@@ -9,9 +9,9 @@ import javax.persistence.Entity;
  */
 @Entity
 public class Course extends Model {
-    public Direction direction;
-    public Generic generic;
-    public Style style;
+    public int d_id;
+    public int g_id;
+    public int s_id;
     public String title;
     public String description;
     public String cover;
@@ -19,10 +19,10 @@ public class Course extends Model {
     public int authority;
     public String time;
 
-    public Course(Direction direction, Generic generic, Style style, String title, String description, String cover, int click, int authority, String time) {
-        this.direction = direction;
-        this.generic = generic;
-        this.style = style;
+    public Course(int d_id, int g_id, int s_id, String title, String description, String cover, int click, int authority, String time) {
+        this.d_id = d_id;
+        this.g_id = g_id;
+        this.s_id = s_id;
         this.title = title;
         this.description = description;
         this.cover = cover;
