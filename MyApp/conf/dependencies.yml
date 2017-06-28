@@ -2,7 +2,4 @@
 
 require:
     - play
-<<<<<<< HEAD
-=======
     - com.alibaba -> fastjson 1.2.7
->>>>>>> 73c8486a3b47f17821559f7cc95399217ae2b3c3

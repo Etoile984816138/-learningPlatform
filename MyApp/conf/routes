@@ -9,18 +9,15 @@ GET     /                                       Application.index
 GET     /favicon.ico                            404
 
 # Map static resources from the /app/public folder to the /public path
-GET     /public/                                staticDir:public
+GET     /static/                                staticDir:static
+GET     /module/                                staticDir:app/views/module
 
 # Catch all
-*       /{controller}/{action}                  {controller}.{action}
-<<<<<<< HEAD
-=======
 
 GET     /direction                              DirectionAction.index
-GET     /generic                                GenericAction.index
+GET     /generics                               GenericAction.index
 GET     /style                                  StyleAction.index
 GET     /direction/{direction_id}               GenericAction.findByD_id
 GET     /generic/{generic_id}                   StyleAction.findByGeneric
 GET     /course/new                             CourseAction.GetNew
 GET     /course/hot                             CourseAction.GetHot
->>>>>>> 73c8486a3b47f17821559f7cc95399217ae2b3c3
