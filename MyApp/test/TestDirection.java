@@ -3,16 +3,15 @@ import play.test.*;
 import models.*;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by C_C on 2017/6/26.
  */
 public class TestDirection extends UnitTest {
     @Test
-    public void findAll(){
-        List<Direction> directions = Direction.findAll();
-        for(Direction direction:directions){
-            System.out.print(direction.name);
-        }
+    public void test(){
+        Direction direction = new Direction("前端");
+        direction.save();
     }
 }

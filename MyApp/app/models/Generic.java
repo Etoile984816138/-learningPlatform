@@ -9,7 +9,9 @@ import javax.persistence.*;
  */
 @Entity
 public class Generic extends Model {
+
     public int d_id;
+
     public String name;
 
     public Generic(int d_id, String name) {
