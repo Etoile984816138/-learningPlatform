@@ -15,7 +15,13 @@ public class DirectionAction extends Controller {
 
     //获取所有课程方向信息
     public static void index(){
+        Map map = new HashMap();
+
         List<Map> directions = Direction.find("SELECT new map(d.id as d_id,d.name as name) FROM Direction d").fetch();
-        renderJSON(JSON.toJSONString(directions));
+
+        map.put("success",directions);
+        map.put("failure","");
+
+        renderJSON(JSON.toJSONString(map));
     }
 }
