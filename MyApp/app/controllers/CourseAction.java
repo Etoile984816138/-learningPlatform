@@ -50,4 +50,7 @@ public class CourseAction extends Controller{
         return map;
     }
 
+    public static void a() {
+        System.out.println("hello");
+    }
 }

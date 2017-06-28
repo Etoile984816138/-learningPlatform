@@ -21,3 +21,4 @@ GET     /direction/{direction_id}               GenericAction.findByD_id
 GET     /generic/{generic_id}                   StyleAction.findByGeneric
 GET     /course/new                             CourseAction.GetNew
 GET     /course/hot                             CourseAction.GetHot
+GET     /course/recommendation                  CommendationAction.suitForMe
