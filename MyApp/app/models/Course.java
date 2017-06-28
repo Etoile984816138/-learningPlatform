@@ -16,10 +16,11 @@ public class Course extends Model {
     public String description;
     public String cover;
     public int click;
-    public int authority;
+    public int power;
     public String time;
 
-    public Course(int d_id, int g_id, int s_id, String title, String description, String cover, int click, int authority, String time) {
+    public Course(int d_id, int g_id, int s_id, String title, String description, String cover, int click, int power, String time) {
+
         this.d_id = d_id;
         this.g_id = g_id;
         this.s_id = s_id;
@@ -27,7 +28,7 @@ public class Course extends Model {
         this.description = description;
         this.cover = cover;
         this.click = click;
-        this.authority = authority;
+        this.power = power;
         this.time = time;
     }
 }
