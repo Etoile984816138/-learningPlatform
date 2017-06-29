@@ -57,7 +57,7 @@ public class CourseAction extends Controller{
 
         //根据条件获取课程列表
         List<Course> Courses = Course.find("SELECT new Course(id,description,title,cover,person) FROM Course.c " +
-                "WHERE c.power = AuthorityIDs AND c.s_id = sid AND c.g_id = gid AND d_id = did And c.title like:title " +
+                "WHERE c.authority_id = AuthorityIDs AND c.s_id = sid AND c.g_id = gid AND d_id = did And c.title like:title " +
                 "ORDER BY "+condition+" desc")
                 .setParameter("AuthorityIDs",AuthorityIDs)
                 .setParameter("sid",s_id)
@@ -67,7 +67,7 @@ public class CourseAction extends Controller{
                 .from((PageNum-1)*PageSize).fetch(PageNum*PageSize);
 
         //计算总页数
-        long count = Course.count("power = ? AND s_id = ? AND g_id = ? AND d_id = ? And title like ?",AuthorityIDs,s_id,g_id,d_id,"%title%");
+        long count = Course.count("authority_id = ? AND s_id = ? AND g_id = ? AND d_id = ? And title like ?",AuthorityIDs,s_id,g_id,d_id,"%title%");
         int total = (int)Math.ceil(count/PageSize);
 
 

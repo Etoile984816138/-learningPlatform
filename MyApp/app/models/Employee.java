@@ -16,7 +16,6 @@ import java.util.List;
 @DynamicInsert
 public class Employee extends Model{
 
-
     public String IDCard;
     public String password;
     public String phone;

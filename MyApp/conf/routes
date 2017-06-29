@@ -22,3 +22,7 @@ GET     /generic/{generic_id}                   StyleAction.findByGeneric
 GET     /course/new                             CourseAction.getNew
 GET     /course/hot                             CourseAction.getHot
 GET     /course/recommendation                  CommendationAction.suitForMe
+GET     /material/{material_id}                 MaterialAction.get
+GET     /discuss/{material_id}                  DiscussAction.get
+GET     /discuss/add                            DiscussAction.add
+GET     /comment/add                            CommentAction.add

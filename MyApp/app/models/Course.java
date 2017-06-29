@@ -19,6 +19,7 @@ public class Course extends Model {
 
     public int person;
 
+
     public String title;
     public String description;
     public String cover;
@@ -31,9 +32,7 @@ public class Course extends Model {
     public Authority authority;
 
 
-    public Course(int d_id, int g_id, int s_id, int person,
-                  String title, String description, String cover,
-                  String time, List<Chapter> chapters, Authority authority) {
+    public Course(int d_id, int g_id, int s_id, int person, String title, String description, String cover, String time, List<Chapter> chapters, Authority authority) {
         this.d_id = d_id;
         this.g_id = g_id;
         this.s_id = s_id;
