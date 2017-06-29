@@ -6,12 +6,16 @@ import javax.persistence.*;
 /**
  * Created by C_C on 2017/6/29.
  */
+@Entity
 public class Friend  extends Model{
-    public int employee_id1;
-    public int employee_id2;
 
-    public Friend(int employee_id1, int employee_id2) {
-        this.employee_id1 = employee_id1;
-        this.employee_id2 = employee_id2;
+    @OneToOne
+    public Employee from;
+    @OneToOne
+    public Employee to;
+
+    public Friend(Employee from, Employee to) {
+        this.from = from;
+        this.to = to;
     }
 }

@@ -32,20 +32,10 @@ public class Employee extends Model{
     @OneToMany(mappedBy = "employee")
     public List<History> histories;
 
-    public Employee(String IDCard, String password, String phone, String email
-            , String port, String name, String sex, String department,
-                    int total_time, Power power) {
-        this.IDCard = IDCard;
-        this.password = password;
-        this.phone = phone;
-        this.email = email;
-        this.port = port;
-        this.name = name;
-        this.sex = sex;
-        this.department = department;
-        this.total_time = total_time;
-        this.power = power;
-    }
+//    @OneToMany(mappedBy = "employee")
+//    List<Comment> comments;
+
+
 
     public Employee() {
     }
