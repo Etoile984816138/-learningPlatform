@@ -11,6 +11,7 @@ import javax.persistence.*;
 public class Style extends Model {
 
     public int g_id;
+
     public String name;
 
     public Style(int g_id, String name) {

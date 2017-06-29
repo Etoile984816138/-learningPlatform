@@ -9,6 +9,7 @@ import javax.persistence.*;
  */
 @Entity
 public class Direction extends Model{
+
     public String name;
 
     public Direction(String name) {

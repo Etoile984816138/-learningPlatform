@@ -1,13 +1,8 @@
 package recommend;
 
-import models.Course;
 import org.junit.Test;
 import play.mvc.Http;
 import play.test.FunctionalTest;
-import service.recommend.MaxStudiedCourse;
-import service.recommend.RecommendExecutor;
-
-import java.util.List;
 
 
 /**

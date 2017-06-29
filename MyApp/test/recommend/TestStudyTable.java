@@ -1,6 +1,9 @@
 package recommend;
 
+import models.Course;
+import models.Employee;
 import models.Study;
+import org.junit.Before;
 import org.junit.Test;
 import play.test.UnitTest;
 
@@ -9,9 +12,20 @@ import play.test.UnitTest;
  */
 public class TestStudyTable extends UnitTest {
 
+    Employee employee =
+            new Employee("","","","","","","","",0);
+    Course course = new Course(0,1,2,3,4,"","","","");
+
+    @Before
+    public void set() {
+        employee.save();
+        course.save();
+    }
+
     @Test
     public void testCreate() {
-        new Study("1")
+        Study study = new Study(employee, course, null).save();
+        assertNotNull(study);
     }
 
 }

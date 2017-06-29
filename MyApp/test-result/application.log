@@ -1,8 +1,4 @@
-28 六月 2017 20:53:48,231 INFO  ~ Starting /home/jsh3/IdeaProjects/job/MyApp/.
-28 六月 2017 20:53:50,025 WARN  ~ You're running Play! in DEV mode
-28 六月 2017 20:53:52,276 INFO  ~ Connected to jdbc:mysql://118.89.145.76:3306/plain?useUnicode=yes&connectionCollation=utf8_general_ci&characterEncoding=UTF-8 for default
-28 六月 2017 20:53:53,373 ERROR ~ HHH000389: Unsuccessful: drop table if exists Group
-28 六月 2017 20:53:53,374 ERROR ~ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Group' at line 1
-28 六月 2017 20:53:53,848 ERROR ~ HHH000389: Unsuccessful: create table Group (id bigint not null auto_increment, team varchar(255), primary key (id)) ENGINE=InnoDB DEFAULT CHARSET=utf8
-28 六月 2017 20:53:53,848 ERROR ~ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Group (id bigint not null auto_increment, team varchar(255), primary key (id)) E' at line 1
-28 六月 2017 20:53:54,042 INFO  ~ Application 'y' is now started !
+29 六月 2017 14:06:07,225 INFO  ~ Starting /home/jsh3/IdeaProjects/job/MyApp/.
+29 六月 2017 14:06:08,862 WARN  ~ You're running Play! in DEV mode
+29 六月 2017 14:06:10,833 INFO  ~ Connected to jdbc:mysql://118.89.145.76:3306/plain?useUnicode=yes&connectionCollation=utf8_general_ci&characterEncoding=UTF-8 for default
+29 六月 2017 14:06:12,609 INFO  ~ Application 'y' is now started !

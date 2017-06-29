@@ -9,26 +9,31 @@ import javax.persistence.Entity;
  */
 @Entity
 public class Course extends Model {
+
     public int d_id;
     public int g_id;
     public int s_id;
+
+    public int person;
+    public int power;
+
     public String title;
     public String description;
     public String cover;
-    public int click;
-    public int power;
     public String time;
 
-    public Course(int d_id, int g_id, int s_id, String title, String description, String cover, int click, int power, String time) {
-
+    public Course(int d_id, int g_id, int s_id, int person, int power, String title, String description, String cover, String time) {
         this.d_id = d_id;
         this.g_id = g_id;
         this.s_id = s_id;
+        this.person = person;
+        this.power = power;
         this.title = title;
         this.description = description;
         this.cover = cover;
-        this.click = click;
-        this.power = power;
         this.time = time;
+    }
+
+    public Course() {
     }
 }

@@ -1,56 +1,80 @@
 package controllers;
 
 import com.alibaba.fastjson.JSON;
-import play.*;
 import play.mvc.*;
 
 import java.util.*;
 
 import models.*;
-import toolutils.ListSort;
 
 /**
  * Created by C_C on 2017/6/27.
  */
 public class CourseAction extends Controller{
-
     //获取某页面最新课程
-    public static void GetNew(int PageNum,int PageSize,String s_id,String g_id,String d_id,String title){
-        Map map = QueryByAll(PageNum,PageSize,s_id,g_id,d_id,title,"time","str");
-        renderJSON(map);
+    public static void getNew(){
+        int pageNum = Integer.parseInt(params.get("pageNum"));
+        int pageSize = Integer.parseInt(params.get("pageSize"));
+
+        String s_id = params.get("s_id");
+        String g_id = params.get("g_id");
+        String d_id = params.get("d_id");
+        String title = params.get("title");
+
+        Map map = queryByAll(pageNum,pageSize,s_id,g_id,d_id,title,"time");
+
+        map.put("failure","");
+
+        renderJSON(JSON.toJSONString(map));
     }
     //获取某页面最热课程
-    public static void GetHot(int PageNum,int PageSize,String s_id,String g_id,String d_id,String title){
-        Map map = QueryByAll(PageNum,PageSize,s_id,g_id,d_id,title,"click",null);
-        renderJSON(map);
+    public static void getHot(){
+        int pageNum = Integer.parseInt(params.get("pageNum"));
+        int pageSize = Integer.parseInt(params.get("pageSize"));
+
+        String s_id = params.get("s_id");
+        String g_id = params.get("g_id");
+        String d_id = params.get("d_id");
+        String title = params.get("title");
+
+        Map map = queryByAll(pageNum,pageSize,s_id,g_id,d_id,title,"person");
+
+        map.put("failure","");
+
+        renderJSON(JSON.toJSONString(map));
     }
 
     //按某些条件查询
-    private static Map QueryByAll(int PageNum,int PageSize,String s_id,String g_id,String d_id,String title,String method,String type){
+    private static Map queryByAll(int PageNum,int PageSize,String s_id,String g_id,String d_id,String title,String condition){
         int employee_id = Integer.parseInt(session.get("employeeID"));
-        List GroupIDs = Power.find("SELECT g.group_id FROM Group g WHERE g.employee_id = ?",employee_id).fetch();
+
         //获取该学员的权限列表
+        List AuthorityIDs = Power.find("SELECT p.authority_id FROM Power p WHERE p.employee_id = ?",employee_id).fetch();
+
         if("0".equals(s_id)) s_id = null;
         if("0".equals(g_id)) g_id = null;
         if("0".equals(d_id)) d_id = null;
 
-        List<Course> Courses = Course.find("SELECT new Course(id,description,title,cover) FROM Course.c " +
-                "WHERE c.power = ? AND c.s_id = ? AND c.g_id = ? AND d_id = ? And " +
-                "c.title like:title",GroupIDs,s_id,g_id,d_id).setParameter("title",title).fetch();
         //根据条件获取课程列表
-        int total = Courses.size()/PageSize;
-        //计算页面总数
-        new ListSort<Course>().sort(Courses,method,"desc",type);
-        //按条件排序
-        Courses = Courses.subList((PageNum-1)*PageSize,PageNum*PageSize);
-        //获取某页面信息
+        List<Course> Courses = Course.find("SELECT new Course(id,description,title,cover,person) FROM Course.c " +
+                "WHERE c.power = AuthorityIDs AND c.s_id = sid AND c.g_id = gid AND d_id = did And c.title like:title " +
+                "ORDER BY "+condition+" desc")
+                .setParameter("AuthorityIDs",AuthorityIDs)
+                .setParameter("sid",s_id)
+                .setParameter("gid",g_id)
+                .setParameter("did",d_id)
+                .setParameter("title",title)
+                .from((PageNum-1)*PageSize).fetch(PageNum*PageSize);
+
+        //计算总页数
+        long count = Course.count("power = ? AND s_id = ? AND g_id = ? AND d_id = ? And title like ?",AuthorityIDs,s_id,g_id,d_id,"%title%");
+        int total = (int)Math.ceil(count/PageSize);
+
+
         Map map = new HashMap();
-        map.put("Courses",Courses);
+        map.put("success",Courses);
         map.put("total",total);
         return map;
     }
 
-    public static void a() {
-        System.out.println("hello");
-    }
 }

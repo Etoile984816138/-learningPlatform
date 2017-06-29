@@ -15,10 +15,10 @@ GET     /module/                                staticDir:app/views/module
 # Catch all
 
 GET     /direction                              DirectionAction.index
-GET     /generics                               GenericAction.index
+GET     /generic                                GenericAction.index
 GET     /style                                  StyleAction.index
-GET     /direction/{direction_id}               GenericAction.findByD_id
+GET     /direction/{direction_id}               GenericAction.findByDirection
 GET     /generic/{generic_id}                   StyleAction.findByGeneric
-GET     /course/new                             CourseAction.GetNew
-GET     /course/hot                             CourseAction.GetHot
+GET     /course/new                             CourseAction.getNew
+GET     /course/hot                             CourseAction.getHot
 GET     /course/recommendation                  CommendationAction.suitForMe

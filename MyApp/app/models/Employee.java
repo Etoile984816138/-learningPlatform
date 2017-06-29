@@ -9,25 +9,30 @@ import javax.persistence.Entity;
  */
 @Entity
 public class Employee extends Model{
-    public String ID;
+
+    public String employee_id;
     public String password;
     public String phone;
     public String email;
     public String port;
     public String name;
-    public String Sex;
-    public int total_time;
+    public String sex;
     public String department;
 
-    public Employee(String ID, String password, String phone, String email, String port, String name, String sex, int total_time, String department) {
-        this.ID = ID;
+    public int total_time;
+
+    public Employee(String employee_id, String password, String phone, String email, String port, String name, String sex, String department, int total_time) {
+        this.employee_id = employee_id;
         this.password = password;
         this.phone = phone;
         this.email = email;
         this.port = port;
         this.name = name;
-        Sex = sex;
-        this.total_time = total_time;
+        this.sex = sex;
         this.department = department;
+        this.total_time = total_time;
+    }
+
+    public Employee() {
     }
 }
