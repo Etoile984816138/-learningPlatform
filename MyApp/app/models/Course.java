@@ -15,19 +15,19 @@ public class Course extends Model {
     public int s_id;
 
     public int person;
-    public int power;
+    public int authority_id;
 
     public String title;
     public String description;
     public String cover;
     public String time;
 
-    public Course(int d_id, int g_id, int s_id, int person, int power, String title, String description, String cover, String time) {
+    public Course(int d_id, int g_id, int s_id, int person, int authority_id, String title, String description, String cover, String time) {
         this.d_id = d_id;
         this.g_id = g_id;
         this.s_id = s_id;
         this.person = person;
-        this.power = power;
+        this.authority_id = authority_id;
         this.title = title;
         this.description = description;
         this.cover = cover;
