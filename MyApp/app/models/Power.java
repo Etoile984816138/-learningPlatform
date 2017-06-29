@@ -10,11 +10,11 @@ import javax.persistence.Entity;
 @Entity
 public class Power extends Model {
 
-    public int group_id;
+    public int authority_id;
     public int employee_id;
 
-    public Power(int group_id, int employee_id) {
-        this.group_id = group_id;
+    public Power(int authority_id, int employee_id) {
+        this.authority_id = authority_id;
         this.employee_id = employee_id;
     }
 }

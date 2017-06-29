@@ -15,7 +15,7 @@ GET     /module/                                staticDir:app/views/module
 # Catch all
 
 GET     /direction                              DirectionAction.index
-GET     /generics                               GenericAction.index
+GET     /generic                                GenericAction.index
 GET     /style                                  StyleAction.index
 GET     /direction/{direction_id}               GenericAction.findByDirection
 GET     /generic/{generic_id}                   StyleAction.findByGeneric
