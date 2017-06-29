@@ -10,7 +10,7 @@ import javax.persistence.Entity;
 @Entity
 public class Employee extends Model{
 
-    public String ID;
+    public String IDCard;
     public String password;
     public String phone;
     public String email;
@@ -21,8 +21,8 @@ public class Employee extends Model{
 
     public int total_time;
 
-    public Employee(String ID, String password, String phone, String email, String port, String name, String sex, String department, int total_time) {
-        this.ID = ID;
+    public Employee(String IDCard, String password, String phone, String email, String port, String name, String sex, String department, int total_time) {
+        this.IDCard = IDCard;
         this.password = password;
         this.phone = phone;
         this.email = email;

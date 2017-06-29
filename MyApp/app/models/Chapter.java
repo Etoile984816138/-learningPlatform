@@ -11,7 +11,7 @@ import javax.persistence.*;
 @Entity
 public class Chapter extends Model {
     public int course_id;//所属课程id
-    public int number;//第几章
+    public int number;//第几章节
 
     public String title;//标题
 
