@@ -3,6 +3,9 @@ package models;
 import play.db.jpa.Model;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import java.util.List;
 
 /**
  * Created by C_C on 2017/6/26.
@@ -15,25 +18,36 @@ public class Course extends Model {
     public int s_id;
 
     public int person;
-    public int power;
 
     public String title;
     public String description;
     public String cover;
     public String time;
 
-    public Course(int d_id, int g_id, int s_id, int person, int power, String title, String description, String cover, String time) {
+    @OneToMany(mappedBy = "course_id")
+    public List<Chapter> chapters;
+
+    @OneToOne
+    public Authority authority;
+
+
+    public Course(int d_id, int g_id, int s_id, int person,
+                  String title, String description, String cover,
+                  String time, List<Chapter> chapters, Authority authority) {
         this.d_id = d_id;
         this.g_id = g_id;
         this.s_id = s_id;
         this.person = person;
-        this.power = power;
         this.title = title;
         this.description = description;
         this.cover = cover;
         this.time = time;
+        this.chapters = chapters;
+        this.authority = authority;
     }
 
     public Course() {
     }
+
+
 }

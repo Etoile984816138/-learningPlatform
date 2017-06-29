@@ -1,16 +1,23 @@
 package models;
 
+import org.hibernate.annotations.DynamicInsert;
 import play.db.jpa.Model;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import java.util.List;
 
 /**
  * Created by C_C on 2017/6/27.
  */
 @Entity
+@DynamicInsert
 public class Employee extends Model{
 
-    public String employee_id;
+
+    public String IDCard;
     public String password;
     public String phone;
     public String email;
@@ -18,11 +25,18 @@ public class Employee extends Model{
     public String name;
     public String sex;
     public String department;
-
     public int total_time;
 
-    public Employee(String employee_id, String password, String phone, String email, String port, String name, String sex, String department, int total_time) {
-        this.employee_id = employee_id;
+    @OneToOne(mappedBy = "employee")
+    public Power power;
+
+    @OneToMany(mappedBy = "employee")
+    public List<History> histories;
+
+    public Employee(String IDCard, String password, String phone, String email
+            , String port, String name, String sex, String department,
+                    int total_time, Power power) {
+        this.IDCard = IDCard;
         this.password = password;
         this.phone = phone;
         this.email = email;
@@ -31,6 +45,7 @@ public class Employee extends Model{
         this.sex = sex;
         this.department = department;
         this.total_time = total_time;
+        this.power = power;
     }
 
     public Employee() {

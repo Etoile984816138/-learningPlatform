@@ -9,6 +9,7 @@ import java.util.List;
  * Created by jsh3 on 17-6-28.
  * 下策
  */
+@Deprecated
 public class MaxStudiedStrategy {
 
     private static final String sql = "select count(*),s from Study s group by course_id" +

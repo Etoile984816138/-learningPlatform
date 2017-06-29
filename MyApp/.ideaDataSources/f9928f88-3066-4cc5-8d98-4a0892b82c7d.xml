@@ -9956,43 +9956,43 @@ User</ColNames>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="2125" parent="174" name="cover">
-      <Position>2</Position>
+      <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
     <column id="2126" parent="174" name="d_id">
-      <Position>3</Position>
+      <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="2127" parent="174" name="description">
-      <Position>4</Position>
+      <Position>5</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
     <column id="2128" parent="174" name="g_id">
-      <Position>5</Position>
+      <Position>6</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="2129" parent="174" name="power">
-      <Position>7</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="2130" parent="174" name="s_id">
+    <column id="2129" parent="174" name="s_id">
       <Position>8</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="2131" parent="174" name="time">
+    <column id="2130" parent="174" name="time">
       <Position>9</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="2132" parent="174" name="title">
+    <column id="2131" parent="174" name="title">
       <Position>10</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="2133" parent="174" name="person">
-      <Position>6</Position>
+    <column id="2132" parent="174" name="person">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="2133" parent="174" name="authority_id">
+      <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
@@ -10023,11 +10023,11 @@ User</ColNames>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="2139" parent="176" name="department">
-      <Position>2</Position>
+      <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
     <column id="2140" parent="176" name="email">
-      <Position>3</Position>
+      <Position>4</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
     <column id="2141" parent="176" name="name">
@@ -10055,8 +10055,8 @@ User</ColNames>
       <Position>9</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="2147" parent="176" name="employee_id">
-      <Position>4</Position>
+    <column id="2147" parent="176" name="IDCard">
+      <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
     <key id="2148" parent="176" name="PRIMARY">
