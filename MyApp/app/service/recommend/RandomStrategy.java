@@ -10,7 +10,7 @@ import java.util.List;
 public class RandomStrategy {
 
     public List<Course> randomRecommend(int limit) {
-
+        return null;
     }
 
 
