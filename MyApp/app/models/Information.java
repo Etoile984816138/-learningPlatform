@@ -28,4 +28,6 @@ public class Information extends Model {
         this.title = title;
         this.material = material;
     }
+
+
 }
