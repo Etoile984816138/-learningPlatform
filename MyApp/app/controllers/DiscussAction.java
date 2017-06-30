@@ -134,7 +134,12 @@ public class DiscussAction extends Controller{
         Discuss discuss = new Discuss(type,0,1,0,0,title,content,null,df.
                 format(new Date()),employee,information,null);
 
+<<<<<<< HEAD
         discuss.save();
+=======
+//        Discuss discuss = new Discuss(employee_id,material_id,type,flag,0,content,point_time,df.format(new Date()));
+//        discuss.save();
+>>>>>>> b3382aa2780343ebef80e390039dd614e85d1658
 
         map.put("success",true);
         map.put("failure","");
