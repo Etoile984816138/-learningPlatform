@@ -1,0 +1,155 @@
+<!-- 
+    逻辑概述：1.点击all-tag，其它tag上active去掉
+            2.点击tag，all-tag上active去掉
+ -->
+<template>
+    <div id="courseHeader" class="course-header">
+        <mu-row>
+            <mu-col width="100" tablet="40" desktop="40">
+                <div class="cover-wrapper">
+                    <img :src="courseData.cover">
+                </div>
+            </mu-col>
+            <mu-col width="100" tablet="60" desktop="60">
+                <mu-list-item disabled>
+                    <h1>{{courseData.title}}</h1>
+                    <mu-badge :content="badgeText" slot="after" @click="" class="badge-active"/>
+                    <p>{{student_num}}人在学
+                        <span class="star-wrapper">
+                        评分：
+                        <mu-icon-button icon="grade" v-for="item in courseData.star" :key="courseData.id"/>
+                    </span>
+                    </p>
+                    <div v-if="courseData.hasjoin">
+                        <mu-linear-progress mode="determinate" :value="value" class="progress" :size="progressSize" />
+                        <p>已学习2个课时</p>
+                    </div>
+                    <div v-else>
+                        <mu-raised-button label="立即参加" class="demo-raised-button" @click="joinCourse" primary/>
+                    </div>
+                </mu-list-item>
+            </mu-col>
+        </mu-row>
+    </div>
+</template>
+<script>
+const ERR_OK = 0;
+export default {
+    // props: { }, data() { }, methods: { }, computed: { }
+    data() {
+            return {
+                test: '',
+                value: 20,
+                badgeText:'收藏',
+                progressSize:10
+            }
+        },
+        props: {
+            courseData: {
+                type: Object
+            },
+            bus: {
+                type: Object
+            }
+        },
+        created() {
+
+        },
+        methods: {
+            joinCourse() {
+                this.$http.get('/course/add/' + this.courseData.id).then((response) => {
+                    response = response.body
+                        // console.log(response)
+                    if (response.failure.length === 0) {
+                        this.bus.$emit("alertFlag", {
+                            flag: true,
+                            text: '加入成功'
+                        });
+                        // console.log(this.chapter)
+                    } else {
+                        this.bus.$emit("alertFlag", {
+                            flag: true,
+                            text: response.failure[0]
+                        });
+                    }
+
+                })
+            }
+        },
+        computed: {
+            student_num() {
+                console.log('-------------------')
+                console.log(this.courseData)
+
+                try {
+                    return this.courseData.students.length
+                } catch (e) {
+                    console.log('数据读取中')
+
+                }
+                // while (!this.courseData);
+                // return this.courseData.students.length
+            }
+        }
+
+
+
+}
+</script>
+<style lang="less">
+@main-color: #009688;
+#courseHeader {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    .cover-wrapper {
+        // margin:50px;
+        width: 300px;
+        height: 200px;
+        border: 1px solid #ccc;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .star-wrapper {
+        display: inline-block;
+        margin-left: 100px;
+        .mu-icon-button {
+            width: 8px;
+            height: 8px;
+            .mu-icon {
+                font-size: 16px;
+                color: #ffc107
+            }
+        }
+    }
+    .f-btn-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 40px;
+        .mu-icon-button {
+            width: 8px;
+            height: 8px;
+            clear: both;
+            .mu-icon {
+                font-size: 20px;
+                color: #000;
+                &:hover {
+                    color: @main-color;
+                }
+            }
+        }
+    }
+    .progress {
+        width: 100%;
+    }
+    .badge-active .mu-badge{
+        cursor: pointer;
+        background: #fdd835;
+        // color: #ffeb3b;
+
+    }
+}
+</style>

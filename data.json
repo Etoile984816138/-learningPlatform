@@ -1,0 +1,478 @@
+{
+    "direction": {
+        "failure": [
+
+        ],
+        "success": [{
+            "d_id": 1,
+            "name": "前端"
+        }, {
+            "d_id": 2,
+            "name": "前端"
+        }, {
+            "d_id": 3,
+            "name": "前端"
+        }, {
+            "d_id": 4,
+            "name": "前端"
+        }, {
+            "d_id": 5,
+            "name": "前端"
+        }, {
+            "d_id": 6,
+            "name": "前端"
+        }, {
+            "d_id": 7,
+            "name": "前端"
+        }]
+    },
+    "generics": {
+        "failure": [],
+        "success": [{
+            "g_id": 1,
+            "name": "前端"
+        }, {
+            "g_id": 2,
+            "name": "前端"
+        }, {
+            "g_id": 3,
+            "name": "前端"
+        }]
+    },
+    "course": {
+        "failure": [
+
+        ],
+        "success": [{
+            "title": "DO0PvQzxlZ",
+            "id": 1,
+            "description": "FL3c59Yyam",
+            "cover": "Hjcbwcyphe"
+        }, {
+            "title": "X4RTecitQD",
+            "id": 2,
+            "description": "L58rGL4Se0",
+            "cover": "vX5MVZdw2k"
+        }, {
+            "title": "6Oeln70Jq3",
+            "id": 3,
+            "description": "rxNEZlSfKd",
+            "cover": "is8KDtyD4X"
+        }]
+    },
+    "new": {
+        "failure": [],
+        "success": [{
+            "id": 2,
+            "description": "120",
+            "title": "68Qh680c3r",
+            "cover": "8M7ML6cbQR"
+        }, {
+            "id": 2,
+            "description": "120",
+            "title": "sOpXI5OrUU",
+            "cover": "H3NKwQQZRv"
+        }, {
+            "id": 2,
+            "description": "120",
+            "title": "1mdWcFafeR",
+            "cover": "rFVUkg89Vn"
+        }, {
+            "id": 2,
+            "description": "120",
+            "title": "1mdWcFafeR",
+            "cover": "rFVUkg89Vn"
+        }]
+    },
+    "user": {
+        "failure": [
+
+        ],
+        "success": {
+            "new_info": 20,
+            "name": "nick",
+            "portrait": "http://wwww.baidu.jpg"
+        }
+    },
+    "style": {
+        "failure": [
+
+        ],
+        "success": [{
+            "s_id": 1,
+            "name": "前端"
+        }, {
+            "s_id": 2,
+            "name": "前端"
+        }, {
+            "s_id": 3,
+            "name": "前端"
+        }]
+    },
+    "generic": {
+        "failure": [
+
+        ],
+        "success": [{
+            "s_id": 1,
+            "name": "前端"
+        }, {
+            "s_id": 2,
+            "name": "前端"
+        }, {
+            "s_id": 3,
+            "name": "前端"
+        }]
+    },
+    "courseDetail": {
+        "failure": [
+
+        ],
+        "success": {
+            "title": "jTWW1pbKi4",
+            "id": 1024,
+            "description": "dfa",
+            "cover": "http://df.jpg",
+            "star": 3,
+            "students": [{
+                "id": 2,
+                "name": "nick",
+                "post": "http://wwww.baidu.jpg"
+            }, {
+                "id": 2,
+                "name": "nick",
+                "post": "http://wwww.baidu.jpg"
+            }, {
+                "id": 2,
+                "name": "nick",
+                "post": "http://wwww.baidu.jpg"
+            }],
+            "comments": [{
+                "id": 2,
+                "name": "nick",
+                "post": "http://wwww.baidu.jpg",
+                "star": 4,
+                "comments": "TMR9thWddQ",
+                "time": "1497657054084"
+            }, {
+                "id": 2,
+                "name": "nick",
+                "post": "http://wwww.baidu.jpg",
+                "star": 4,
+                "comments": "TMR9thWddQ",
+                "time": "1497657054084"
+            }, {
+                "id": 2,
+                "name": "nick",
+                "post": "http://wwww.baidu.jpg",
+                "star": 4,
+                "comments": "TMR9thWddQ",
+                "time": "1497657054084"
+            }],
+            "tag": "56lDfznA2B",
+            "category": "ElmdclwPlP",
+            "type": "3NRILdpHwJ",
+            "hasjoin": true
+        }
+    },
+    "chapter": {
+    "failure": [
+      
+    ],
+    "success": {
+        "name": "jTWW1pbKi4",
+        "descript": "dfa",
+        "img": "http://df.jpg",
+        "star": 3,
+        "sections": [
+            {
+                "id": 1,
+                "name": "第一节",
+                "chapter": [
+                    {
+                        "id": 1,
+                        "name": "标题",
+                        "time": "时间",
+                        "question": true,
+                        "complete": true,
+                        "noted": true,
+                        "type": "2"
+                    },
+                    {
+                        "id": 1,
+                        "name": "标题",
+                        "time": "时间",
+                        "question": true,
+                        "complete": true,
+                        "noted": true,
+                        "type": "2"
+                    },
+                    {
+                        "id": 1,
+                        "name": "标题",
+                        "time": "时间",
+                        "question": true,
+                        "complete": true,
+                        "noted": true,
+                        "type": "2"
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "name": "第一节",
+                "chapter": [
+                    {
+                        "id": 1,
+                        "name": "标题",
+                        "time": "时间",
+                        "question": true,
+                        "complete": true,
+                        "noted": true,
+                        "type": "2"
+                    },
+                    {
+                        "id": 1,
+                        "name": "标题",
+                        "time": "时间",
+                        "question": true,
+                        "complete": true,
+                        "noted": true,
+                        "type": "2"
+                    },
+                    {
+                        "id": 1,
+                        "name": "标题",
+                        "time": "时间",
+                        "question": true,
+                        "complete": true,
+                        "noted": true,
+                        "type": "2"
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "name": "第一节",
+                "chapter": [
+                    {
+                        "id": 1,
+                        "name": "标题",
+                        "time": "时间",
+                        "question": true,
+                        "complete": true,
+                        "noted": true,
+                        "type": "2"
+                    },
+                    {
+                        "id": 1,
+                        "name": "标题",
+                        "time": "时间",
+                        "question": true,
+                        "complete": true,
+                        "noted": true,
+                        "type": "2"
+                    },
+                    {
+                        "id": 1,
+                        "name": "标题",
+                        "time": "时间",
+                        "question": true,
+                        "complete": true,
+                        "noted": true,
+                        "type": "2"
+                    }
+                ]
+            }
+        ]
+    },
+    "hasjoin": true
+},
+    "courseAdd": {
+        "failure": [
+
+        ],
+        "success": true
+    },
+    "discusion": {
+        "failure": [
+
+        ],
+        "success": [{
+            "id": 2,
+            "content": "MA4NDS6Cxo",
+            "grate": 12,
+            "view": 3,
+            "time": "1498785184258",
+            "title": "F2UrCRoiZA",
+            "commends": [{
+                "content": "a6uuwohKyX",
+                "grate": 12,
+                "time": "1498785180859",
+                "to": {
+                    "id": 75443,
+                    "name": "mJ10ToZdnI",
+                    "isTeacher": true
+                },
+                "from": {
+                    "id": 75762,
+                    "name": "M3fYd5vq60",
+                    "port": "8tDdBCW1BB",
+                    "isTeacher": false
+                }
+            }, {
+                "content": "0hNMPFGqlN",
+                "grate": 12,
+                "time": "1498786458177",
+                "to": {
+                    "id": 76482,
+                    "name": "yewbrjiYxQ",
+                    "isTeacher": true
+                },
+                "from": {
+                    "id": 76887,
+                    "name": "PvO9uJRy1B",
+                    "port": "PQlTc2T8kb",
+                    "isTeacher": false
+                }
+            }, {
+                "content": "PM2Fa3DLEb",
+                "grate": 12,
+                "time": "1498785978925",
+                "to": {
+                    "id": 77508,
+                    "name": "9vkZYVfROb",
+                    "isTeacher": false
+                },
+                "from": {
+                    "id": 78331,
+                    "name": "qDhqsHzDzb",
+                    "port": "Rvb08fjzoX",
+                    "isTeacher": false
+                }
+            }],
+            "employee": {
+                "id": 78642,
+                "name": "sxY4hjqX5I",
+                "port": "YailSIDNp2"
+            }
+        }, {
+            "id": 2,
+            "content": "zaJcPZfAWp",
+            "grate": 12,
+            "view": 3,
+            "time": "1498786087308",
+            "title": "h74V2lMW1V",
+            "commends": [{
+                "content": "pe060VVmrn",
+                "grate": 12,
+                "time": "1498786264300",
+                "to": {
+                    "id": 79097,
+                    "name": "xcIB7d06pB",
+                    "isTeacher": true
+                },
+                "from": {
+                    "id": 79571,
+                    "name": "q97QXQXCQP",
+                    "port": "ymeEkx2Zk5",
+                    "isTeacher": true
+                }
+            }, {
+                "content": "9i8WGDBqd6",
+                "grate": 12,
+                "time": "1498786624317",
+                "to": {
+                    "id": 80254,
+                    "name": "fSHXtLj5xk",
+                    "isTeacher": false
+                },
+                "from": {
+                    "id": 80978,
+                    "name": "0LMVHiVl7e",
+                    "port": "201Trbo72E",
+                    "isTeacher": true
+                }
+            }, {
+                "content": "JMgQ5jvxu9",
+                "grate": 12,
+                "time": "1498784900695",
+                "to": {
+                    "id": 80988,
+                    "name": "GCDtqJx4cL",
+                    "isTeacher": false
+                },
+                "from": {
+                    "id": 81981,
+                    "name": "7rmcWt3UnO",
+                    "port": "4urtql9TS9",
+                    "isTeacher": false
+                }
+            }],
+            "employee": {
+                "id": 82265,
+                "name": "T1FtzSU7Ts",
+                "port": "mq7LX5NoTn"
+            }
+        }, {
+            "id": 2,
+            "content": "rehGwv62w9",
+            "grate": 12,
+            "view": 3,
+            "time": "1498786920961",
+            "title": "LNSaknjo3k",
+            "commends": [{
+                "content": "EziTkMryG9",
+                "grate": 12,
+                "time": "1498785116670",
+                "to": {
+                    "id": 82362,
+                    "name": "9yInVvm5cQ",
+                    "isTeacher": true
+                },
+                "from": {
+                    "id": 83112,
+                    "name": "H1pXdvoh6i",
+                    "port": "bGOmlKMgoy",
+                    "isTeacher": true
+                }
+            }, {
+                "content": "Fu6MCERPte",
+                "grate": 12,
+                "time": "1498785036382",
+                "to": {
+                    "id": 83318,
+                    "name": "Ab79mfTPrP",
+                    "isTeacher": true
+                },
+                "from": {
+                    "id": 83496,
+                    "name": "j714ECCuxb",
+                    "port": "EhwbrSF5hE",
+                    "isTeacher": false
+                }
+            }, {
+                "content": "U4UKK9cGTn",
+                "grate": 12,
+                "time": "1498785435105",
+                "to": {
+                    "id": 83687,
+                    "name": "t2xDw5cJi4",
+                    "isTeacher": true
+                },
+                "from": {
+                    "id": 84179,
+                    "name": "11lu2VxtH6",
+                    "port": "LJRKGvDxg8",
+                    "isTeacher": false
+                }
+            }],
+            "employee": {
+                "id": 84814,
+                "name": "Z92ws90mzz",
+                "port": "zUcXRFuT99"
+            }
+        }],
+        "total": 79572
+    }
+}
