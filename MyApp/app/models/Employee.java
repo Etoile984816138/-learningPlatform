@@ -50,4 +50,6 @@ public class Employee extends Model{
         this.histories = histories;
     }
 
+    public Employee() {
+    }
 }

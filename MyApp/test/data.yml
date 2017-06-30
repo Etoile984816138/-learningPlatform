@@ -77,6 +77,16 @@ Power(power4):
   authority: auth1
   employee: chen
 
+Direction(qianduan):
+  name: qianduan
+
+Direction(houtai):
+  name: houtai
+
+
+Generic(js):
+  d_id: 1
+
 
 Course(android):
   d_id: 1
@@ -146,3 +156,5 @@ History(3):
 History(4):
   employee: bao
   information: android_info
+
+

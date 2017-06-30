@@ -1,8 +1,10 @@
 package service.recommend;
 
 import dao.CourseDAO;
+import dao.HistoryDAO;
 import models.Course;
 import models.Employee;
+import models.History;
 
 import java.util.Collections;
 import java.util.List;
@@ -15,7 +17,15 @@ public class JDBCRecommend implements RecommendService {
 
     @Override
     public List<Course> latestViewRec(Employee employee, int limit) {
-        return null;
+        History history = HistoryDAO.finallyVisit(employee);
+        // 根据gid
+        List<Course> courses = Collections.EMPTY_LIST;
+        if (history != null) {
+            int gid = history.information.chapter.course.g_id;
+            long courseId = history.information.chapter.course.id;
+            courses = CourseDAO.byGenericAndNotEqual(gid, courseId);
+        }
+        return courses;
     }
 
     @Override

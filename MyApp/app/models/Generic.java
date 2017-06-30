@@ -17,4 +17,7 @@ public class Generic extends Model {
         this.d_id = d_id;
         this.name = name;
     }
+
+    public Generic() {
+    }
 }

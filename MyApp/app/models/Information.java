@@ -22,20 +22,20 @@ public class Information extends Model {
     public Chapter chapter;
 
 
-    @OneToOne(mappedBy = "information")
-    public History history;
+    @OneToMany(mappedBy = "information")
+    public List<History> histories;
 
     @OneToMany(mappedBy = "information")
     public List<Discuss> discusses;
 
 
-    public Information(int number, String title, Material material, List<Discuss> discusses, Chapter chapter, History history, List<Discuss> discusses1) {
+    public Information(int number, String title, Material material, Chapter chapter
+            , List<History> histories, List<Discuss> discusses) {
         this.number = number;
         this.title = title;
         this.material = material;
-        this.discusses = discusses;
         this.chapter = chapter;
-        this.history = history;
-        this.discusses = discusses1;
+        this.histories = histories;
+        this.discusses = discusses;
     }
 }

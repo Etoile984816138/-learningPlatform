@@ -15,7 +15,7 @@ public class History extends Model {
     public String time;
     public String cont;
 
-    @OneToOne
+    @ManyToOne
     public Information information;
 
     @ManyToOne

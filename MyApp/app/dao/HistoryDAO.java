@@ -20,6 +20,21 @@ public class HistoryDAO {
         return null;
     }
 
+
+    public static History finallyVisit(Employee employee) {
+        return History.find("select h from History h where h.employee = :employee order by time,id desc")
+                .setParameter("employee", employee).first();
+    }
+
+
+
+    public static List<History> allVisit(Employee employee) {
+        return History.find("select h from History h where h.employee = :employee order by time,id desc")
+                .setParameter("employee", employee).fetch();
+    }
+
+
+
    /* public static List<Course> mostViewsCourse(int limit) {
         return History.find("select count(*),* ")
     }*/
