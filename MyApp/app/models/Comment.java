@@ -6,7 +6,6 @@ import javax.persistence.*;
 /**
  * Created by C_C on 2017/6/29.
  */
-@Entity
 public class Comment extends Model {
     public int grate;//点赞
 
@@ -30,6 +29,4 @@ public class Comment extends Model {
         this.from = from;
         this.discuss = discuss;
     }
-
-
 }

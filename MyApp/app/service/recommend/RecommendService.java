@@ -1,7 +1,6 @@
 package service.recommend;
 
 import models.Course;
-import models.Employee;
 
 import java.util.List;
 
@@ -10,10 +9,10 @@ import java.util.List;
  */
 public interface RecommendService {
 
-    List<Course> latestViewRec(Employee employee, int limit);
-    List<Course> randomRec(Employee employee, int limit);
-    List<Course> departmentRec(Employee employee, int limit);
-    List<Course> maxViewRec(Employee employee, int limit);
+    List<Course> latestViewRec(String userid);
+    List<Course> randomRec(String userid);
+    List<Course> departmentRec(String userid);
+    List<Course> maxViewRec(String userid);
 
 
 }

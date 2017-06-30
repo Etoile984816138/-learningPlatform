@@ -22,7 +22,14 @@ public class TestRecommendStrategy extends UnitTest {
         assertTrue(courses.size() == 1);
     }
 
-
+    @Before
+    public void addCourse() {
+        new Course(0,1,2,3,4,"","","","").save();
+        new Course(0,1,2,3,4,"","","","").save();
+        new Course(0,1,2,3,4,"","","","").save();
+        new Course(0,1,2,3,4,"","","","").save();
+        new Course(0,1,2,3,4,"","","","").save();
+    }
 
     @Test
     public void testRandomCourseRecommend() {

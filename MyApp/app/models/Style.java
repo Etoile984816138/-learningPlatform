@@ -9,6 +9,7 @@ import javax.persistence.*;
  */
 @Entity
 public class Style extends Model {
+
     public int g_id;
 
     public String name;
