@@ -5,3 +5,16 @@
 #   email: bob@gmail.com
 #   password: secret
 #   fullname: Bob
+
+
+
+Employee(nick):
+  IDCard: 12345678
+  password: 123456789
+  phone:  1234567890
+  email: 941112341@qq.com
+  port: http://localhost:80/a.jpg
+  name: nick
+  sex: 男
+  department: 前端
+  total_time: 0

@@ -52,8 +52,8 @@ public class DiscussAction extends Controller{
 
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
 
-        Discuss discuss = new Discuss(employee_id,material_id,type,flag,0,content,point_time,df.format(new Date()));
-        discuss.save();
+//        Discuss discuss = new Discuss(employee_id,material_id,type,flag,0,content,point_time,df.format(new Date()));
+//        discuss.save();
 
         map.put("success",true);
         map.put("failure","");

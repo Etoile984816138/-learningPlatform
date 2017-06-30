@@ -5,3 +5,57 @@
 #   email: bob@gmail.com
 #   password: secret
 #   fullname: Bob
+
+
+
+Employee(nick):
+  IDCard: 12345678
+  password: 123456789
+  phone:  1234567890
+  email: 941112341@qq.com
+  port: http://localhost:80/a.jpg
+  name: nick
+  sex: 男
+  department: 前端
+  total_time: 0
+
+Employee(lin):
+  IDCard: 1234567
+  password: 123456789
+  phone:  1234567890
+  email: 3334510199@qq.com
+  port: http://localhost:80/2.jpg
+  name: lin
+  sex: 女
+  department: 前端
+  total_time: 15
+
+
+Employee(bao):
+  IDCard: 1234567
+  password: admin
+  phone:  12589
+  email: 3334199@qq.com
+  port: http://localhost:80/3.jpg
+  name: lin
+  sex: 女
+  department: 产品经理
+  total_time: 10
+
+Employee(chen):
+  IDCard: 945651
+  password: 123455
+  phone:  12589456
+  email: 3199@qq.com
+  port: http://localhost:80/4.jpg
+  name: lin
+  sex: 女
+  department: 后台
+  total_time: 20
+
+
+Course(android):
+  d_id:1
+  g_id:1
+  s_id:1
+

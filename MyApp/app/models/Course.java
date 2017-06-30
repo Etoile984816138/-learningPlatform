@@ -25,7 +25,7 @@ public class Course extends Model {
     public String cover;
     public String time;
 
-    @OneToMany(mappedBy = "course_id")
+    @OneToMany(mappedBy = "course")
     public List<Chapter> chapters;
 
     @OneToOne

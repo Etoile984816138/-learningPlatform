@@ -20,7 +20,8 @@ public class JDBCRecommend implements RecommendService {
 
     @Override
     public List<Course> randomRec(Employee employee, int limit) {
-        return CourseDAO.RandomCourse(limit);
+        return null;
+//        return CourseDAO.RandomCourse(limit);
     }
 
     @Override

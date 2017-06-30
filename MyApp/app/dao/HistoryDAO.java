@@ -1,8 +1,12 @@
 package dao;
 
 import models.Course;
+import models.Employee;
 import models.History;
+import play.db.jpa.JPA;
 
+import javax.persistence.EntityManager;
+import javax.swing.text.html.parser.Entity;
 import java.util.List;
 
 /**
@@ -10,9 +14,10 @@ import java.util.List;
  */
 public class HistoryDAO {
 
-   /* public static List<Course> latestViewCourse(String emplyee_id, int limit) {
-
-    }*/
+    public static List<Course> latestViewSimilarCourse(Employee employee, int limit) {
+        EntityManager entityManager = JPA.em();
+        
+    }
 
    /* public static List<Course> mostViewsCourse(int limit) {
         return History.find("select count(*),* ")
