@@ -14,7 +14,7 @@ public class Authority extends Model {
 
     public String team;
 
-    @OneToMany(mappedBy = "authority_id")
+    @OneToMany(mappedBy = "authority")
     public List<Power> powers;
 
     public Authority(String team, List<Power> powers) {

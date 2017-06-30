@@ -10,8 +10,6 @@ import java.util.List;
  * 课时
  */
 public class Information extends Model {
-    public int chapter_id;//所属课时id
-
     public int number;//第几课时
 
     public String title;//标题
@@ -19,13 +17,18 @@ public class Information extends Model {
     @OneToOne
     public Material material;
 
-    @OneToMany(mappedBy = "information_id")
-    public List<Discuss> discusses;
+    @OneToMany(mappedBy = "information")
+    public List<Discuss> discusses;//所属课时
 
-    public Information(int chapter_id, int number, String title, Material material) {
-        this.chapter_id = chapter_id;
+    @ManyToOne
+    public Chapter chapter;
+
+    public Information(int number, String title, Material material,
+                       List<Discuss> discusses, Chapter chapter) {
         this.number = number;
         this.title = title;
         this.material = material;
+        this.discusses = discusses;
+        this.chapter = chapter;
     }
 }

@@ -23,8 +23,7 @@
     <version value="1.0" />
   </component>
   <component name="KotlinCommonCompilerArguments">
-    <option name="languageVersion" value="1.1" />
-    <option name="apiVersion" value="1.1" />
+    <option name="coroutinesWarn" value="false" />
   </component>
   <component name="Palette2">
     <group name="Swing">
@@ -152,7 +151,7 @@
       <module fileurl="file://$PROJECT_DIR$/y.iml" filepath="$PROJECT_DIR$/y.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.7" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/tmp/classes" />
   </component>
   <component name="dataSourceStorageLocal">

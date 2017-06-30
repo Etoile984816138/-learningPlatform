@@ -3,6 +3,7 @@ package models;
 import play.db.jpa.Model;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 /**
@@ -10,13 +11,14 @@ import javax.persistence.OneToOne;
  */
 @Entity
 public class Power extends Model {
-
-    public int authority_id;
     @OneToOne
     public Employee employee;
 
-    public Power(int authority_id, Employee employee) {
-        this.authority_id = authority_id;
+    @OneToMany
+    public Authority authority;
+
+    public Power(Employee employee, Authority authority) {
         this.employee = employee;
+        this.authority = authority;
     }
 }

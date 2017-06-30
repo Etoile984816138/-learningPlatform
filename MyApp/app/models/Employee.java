@@ -25,6 +25,7 @@ public class Employee extends Model{
     public String sex;
     public String department;
     public int total_time;
+    public boolean isTeacher;
 
     @OneToOne(mappedBy = "employee")
     public Power power;
@@ -32,10 +33,22 @@ public class Employee extends Model{
     @OneToMany(mappedBy = "employee")
     public List<History> histories;
 
-//    @OneToMany(mappedBy = "employee")
-//    List<Comment> comments;
-
-
+    public Employee(String IDCard, String password, String phone, String email, String port,
+                    String name, String sex, String department, int total_time,
+                    boolean isTeacher, Power power, List<History> histories) {
+        this.IDCard = IDCard;
+        this.password = password;
+        this.phone = phone;
+        this.email = email;
+        this.port = port;
+        this.name = name;
+        this.sex = sex;
+        this.department = department;
+        this.total_time = total_time;
+        this.isTeacher = isTeacher;
+        this.power = power;
+        this.histories = histories;
+    }
 
     public Employee() {
     }
