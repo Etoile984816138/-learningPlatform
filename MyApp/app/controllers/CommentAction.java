@@ -23,11 +23,12 @@ public class CommentAction extends Controller {
         int employee_id = Integer.parseInt(session.get("employeeID"));
 
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
-        Comment comment = new Comment(discuss_id,employee_id,content,df.format(new Date()));
+        Comment comment = null;
+//        Comment comment = new Comment(discuss_id,employee_id,content,df.format(new Date()));
         comment.save();
 
         Discuss discuss = Discuss.findById(discuss_id);
-        discuss.number ++;
+//        discuss.number ++;
         discuss.save();
 
         map.put("success",true);

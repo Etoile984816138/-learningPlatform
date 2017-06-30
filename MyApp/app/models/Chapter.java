@@ -12,7 +12,6 @@ import java.util.List;
 
 @Entity
 public class Chapter extends Model {
-
     public int number;//第几章节
 
     public String title;//标题
@@ -21,6 +20,7 @@ public class Chapter extends Model {
 
     @ManyToOne
     public Course course;
+
 
     public Chapter(int number, String title, List<Information> informations, Course course) {
         this.number = number;

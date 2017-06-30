@@ -16,7 +16,7 @@ public class HistoryDAO {
 
     public static List<Course> latestViewSimilarCourse(Employee employee, int limit) {
         EntityManager entityManager = JPA.em();
-        entityManager.createNativeQuery("SELECT FROM emplyee_course_auth ")
+        entityManager.createNativeQuery("SELECT FROM emplyee_course_auth ");
         return null;
     }
 

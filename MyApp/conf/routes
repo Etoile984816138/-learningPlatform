@@ -23,6 +23,8 @@ GET     /course/new                             CourseAction.getNew
 GET     /course/hot                             CourseAction.getHot
 GET     /course/recommendation                  CommendationAction.suitForMe
 GET     /material/{material_id}                 MaterialAction.get
-GET     /discuss/{material_id}                  DiscussAction.get
-GET     /discuss/add                            DiscussAction.add
+GET     /discuss/{information_id}/inform/{type} DiscussAction.getByInformation
+GET     /discuss/{course_id}/course/{type}      DiscussAction.getByCourse
+GET     /discuss/publish                        DiscussAction.publish
+GET     /discuss/note                           DiscussAction.note
 GET     /comment/add                            CommentAction.add

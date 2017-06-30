@@ -49,30 +49,30 @@ public class CourseAction extends Controller{
         int employee_id = Integer.parseInt(session.get("employeeID"));
 
         //获取该学员的权限列表
-        List AuthorityIDs = Power.find("SELECT p.authority_id FROM Power p WHERE p.employee_id = ?",employee_id).fetch();
+        List <Authority> authorities = Power.find("SELECT p.authority FROM Power p WHERE p.employee.id = ?",employee_id).fetch();
 
         if("0".equals(s_id)) s_id = null;
         if("0".equals(g_id)) g_id = null;
         if("0".equals(d_id)) d_id = null;
 
         //根据条件获取课程列表
-        List<Course> Courses = Course.find("SELECT new Course(id,description,title,cover,person) FROM Course.c " +
-                "WHERE c.authority_id = AuthorityIDs AND c.s_id = sid AND c.g_id = gid AND d_id = did And c.title like:title " +
+        List<Course> courses = Course.find("SELECT new Course(id,description,title,cover,person,authority) FROM Course.c " +
+                "WHERE c.authority in (:authority) AND c.s_id = :s_id AND c.g_id = :g_id AND d_id = :d_id And c.title like:title " +
                 "ORDER BY "+condition+" desc")
-                .setParameter("AuthorityIDs",AuthorityIDs)
-                .setParameter("sid",s_id)
-                .setParameter("gid",g_id)
-                .setParameter("did",d_id)
+                .setParameter("authority",authorities)
+                .setParameter("s_id",s_id)
+                .setParameter("g_id",g_id)
+                .setParameter("d_id",d_id)
                 .setParameter("title",title)
                 .from((PageNum-1)*PageSize).fetch(PageNum*PageSize);
 
         //计算总页数
-        long count = Course.count("authority_id = ? AND s_id = ? AND g_id = ? AND d_id = ? And title like ?",AuthorityIDs,s_id,g_id,d_id,"%title%");
+        long count = Course.count();
         int total = (int)Math.ceil(count/PageSize);
 
 
         Map map = new HashMap();
-        map.put("success",Courses);
+        map.put("success",courses);
         map.put("total",total);
         return map;
     }
