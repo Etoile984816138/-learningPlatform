@@ -1,34 +1,8 @@
-30 六月 2017 09:16:43,371 INFO  ~ Starting /home/jsh3/IdeaProjects/job/MyApp/.
-30 六月 2017 09:16:45,915 WARN  ~ You're running Play! in DEV mode
-30 六月 2017 09:16:48,133 INFO  ~ Connected to jdbc:mysql://118.89.145.76:3306/plain?useUnicode=yes&connectionCollation=utf8_general_ci&characterEncoding=UTF-8 for default
-30 六月 2017 09:16:49,360 ERROR ~ HHH000389: Unsuccessful: alter table Chapter drop foreign key FK_o6g60h9hrsvid38876yjsvtnr
-30 六月 2017 09:16:49,372 ERROR ~ Table 'plain.Chapter' doesn't exist
-30 六月 2017 09:16:49,401 ERROR ~ HHH000389: Unsuccessful: alter table Course drop foreign key FK_d49657dmxxyxiydm05hn85usw
-30 六月 2017 09:16:49,401 ERROR ~ Table 'plain.Course' doesn't exist
-30 六月 2017 09:16:49,440 ERROR ~ HHH000389: Unsuccessful: alter table Discuss drop foreign key FK_eutn9m5mcrw6xm58tpefk6wbv
-30 六月 2017 09:16:49,440 ERROR ~ Table 'plain.Discuss' doesn't exist
-30 六月 2017 09:16:49,468 ERROR ~ HHH000389: Unsuccessful: alter table Discuss drop foreign key FK_ef9d848qo0wl519ivwmq5bjm
-30 六月 2017 09:16:49,468 ERROR ~ Table 'plain.Discuss' doesn't exist
-30 六月 2017 09:16:49,498 ERROR ~ HHH000389: Unsuccessful: alter table Friend drop foreign key FK_56t4nr3wh7ee3eohl0cnm4qk6
-30 六月 2017 09:16:49,498 ERROR ~ Table 'plain.Friend' doesn't exist
-30 六月 2017 09:16:49,530 ERROR ~ HHH000389: Unsuccessful: alter table Friend drop foreign key FK_nsc2yr00ulplitxr7vp2nlfe4
-30 六月 2017 09:16:49,530 ERROR ~ Table 'plain.Friend' doesn't exist
-30 六月 2017 09:16:49,564 ERROR ~ HHH000389: Unsuccessful: alter table History drop foreign key FK_ha6jifay3vygu029hojk0sluk
-30 六月 2017 09:16:49,565 ERROR ~ Table 'plain.History' doesn't exist
-30 六月 2017 09:16:49,593 ERROR ~ HHH000389: Unsuccessful: alter table History drop foreign key FK_b4kkqf82hh6jnd62mr8qvhkhy
-30 六月 2017 09:16:49,593 ERROR ~ Table 'plain.History' doesn't exist
-30 六月 2017 09:16:49,628 ERROR ~ HHH000389: Unsuccessful: alter table Information drop foreign key FK_gt9ks5lrkw3y0ovqop4ovi4x4
-30 六月 2017 09:16:49,628 ERROR ~ Table 'plain.Information' doesn't exist
-30 六月 2017 09:16:49,652 ERROR ~ HHH000389: Unsuccessful: alter table Information drop foreign key FK_trkhoe48hewnlrvpsdbfuw2sx
-30 六月 2017 09:16:49,652 ERROR ~ Table 'plain.Information' doesn't exist
-30 六月 2017 09:16:49,678 ERROR ~ HHH000389: Unsuccessful: alter table Power drop foreign key FK_knenh10t67o3lusd0n0ujdc53
-30 六月 2017 09:16:49,678 ERROR ~ Table 'plain.Power' doesn't exist
-30 六月 2017 09:16:49,707 ERROR ~ HHH000389: Unsuccessful: alter table Power drop foreign key FK_c2hwviesry3hf2iytnrf7rg03
-30 六月 2017 09:16:49,707 ERROR ~ Table 'plain.Power' doesn't exist
-30 六月 2017 09:16:49,744 ERROR ~ HHH000389: Unsuccessful: alter table Study drop foreign key FK_5l2krusjkkhekvvx8ma31wyco
-30 六月 2017 09:16:49,744 ERROR ~ Table 'plain.Study' doesn't exist
-30 六月 2017 09:16:49,772 ERROR ~ HHH000389: Unsuccessful: alter table Study drop foreign key FK_qbb4rkmb3kambf77k81csuesj
-30 六月 2017 09:16:49,772 ERROR ~ Table 'plain.Study' doesn't exist
-30 六月 2017 09:16:50,982 ERROR ~ HHH000389: Unsuccessful: alter table Discuss add index FK_ef9d848qo0wl519ivwmq5bjm (information_id), add constraint FK_ef9d848qo0wl519ivwmq5bjm foreign key (information_id) references Information (id)
-30 六月 2017 09:16:50,982 ERROR ~ Cannot add foreign key constraint
-30 六月 2017 09:16:51,667 INFO  ~ Application 'y' is now started !
+30 六月 2017 10:25:24,906 INFO  ~ Starting /home/jsh3/IdeaProjects/job/MyApp/.
+30 六月 2017 10:25:26,791 WARN  ~ You're running Play! in DEV mode
+30 六月 2017 10:25:29,285 INFO  ~ Connected to jdbc:mysql://118.89.145.76:3306/plain?useUnicode=yes&connectionCollation=utf8_general_ci&characterEncoding=UTF-8 for default
+30 六月 2017 10:25:30,569 ERROR ~ HHH000389: Unsuccessful: alter table Discuss drop foreign key FK_ef9d848qo0wl519ivwmq5bjm
+30 六月 2017 10:25:30,570 ERROR ~ Can't DROP 'FK_ef9d848qo0wl519ivwmq5bjm'; check that column/key exists
+30 六月 2017 10:25:32,291 ERROR ~ HHH000389: Unsuccessful: alter table Discuss add index FK_ef9d848qo0wl519ivwmq5bjm (information_id), add constraint FK_ef9d848qo0wl519ivwmq5bjm foreign key (information_id) references Information (id)
+30 六月 2017 10:25:32,291 ERROR ~ Cannot add foreign key constraint
+30 六月 2017 10:25:32,915 INFO  ~ Application 'y' is now started !

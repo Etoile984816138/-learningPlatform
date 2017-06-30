@@ -16,10 +16,14 @@ public class HistoryDAO {
 
     public static List<Course> latestViewSimilarCourse(Employee employee, int limit) {
         EntityManager entityManager = JPA.em();
-        
+//        entityManager.createQuery("select h from History h where h.emplyee = :emplyee " +
+//                "and h.emplyee.power member of h.information.chapter.course.authority.powers")
+        return null;
     }
 
    /* public static List<Course> mostViewsCourse(int limit) {
         return History.find("select count(*),* ")
     }*/
+
+
 }
