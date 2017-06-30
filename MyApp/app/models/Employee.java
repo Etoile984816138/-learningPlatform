@@ -33,7 +33,6 @@ public class Employee extends Model{
     @OneToMany(mappedBy = "employee")
     public List<History> histories;
 
-<<<<<<< HEAD
     public Employee(String IDCard, String password, String phone, String email, String port,
                     String name, String sex, String department, int total_time,
                     boolean isTeacher, Power power, List<History> histories) {
@@ -50,26 +49,5 @@ public class Employee extends Model{
         this.power = power;
         this.histories = histories;
     }
-=======
-//    @OneToMany(mappedBy = "employee")
-//    List<Comment> comments;
 
->>>>>>> b3382aa2780343ebef80e390039dd614e85d1658
-
-    public Employee() {
-    }
-
-    public Employee(String IDCard, String password, String phone, String email, String port, String name, String sex, String department, int total_time, Power power, List<History> histories) {
-        this.IDCard = IDCard;
-        this.password = password;
-        this.phone = phone;
-        this.email = email;
-        this.port = port;
-        this.name = name;
-        this.sex = sex;
-        this.department = department;
-        this.total_time = total_time;
-        this.power = power;
-        this.histories = histories;
-    }
 }

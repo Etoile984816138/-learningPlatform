@@ -12,18 +12,6 @@ import java.util.List;
 
 @Entity
 public class Chapter extends Model {
-<<<<<<< HEAD
-    public int number;//第几章节
-
-    public String title;//标题
-
-    @OneToMany(mappedBy = "discusses")
-    public List<Information> informations;//课时列表
-
-    @ManyToOne
-    public Course course;//所属课程
-=======
-
     public int number;//第几章节
 
     public String title;//标题
@@ -32,7 +20,7 @@ public class Chapter extends Model {
 
     @ManyToOne
     public Course course;
->>>>>>> b3382aa2780343ebef80e390039dd614e85d1658
+
 
     public Chapter(int number, String title, List<Information> informations, Course course) {
         this.number = number;
