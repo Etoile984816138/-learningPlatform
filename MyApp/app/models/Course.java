@@ -4,7 +4,6 @@ import play.db.jpa.Model;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Transient;
 import java.util.List;
 
@@ -26,7 +25,7 @@ public class Course extends Model {
     public String time;
 
     @OneToMany(mappedBy = "course")
-    public List<Chapter> chapters;
+    public List<Lesson> lessons;
 
     @OneToMany(mappedBy = "course")
     public List<Power> powers;
@@ -53,7 +52,7 @@ public class Course extends Model {
     public boolean hasjoin;
 
     public Course(int d_id, int g_id, int s_id, int authority, String title,String description,
-                  String cover, String time, List<Chapter> chapters,List<Power> powers,
+                  String cover, String time, List<Lesson> lessons,List<Power> powers,
                   List<Exam> exams, List<CourseRate> courseRates, List<Study> studies,List<Collection> collections) {
 
         this.d_id = d_id;
@@ -64,7 +63,7 @@ public class Course extends Model {
         this.description = description;
         this.cover = cover;
         this.time = time;
-        this.chapters = chapters;
+        this.lessons = lessons;
         this.powers = powers;
         this.exams = exams;
         this.courseRates = courseRates;

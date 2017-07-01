@@ -1,7 +1,6 @@
 package controllers;
 
 import com.alibaba.fastjson.JSON;
-import play.*;
 import play.mvc.*;
 
 import java.text.SimpleDateFormat;
@@ -45,8 +44,8 @@ public class HistoryAction extends Controller {
         String point = params.get("point");
 
         //获取该课时信息
-        int information_id = Integer.parseInt(params.get("information_id"));
-        Information information = Information.findById(information_id);
+        int lesson_id = Integer.parseInt(params.get("lesson_id"));
+        Lesson lesson = Lesson.findById(lesson_id);
 
         //查询该员工信息
         int employee_id = Integer.parseInt(session.get("employeeID"));
@@ -55,7 +54,7 @@ public class HistoryAction extends Controller {
         String cover = "";//历史记录封面
 
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
-        History history = new History(cover,df.format(new Date()),point,information,employee);
+        History history = new History(cover,df.format(new Date()),point, lesson,employee);
 
         map.put("success",true);
         map.put("failure","");

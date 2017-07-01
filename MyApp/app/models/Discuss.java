@@ -28,14 +28,15 @@ public class Discuss extends Model {
     public Employee employee;
 
     @ManyToOne
-    public Information information;
+    public Lesson lesson;
 
     @OneToMany(mappedBy = "discuss")
     public List<Comment> comments;
 
     public Discuss(int type, int flag, int isNote, int isNick, int grate, int view, String title,
                    String content, String point_time, String time, Employee employee,
-                   Information information, List<Comment> comments) {
+                   Lesson lesson, List<Comment> comments) {
+
         this.type = type;
         this.flag = flag;
         this.isNote = isNote;
@@ -47,7 +48,7 @@ public class Discuss extends Model {
         this.point_time = point_time;
         this.time = time;
         this.employee = employee;
-        this.information = information;
+        this.lesson = lesson;
         this.comments = comments;
     }
 }

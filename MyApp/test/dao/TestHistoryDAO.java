@@ -1,6 +1,5 @@
 package dao;
 
-import models.Course;
 import models.Employee;
 import models.History;
 import org.junit.Before;
@@ -33,7 +32,7 @@ public class TestHistoryDAO extends UnitTest {
     @Test
     public void testFinallyVisit() {
         History history = HistoryDAO.finallyVisit(employee);
-        assertTrue(history.information.id == 1L);
+        assertTrue(history.lesson.id == 1L);
     }
 
     @Test

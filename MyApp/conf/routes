@@ -23,14 +23,15 @@ GET     /course/new                             CourseAction.getNew
 GET     /course/hot                             CourseAction.getHot
 GET     /course/recommendation                  CommendationAction.suitForMe
 GET     /material/{material_id}                 MaterialAction.get
-GET     /discuss/{information_id}/inform/{type} DiscussAction.getByInformation
+GET     /discuss/{lesson_id}/lesson/{type}      DiscussAction.getBylesson
 GET     /discuss/{course_id}/course/{type}      DiscussAction.getByCourse
 GET     /user/history                           HistoryAction.myHistroy
 GET     /user/collection                        CollectionAction.myCollect
 GET     /user/study                             StudyAction.myStudy
+GET     /discuss/add/{cid}                      StudyAction.enter
 
-POST     /discuss/publish                       DiscussAction.publish
-POST     /discuss/note                          DiscussAction.note
-POST     /comment/add                           CommentAction.add
-POST     /history/record                        HistoryAction.record
-POST     /collection/{course_id}                CollectionAction.operate
+POST    /discuss/publish                        DiscussAction.publish
+POST    /discuss/note                           DiscussAction.note
+POST    /comment/add                            CommentAction.add
+POST    /history/record                         HistoryAction.record
+POST    /collection/{course_id}                 CollectionAction.operate

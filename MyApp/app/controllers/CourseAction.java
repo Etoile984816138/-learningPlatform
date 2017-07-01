@@ -7,6 +7,9 @@ import java.util.*;
 
 import models.*;
 
+import static ch.lambdaj.Lambda.extract;
+import static ch.lambdaj.Lambda.on;
+
 /**
  * Created by C_C on 2017/6/27.
  */
@@ -54,13 +57,13 @@ public class CourseAction extends Controller{
         //根据条件获取课程列表
         List<Course> courses = Course.find("SELECT new Course(id,description,title,cover,person,authority) FROM Course c " +
                 "WHERE c.s_id = :s_id AND c.g_id = :g_id AND c.d_id = :d_id And c.title like:title AND" +
-                "AND authority = 0 OR (authority = 1 AND c in :courses) OR (authority = 2 AND c not in :courses)" +
+                "AND authority = 0 OR (authority = 1 AND c.id in :courses) OR (authority = 2 AND c.id not in :courses)" +
                 "ORDER BY "+condition+" desc")
                 .setParameter("s_id",s_id)
                 .setParameter("g_id",g_id)
                 .setParameter("d_id",d_id)
                 .setParameter("title",title)
-                .setParameter("courses",myCourses)
+                .setParameter("courses",extract(myCourses, on(Course.class).id))
                 .from((PageNum-1)*PageSize).fetch(PageNum*PageSize);
 
         //计算总页数

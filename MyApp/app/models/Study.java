@@ -18,8 +18,6 @@ import java.util.Date;
 @Entity
 public class Study extends Model {
 
-    public int hasStudy;//已经学习到第几章
-
     public String time;
 
     @ManyToOne
@@ -29,10 +27,12 @@ public class Study extends Model {
     public Course course;
 
     @Transient
+    public int hasStudy;//已经学习到第几章
+
+    @Transient
     public int total;
 
-    public Study(int hasStudy, String time, Employee employee, Course course) {
-        this.hasStudy = hasStudy;
+    public Study(String time, Employee employee, Course course) {
         this.time = time;
         this.employee = employee;
         this.course = course;

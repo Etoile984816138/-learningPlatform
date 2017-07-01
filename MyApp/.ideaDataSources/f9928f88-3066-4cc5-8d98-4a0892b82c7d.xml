@@ -43,7 +43,7 @@
       <Comment>Table containing valid access domains for tenants</Comment>
     </table>
     <table id="15" parent="2" name="backtracking">
-      <Comment>Backtracking information about recommendations</Comment>
+      <Comment>Backtracking lesson about recommendations</Comment>
     </table>
     <table id="16" parent="2" name="easyrec"/>
     <table id="17" parent="2" name="idmapping">
@@ -333,7 +333,7 @@
       <Comment>Time zones</Comment>
     </table>
     <table id="115" parent="5" name="time_zone_leap_second">
-      <Comment>Leap seconds information for time zones</Comment>
+      <Comment>Leap seconds lesson for time zones</Comment>
     </table>
     <table id="116" parent="5" name="time_zone_name">
       <Comment>Time zone names</Comment>

@@ -1,13 +1,16 @@
 package controllers;
 
 import com.alibaba.fastjson.JSON;
-import play.*;
 import play.mvc.*;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
 
 import models.*;
+
+import static ch.lambdaj.Lambda.index;
+import static ch.lambdaj.Lambda.on;
+
 /**
  * Created by C_C on 2017/7/1.
  */
@@ -27,12 +30,13 @@ public class StudyAction extends Controller {
                 .from((pageNum-1)*pageSize)
                 .fetch(pageNum*pageSize);
 
+        List<History> histories = History.find("employee = ?",employee_id).fetch();
+        Map<Course,List<History>> mapByChapter = index(histories, on(History.class).lesson.course);
+
         //获取改课程的总课时
         for(Study study:studies){
-            study.total = 0;
-            for(Chapter chapter : study.course.chapters){
-                study.total += chapter.informations.size();
-            }
+            study.total = study.course.lessons.size();
+            study.hasStudy = mapByChapter.get(study.course).size();
         }
 
         map.put("success",studies);
@@ -40,5 +44,26 @@ public class StudyAction extends Controller {
 
         renderJSON(JSON.toJSONString(map));
 
+    }
+
+    //课程参加
+    public static void enter(int course_id){
+        Map map = new HashMap();
+
+        //获取改成员的信息
+        int employee_id = Integer.parseInt(session.get("employee_id"));
+        Employee employee = Employee.findById(employee_id);
+
+        //获取改课程信息
+        Course course = Course.findById(course_id);
+
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+        Study study = new Study(df.format(new Date()),employee,course);
+        study.save();
+
+        map.put("success",true);
+        map.put("failure","");
+
+        renderJSON(JSON.toJSONString(map));
     }
 }

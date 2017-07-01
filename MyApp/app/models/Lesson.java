@@ -10,20 +10,19 @@ import java.util.List;
  * 课时
  */
 @Entity
-public class Information extends Model {
+public class Lesson extends Model {
 
+    public int chapter;//第几章节
     public int number;//第几课时
+
     public String title;//标题
 
     @OneToOne
     public Material material;
 
-    @OneToMany(mappedBy = "information")
-    public List<Discuss> discusses;//所属课时
-
     @ManyToOne
-    public Chapter chapter;
+    public Course course;
 
-    @OneToMany(mappedBy = "information")
+    @OneToMany(mappedBy = "lesson")
     public List<History> histories;
 }
