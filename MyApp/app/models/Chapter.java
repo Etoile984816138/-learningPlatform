@@ -15,12 +15,12 @@ public class Chapter extends Model {
     public int number;//第几章节
 
     public String title;//标题
-    @OneToMany(mappedBy = "chapter")
-    public List<Information> informations;
+
+    @OneToMany(mappedBy = "discusses")
+    public List<Information> informations;//课时列表
 
     @ManyToOne
-    public Course course;
-
+    public Course course;//所属课程
 
     public Chapter(int number, String title, List<Information> informations, Course course) {
         this.number = number;

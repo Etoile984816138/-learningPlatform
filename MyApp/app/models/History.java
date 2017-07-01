@@ -13,20 +13,13 @@ import javax.persistence.OneToOne;
 public class History extends Model {
 
     public String time;
-    public String cont;
+    public String point_time;
 
     @ManyToOne
     public Information information;
 
     @ManyToOne
     public Employee employee;
-
-    public History(String time, String cont, Information information, Employee employee) {
-        this.time = time;
-        this.cont = cont;
-        this.information = information;
-        this.employee = employee;
-    }
 
 
 }

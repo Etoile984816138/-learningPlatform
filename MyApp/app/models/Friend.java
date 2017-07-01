@@ -9,7 +9,7 @@ import java.util.List;
  * Created by C_C on 2017/6/29.
  */
 @Entity
-public class Friend  extends Model{
+public class Friend  extends Model {
 
     @OneToOne
     public Employee from;

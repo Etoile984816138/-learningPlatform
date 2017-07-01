@@ -10,9 +10,11 @@ import java.util.List;
  */
 @Entity
 public class Discuss extends Model {
+
     public int type;//类型（1：综合讨论区；2：教师答疑区）
     public int flag;//（0：所有人；1：仅好友可见；2：私密）
     public int isNote;//（是否属于划重点或者疑问:0-是；1-不是）
+    public int isNick;//0 不是 1 是
 
     public int grate;//点赞
     public int view;//浏览

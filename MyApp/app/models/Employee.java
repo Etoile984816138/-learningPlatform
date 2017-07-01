@@ -25,31 +25,27 @@ public class Employee extends Model{
     public String sex;
     public String department;
     public int total_time;
-    public boolean isTeacher;
+    public int auth;//0管理员1 学生 ；2 老师
+
 
     @OneToOne(mappedBy = "employee")
-    public Power power;
+    public Tag tag;
+
+    @OneToMany(mappedBy = "employee")
+    public List<Power> powers;
 
     @OneToMany(mappedBy = "employee")
     public List<History> histories;
 
-    public Employee(String IDCard, String password, String phone, String email, String port,
-                    String name, String sex, String department, int total_time,
-                    boolean isTeacher, Power power, List<History> histories) {
-        this.IDCard = IDCard;
-        this.password = password;
-        this.phone = phone;
-        this.email = email;
-        this.port = port;
-        this.name = name;
-        this.sex = sex;
-        this.department = department;
-        this.total_time = total_time;
-        this.isTeacher = isTeacher;
-        this.power = power;
-        this.histories = histories;
-    }
+    @OneToMany(mappedBy = "employee")
+    public List<Exam> exams;
 
-    public Employee() {
-    }
+    @OneToMany(mappedBy = "employee")
+    public List<CourseRate> courseRates;
+
+    @OneToMany(mappedBy = "employee")
+    public List<Study> studies;
+
+    @OneToMany(mappedBy = "employee")
+    public List<Feedback> feedbacks;
 }

@@ -8,10 +8,12 @@ import javax.persistence.*;
  */
 @Entity
 public class Comment extends Model {
-    public int grate;//点赞
 
+    public int grate;//点赞
     public String content;
     public String time;
+    public boolean isRead; //0 没读过 1 读过
+
 
     @OneToOne
     public Employee to;
@@ -21,15 +23,6 @@ public class Comment extends Model {
 
     @ManyToOne
     public Discuss discuss;
-
-    public Comment(int grate, String content, String time, Employee to, Employee from, Discuss discuss) {
-        this.grate = grate;
-        this.content = content;
-        this.time = time;
-        this.to = to;
-        this.from = from;
-        this.discuss = discuss;
-    }
 
 
 }

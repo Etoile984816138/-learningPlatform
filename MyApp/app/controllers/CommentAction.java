@@ -17,19 +17,19 @@ public class CommentAction extends Controller {
     public static  void add(){
         Map map = new HashMap();
 
-        int discuss_id = Integer.parseInt(params.get("discuss_id"));
         String content = params.get("content");
 
+        //获取评论的讨论区信息
+        int discuss_id = Integer.parseInt(params.get("discuss_id"));
+        Discuss discuss = Discuss.findById(discuss_id);
+
+        //获取当前登录员工信息
         int employee_id = Integer.parseInt(session.get("employeeID"));
+        Employee employee = Employee.findById(employee_id);
 
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
-        Comment comment = null;
-//        Comment comment = new Comment(discuss_id,employee_id,content,df.format(new Date()));
+        Comment comment = new Comment(0,content,df.format(new Date()),discuss.employee,employee,discuss);
         comment.save();
-
-        Discuss discuss = Discuss.findById(discuss_id);
-//        discuss.number ++;
-        discuss.save();
 
         map.put("success",true);
         map.put("failure","");

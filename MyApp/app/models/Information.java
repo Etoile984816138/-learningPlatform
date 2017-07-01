@@ -11,31 +11,19 @@ import java.util.List;
  */
 @Entity
 public class Information extends Model {
-    public int number;//第几课时
 
+    public int number;//第几课时
     public String title;//标题
 
     @OneToOne
     public Material material;
 
+    @OneToMany(mappedBy = "information")
+    public List<Discuss> discusses;//所属课时
+
     @ManyToOne
     public Chapter chapter;
 
-
     @OneToMany(mappedBy = "information")
     public List<History> histories;
-
-    @OneToMany(mappedBy = "information")
-    public List<Discuss> discusses;
-
-
-    public Information(int number, String title, Material material, Chapter chapter
-            , List<History> histories, List<Discuss> discusses) {
-        this.number = number;
-        this.title = title;
-        this.material = material;
-        this.chapter = chapter;
-        this.histories = histories;
-        this.discusses = discusses;
-    }
 }

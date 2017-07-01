@@ -5,6 +5,7 @@ import play.db.jpa.Model;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.Transient;
 import java.util.List;
 
 /**
@@ -12,12 +13,11 @@ import java.util.List;
  */
 @Entity
 public class Course extends Model {
+
     public int d_id;
     public int g_id;
     public int s_id;
-
     public int person;//课程参加人数
-
     public String title;
     public String description;
     public String cover;
@@ -26,26 +26,26 @@ public class Course extends Model {
     @OneToMany(mappedBy = "course")
     public List<Chapter> chapters;
 
-    @OneToOne
-    public Authority authority;
+    @OneToMany(mappedBy = "course")
+    public List<Power> powers;
 
+    @OneToMany(mappedBy = "course")
+    public List<Exam> exams;
 
-    public Course(int d_id, int g_id, int s_id, int person, String title, String description,
-                  String cover, String time, List<Chapter> chapters, Authority authority) {
-        this.d_id = d_id;
-        this.g_id = g_id;
-        this.s_id = s_id;
-        this.person = person;
-        this.title = title;
-        this.description = description;
-        this.cover = cover;
-        this.time = time;
-        this.chapters = chapters;
-        this.authority = authority;
-    }
+    @OneToMany(mappedBy = "course")
+    public List<CourseRate> courseRates;
 
-    public Course() {
-    }
+    @OneToMany(mappedBy = "course")
+    public List<Study> studies;
+
+    @Transient
+    public List<Employee> employees;
+
+    @Transient
+    public int star;
+
+    @Transient
+    public boolean hasjoin;
 
 
 }

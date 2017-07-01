@@ -12,16 +12,20 @@ import play.test.UnitTest;
  */
 public class TestStudyTable extends UnitTest {
 
-
+    Employee employee =
+            new Employee("","","","","","","","",0);
+    Course course = new Course(0,1,2,3,4,"","","","");
 
     @Before
     public void set() {
-
+        employee.save();
+        course.save();
     }
 
     @Test
     public void testCreate() {
-
+        Study study = new Study(employee, course, null).save();
+        assertNotNull(study);
     }
 
 }
