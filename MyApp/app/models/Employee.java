@@ -25,7 +25,7 @@ public class Employee extends Model{
     public String sex;
     public String department;
     public int total_time;
-    public int auth;//0管理员1 学生 ；2 老师
+    public int identity;//0管理员1 学生 ；2 老师
 
 
     @OneToOne(mappedBy = "employee")

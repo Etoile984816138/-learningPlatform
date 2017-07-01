@@ -12,8 +12,7 @@ public class Comment extends Model {
     public int grate;//点赞
     public String content;
     public String time;
-    public boolean isRead; //0 没读过 1 读过
-
+    public boolean isRead;
 
     @OneToOne
     public Employee to;
@@ -24,5 +23,14 @@ public class Comment extends Model {
     @ManyToOne
     public Discuss discuss;
 
-
+    public Comment(int grate, String content, String time, boolean isRead,
+                   Employee to, Employee from, Discuss discuss) {
+        this.grate = grate;
+        this.content = content;
+        this.time = time;
+        this.isRead = isRead;
+        this.to = to;
+        this.from = from;
+        this.discuss = discuss;
+    }
 }

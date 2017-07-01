@@ -33,12 +33,13 @@ public class Discuss extends Model {
     @OneToMany(mappedBy = "discuss")
     public List<Comment> comments;
 
-    public Discuss(int type, int flag, int isNote, int grate, int view, String title,
+    public Discuss(int type, int flag, int isNote, int isNick, int grate, int view, String title,
                    String content, String point_time, String time, Employee employee,
                    Information information, List<Comment> comments) {
         this.type = type;
         this.flag = flag;
         this.isNote = isNote;
+        this.isNick = isNick;
         this.grate = grate;
         this.view = view;
         this.title = title;

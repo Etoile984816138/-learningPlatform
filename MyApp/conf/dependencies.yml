@@ -4,3 +4,4 @@ require:
     - play
     - com.alibaba -> fastjson 1.2.7
     - org.apache.httpcomponents -> httpclient 4.5.3
+    - com.googlecode.lambdaj -> lambdaj 2.3.3
