@@ -30,7 +30,11 @@ public class HistoryAction extends Controller {
                 .setParameter("time",point_time)
                 .from((pageNum-1)*pageSize)
                 .fetch(pageNum*pageSize);
+        //计算总页数
+        long count = History.count();
+        int total = (int)Math.ceil(count/pageSize);
 
+        map.put("total",total);
         map.put("success",GroupByTime(histories));
         map.put("failure","");
 

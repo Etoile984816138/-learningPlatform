@@ -31,14 +31,19 @@ public class StudyAction extends Controller {
                 .fetch(pageNum*pageSize);
 
         List<History> histories = History.find("employee = ?",employee_id).fetch();
-        Map<Course,List<History>> mapByChapter = index(histories, on(History.class).lesson.course);
+        Map<Course,List<History>> mapByLesson = index(histories, on(History.class).lesson.course);
 
         //获取改课程的总课时
         for(Study study:studies){
             study.total = study.course.lessons.size();
-            study.hasStudy = mapByChapter.get(study.course).size();
+            study.hasStudy = mapByLesson.get(study.course).size();
         }
 
+        //计算总页数
+        long count = Study.count();
+        int total = (int)Math.ceil(count/pageSize);
+
+        map.put("total",total);
         map.put("success",studies);
         map.put("failure","");
 

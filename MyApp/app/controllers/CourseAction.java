@@ -26,8 +26,6 @@ public class CourseAction extends Controller{
 
         Map map = queryByAll(pageNum,pageSize,s_id,g_id,d_id,title,"time");
 
-        map.put("failure","");
-
         renderJSON(JSON.toJSONString(map));
     }
     //获取某页面最热课程
@@ -41,8 +39,6 @@ public class CourseAction extends Controller{
         String title = params.get("title");
 
         Map map = queryByAll(pageNum,pageSize,s_id,g_id,d_id,title,"person");
-
-        map.put("failure","");
 
         renderJSON(JSON.toJSONString(map));
     }
@@ -74,6 +70,8 @@ public class CourseAction extends Controller{
         Map map = new HashMap();
         map.put("success",courses);
         map.put("total",total);
+        map.put("failure","");
+
         return map;
     }
 

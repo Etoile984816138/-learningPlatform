@@ -28,6 +28,11 @@ public class CollectionAction extends Controller {
                 .from((pageNum-1)*pageSize)
                 .fetch(pageNum*pageSize);
 
+        //计算总页数
+        long count = Collection.count();
+        int total = (int)Math.ceil(count/pageSize);
+
+        map.put("total",total);
         map.put("success",collections);
         map.put("failure","");
 
