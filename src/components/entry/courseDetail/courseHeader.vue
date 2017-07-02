@@ -18,11 +18,12 @@
                         <span class="star-wrapper">
                         评分：
                         <mu-icon-button icon="grade" v-for="item in courseData.star" :key="courseData.id"/>
+                        <mu-icon-button icon="star_border" v-for="item in star_num" :key="courseData.id"/>
                     </span>
                     </p>
                     <div v-if="courseData.hasjoin">
-                        <mu-linear-progress mode="determinate" :value="value" class="progress" :size="progressSize" />
-                        <p>已学习2个课时</p>
+                        <mu-linear-progress mode="determinate" :value="courseData.hasStudy" class="progress" :size="progressSize" :max="courseData.total"/>
+                        <p>已学习{{courseData.hasStudy}}个课时</p>
                     </div>
                     <div v-else>
                         <mu-raised-button label="立即参加" class="demo-raised-button" @click="joinCourse" primary/>
@@ -82,13 +83,20 @@ export default {
                 console.log(this.courseData)
 
                 try {
-                    return this.courseData.students.length
+                    return this.courseData.employees.length
                 } catch (e) {
                     console.log('数据读取中')
 
                 }
                 // while (!this.courseData);
                 // return this.courseData.students.length
+            },
+            star_num(){
+                if(isNaN(this.courseData.star)){
+                    return 0;
+                }else{
+                    return (5 -this.courseData.star);
+                }
             }
         }
 
@@ -113,13 +121,16 @@ export default {
         }
     }
     .star-wrapper {
+
         display: inline-block;
         margin-left: 100px;
         .mu-icon-button {
-            width: 8px;
-            height: 8px;
+            position: relative;
+            top:5px;
+            width: 16px;
+            height: 16px;
             .mu-icon {
-                font-size: 16px;
+                font-size: 24px;
                 color: #ffc107
             }
         }

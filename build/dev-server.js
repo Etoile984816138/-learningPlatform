@@ -2,7 +2,7 @@ require('./check-versions')()
 
 var config = require('../config')
 if (!process.env.NODE_ENV) {
-  process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV)
+    process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV)
 }
 
 var opn = require('opn')
@@ -14,10 +14,10 @@ var webpackConfig = require('./webpack.dev.conf')
 
 // default port where dev server listens for incoming traffic
 var port = process.env.PORT || config.dev.port
-// automatically open browser, if not set will be false
+    // automatically open browser, if not set will be false
 var autoOpenBrowser = !!config.dev.autoOpenBrowser
-// Define HTTP proxies to your custom API backend
-// https://github.com/chimurai/http-proxy-middleware
+    // Define HTTP proxies to your custom API backend
+    // https://github.com/chimurai/http-proxy-middleware
 var proxyTable = config.dev.proxyTable
 
 var app = express()
@@ -33,141 +33,191 @@ var direction = appData.direction,
     courseDetail = appData.courseDetail,
     chapter = appData.chapter,
     courseAdd = appData.courseAdd,
-    discusion = appData.discusion
+    discusion = appData.discusion,
+    danmaku1 = appData.danmakuData,
+    style = appData.study,
+    collection = appData.collection,
+    history = appData.history,
+    note = appData.note
 
 var apiRoutes = express.Router();
 
-apiRoutes.param('id', function (req, res, next, id) {
-  next();
+apiRoutes.param('id', function(req, res, next, id) {
+    next();
 });
 
 // 根据方向获取分类
-apiRoutes.get('/direction/:id', function (req, res) {
-  res.json({
-    failure: [],
-    data: direction
-  });
-  res.end();
+apiRoutes.get('/direction/:id', function(req, res) {
+    res.json({
+        failure: [],
+        data: direction
+    });
+    res.end();
 });
 
 
 
 // 获取所有课程分类
-apiRoutes.get('/generic', function (req, res) {
-  res.json({
-    failure: [],
-    success: generics.success
-  });
+apiRoutes.get('/generic', function(req, res) {
+    res.json({
+        failure: [],
+        success: generics.success
+    });
 });
 
 // 检索功能
-apiRoutes.get('/course', function (req, res) {
-  res.json({
-    failure: [],
-    success: course.success
-  });
+apiRoutes.get('/course', function(req, res) {
+    res.json({
+        failure: [],
+        success: course.success
+    });
 });
 
 // 获取最新课程
-apiRoutes.get('/course/new', function (req, res) {
-  res.json({
-    failure: [],
-    success: news.success
-  });
+apiRoutes.get('/course/new', function(req, res) {
+    res.json({
+        failure: [],
+        success: news.success
+    });
 });
 
 // 获取个人详细信息
-apiRoutes.get('/user', function (req, res) {
-  res.json({
-    failure: [],
-    success: user.success
-  });
+apiRoutes.get('/user', function(req, res) {
+    res.json({
+        failure: [],
+        success: user.success
+    });
 });
 
 // 获取所有方向
-apiRoutes.get('/direction', function (req, res) {
-  res.json({
-    failure: [],
-    success: direction.success
-  });
+apiRoutes.get('/direction', function(req, res) {
+    res.json({
+        failure: [],
+        success: direction.success
+    });
 });
 
 // 获取所有课程类型
-apiRoutes.get('/style', function (req, res) {
-  res.json({
-    failure: [],
-    success: style.success
-  });
+apiRoutes.get('/style', function(req, res) {
+    res.json({
+        failure: [],
+        success: style.success
+    });
 });
 
 // 根据课程类别获取课程类型
-apiRoutes.get('/generic/:generic_id', function (req, res) {
-  res.json({
-    failure: [],
-    success: generic.success
-  });
+apiRoutes.get('/generic/:generic_id', function(req, res) {
+    res.json({
+        failure: [],
+        success: generic.success
+    });
 });
 
 // 获取课程详情
-apiRoutes.get('/course/:c_id', function (req, res) {
-  res.json({
-    failure: [],
-    success: courseDetail.success
-  });
+apiRoutes.get('/course/:c_id', function(req, res) {
+    res.json({
+        failure: [],
+        success: courseDetail.success
+    });
 });
 
 // 获取章节
-apiRoutes.get('/course/:c_id/section', function (req, res) {
-  res.json({
-    failure: [],
-    success: chapter.success
-  });
+apiRoutes.get('/course/:c_id/section', function(req, res) {
+    res.json({
+        failure: [],
+        success: chapter.success
+    });
 });
 
 // 加入课程
-apiRoutes.get('/course/add/:c_id', function (req, res) {
-  res.json({
-    failure: [],
-    success: courseAdd.success
-  });
+apiRoutes.get('/course/add/:c_id', function(req, res) {
+    res.json({
+        failure: [],
+        success: courseAdd.success
+    });
 });
-app.use('/',apiRoutes);
+app.use('/', apiRoutes);
 
 // 获取讨论区数据
-apiRoutes.get('/discuss/:course_id/course/:type', function (req, res) {
-  res.json({
-    failure: [],
-    success: discusion.success
-  });
+apiRoutes.get('/discuss/:course_id/course/:type', function(req, res) {
+    res.json({
+        failure: [],
+        success: discusion.success
+    });
 });
-app.use('/',apiRoutes);
+
+// 弹幕数据
+apiRoutes.get('/danmaku', function(req, res) {
+    res.json({
+        code: 1,
+        danmaku: danmaku1.danmaku
+    });
+});
+
+// 我的学习
+apiRoutes.get('/user/study', function(req, res) {
+    res.json({
+        failure: [],
+        success: style.success
+    });
+});
+
+// 我的收藏
+
+apiRoutes.get('/user/collection', function(req, res) {
+    res.json({
+        failure: [],
+        success: collection.success
+    });
+});
+
+// 观看历史
+
+apiRoutes.get('/user/history', function(req, res) {
+    res.json({
+        failure: [],
+        success: history.success,
+        total: history.total
+    });
+});
+
+// 我的笔记
+apiRoutes.get('/discuss/:type', function(req, res) {
+    res.json({
+        failure: [],
+        success: note.success,
+        total: note.total
+    });
+});
+
+app.use('/', apiRoutes);
 
 
 var compiler = webpack(webpackConfig)
 
 var devMiddleware = require('webpack-dev-middleware')(compiler, {
-  publicPath: webpackConfig.output.publicPath,
-  quiet: true
+    publicPath: webpackConfig.output.publicPath,
+    quiet: true
 })
 
 var hotMiddleware = require('webpack-hot-middleware')(compiler, {
-  log: () => {}
-})
-// force page reload when html-webpack-plugin template changes
-compiler.plugin('compilation', function (compilation) {
-  compilation.plugin('html-webpack-plugin-after-emit', function (data, cb) {
-    hotMiddleware.publish({ action: 'reload' })
-    cb()
-  })
+        log: () => {}
+    })
+    // force page reload when html-webpack-plugin template changes
+compiler.plugin('compilation', function(compilation) {
+    compilation.plugin('html-webpack-plugin-after-emit', function(data, cb) {
+        hotMiddleware.publish({ action: 'reload' })
+        cb()
+    })
 })
 
 // proxy api requests
-Object.keys(proxyTable).forEach(function (context) {
-  var options = proxyTable[context]
-  if (typeof options === 'string') {
-    options = { target: options }
-  }
-  app.use(proxyMiddleware(options.filter || context, options))
+Object.keys(proxyTable).forEach(function(context) {
+    var options = proxyTable[context]
+    if (typeof options === 'string') {
+        options = { target: options }
+    }
+    app.use(proxyMiddleware(options.filter || context, options))
 })
 
 // handle fallback for HTML5 history API
@@ -188,24 +238,24 @@ var uri = 'http://localhost:' + port
 
 var _resolve
 var readyPromise = new Promise(resolve => {
-  _resolve = resolve
+    _resolve = resolve
 })
 
 console.log('> Starting dev server...')
 devMiddleware.waitUntilValid(() => {
-  console.log('> Listening at ' + uri + '\n')
-  // when env is testing, don't need open it
-  if (autoOpenBrowser && process.env.NODE_ENV !== 'testing') {
-    opn(uri)
-  }
-  _resolve()
+    console.log('> Listening at ' + uri + '\n')
+        // when env is testing, don't need open it
+    if (autoOpenBrowser && process.env.NODE_ENV !== 'testing') {
+        opn(uri)
+    }
+    _resolve()
 })
 
 var server = app.listen(port)
 
 module.exports = {
-  ready: readyPromise,
-  close: () => {
-    server.close()
-  }
+    ready: readyPromise,
+    close: () => {
+        server.close()
+    }
 }

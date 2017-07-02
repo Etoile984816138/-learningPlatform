@@ -23,13 +23,30 @@
                         <!-- 课程章节 -->
                         <div class="chapter tab-page" :class="{active: activeTab === 'chapter'}">
                             <mu-list>
-                                <mu-list-item v-for="(section, sectionIndex) in chapter.sections" :title="'第'+(sectionIndex+1)+'章：'+section.name" :key="section.id" toggleNested>
-                                    <mu-list-item v-for="(chapter,chapterIndex) in section.chapter" :title="'第'+(chapterIndex+1)+'课时：'+chapter.name" :key="chapter.id" slot="nested">
+                                <mu-list-item v-for="(section, sectionIndex) in chapter.chapters" :title="'第'+(sectionIndex+1)+'章：'+section.title" :key="section.id" toggleNested>
+                                    <mu-list-item v-for="(chapter,chapterIndex) in section.informations" :title="'第'+(chapterIndex+1)+'课时：'+chapter.title" :key="chapter.id" slot="nested">
+                                        <mu-list-item slot="left" disabled v-if="chapter.material.type === 2">
+                                            <mu-icon value="live_tv" />
+                                        </mu-list-item>
+
+                                        <mu-list-item slot="left" disabled v-else-if="chapter.material.type === 1">
+                                            <mu-icon value="settings_voice" />
+                                        </mu-list-item>
+
+                                        <mu-list-item slot="left" disabled v-else>
+                                            <mu-icon value="filter_none" />
+                                        </mu-list-item>
+
                                         <mu-list-item slot="right" class="chapter-states" disabled>
                                             <span :class="{active: chapter.noted}">划重点</span>
                                             <span :class="{active: chapter.question}">有疑问</span>
                                             <span :class="{active: chapter.complete}">已完成</span>
-                                            <span>{{chapter.time}}</span>
+                                            <div v-if="chapter.material.type === 0">
+                                                <span>{{chapter.material.page}}页</span>
+                                            </div>
+                                            <div v-else>
+                                                <span>{{chapter.material.length}}分</span>
+                                            </div>
                                         </mu-list-item>
                                     </mu-list-item>
                                 </mu-list-item>
@@ -47,11 +64,11 @@
                                 </mu-select-field>
                                 <div></div>
                                 <mu-select-field v-model="s_index" label="选择章节" hintText="请选择章节" @input="test">
-                                    <mu-menu-item v-for="(course,index) in chapter.sections" :key="course.id" :value="index" :title="course.name">
+                                    <mu-menu-item v-for="(course,index) in chapter.chapters" :key="course.id" :value="index" :title="course.name">
                                     </mu-menu-item>
                                 </mu-select-field>
                                 <mu-select-field v-model="addDiscuss.information_id" label="选择课时" hintText="请选择课时" @input="test" v-if="s_index">
-                                    <mu-menu-item v-for="chapters in chapter.sections[s_index].chapter" :key="chapters.id" :value="chapters.id" :title="chapters.name">
+                                    <mu-menu-item v-for="chapterItem in chapter.chapters[s_index].informations" :key="chapterItem.id" :value="chapterItem.id" :title="chapterItem.name">
                                     </mu-menu-item>
                                 </mu-select-field>
                                 <mu-text-field hintText="请输入标题" fullWidth label="标题" v-model="addDiscuss.title" />
@@ -71,15 +88,15 @@
                                 <mu-list-item :title="discu.employee.name" disabled v-for="(discu,index) in discusionData" :key="discu.id">
                                     <mu-avatar slot="left" :src="discu.employee.port" />
                                     <span slot="describe">
-                                        <!-- <mu-badge content="教师" secondary slot="right" v-show="discu.isTeacher"/> -->
-                                        <span>{{discu.time}}</span>
+																																								<!-- <mu-badge content="教师" secondary slot="right" v-show="discu.isTeacher"/> -->
+																																								<span>{{discu.time}}</span>
                                     </span>
                                     <p @click="setClose(discu, index) " class="hover-state">{{discu.title}}</p>
                                     <transition name="slide-fade">
                                         <mu-list-item v-show="discu.close">{{discu.content}}</mu-list-item>
                                     </transition>
                                     <span style="float:right">
-                                            <span>浏览 （{{discu.view}}）   </span>
+																																												<span>浏览 （{{discu.view}}）   </span>
                                     <span @click="setReply(discu,index)" class="hover-state">回复（{{discu.commends.length}}）  </span>
                                     <span class="hover-state" @click="setSupport(index)">点赞（{{discu.grate}}）</span>
                                     </span>
@@ -89,12 +106,12 @@
                                                 <mu-list-item v-for="(reply,replyIndex) in discu.commends" :key="reply.from.id" :title="reply.from.name">
                                                     <mu-avatar slot="left" :src="reply.from.port" />
                                                     <span slot="describe">
-                                                        <mu-badge content="教师" secondary slot="right" v-show="reply.from.isTeacher"/>
-                                                        <span>{{reply.time}}</span>
+																																																								<mu-badge content="教师" secondary slot="right" v-show="reply.from.isTeacher"/>
+																																																								<span>{{reply.time}}</span>
                                                     </span>
                                                     <p>{{reply.content}}</p>
                                                     <span style="float:right">
-                                                    <span class="hover-state" @click="setSubReply(reply)">回复  </span>
+																																																				<span class="hover-state" @click="setSubReply(reply)">回复  </span>
                                                     <span class="hover-state" @click="setReplySupport(index,replyIndex)">点赞（{{reply.grate}}）</span>
                                                     </span>
                                                 </mu-list-item>
@@ -122,45 +139,42 @@
                     <div class="comment-list">
                         <mu-list>
                             <mu-sub-header>评价</mu-sub-header>
-                            <div v-if="courseData.hasjoin">
-                                <mu-list-item disabled>
-                                    打分：
-                                    <mu-icon value="grade"/>
-                                    <mu-icon value="grade"/>
-                                    <mu-icon value="grade"/>
-                                    <mu-icon value="grade"/>
-                                    <mu-icon value="grade"/>
-                                    <mu-text-field hintText="请输入评论内容" multiLine :rows="3" :rowsMax="6"/>
-                                    <mu-raised-button label="确定" class="demo-raised-button" primary style="float:right"/>
+                            <div>
+                                <mu-list-item disabled class="set-star"  v-if="courseData.hasjoin && !isScore">
+                                    <span style="position:relative;top:-5px">打分：</span>
+                                    <!-- <mu-icon-button tooltip="default tooltip" icon="grade"/> -->
+                                    <mu-icon-button icon="star" v-for="item in setScore" @click="setScoreFull(item)" :tooltip="comment_tooltip[item]" :key="item"/>
+                                    <mu-icon-button icon="star_border" v-for="item in (5-setScore)" @click="setScoreBorder(item)" :tooltip="comment_tooltip[setScore+item-1]" :key="item"/>
+                                   
+                                    <mu-text-field hintText="请输入评论内容" multiLine :rows="3" :rowsMax="6" />
+                                    <mu-raised-button label="确定" class="send-score" primary style="float:right" @click="sendScore"/>
                                 </mu-list-item>
-
-                                <mu-list-item disabled>
+                                <mu-list-item disabled v-if="courseData.hasjoin && isScore">
                                     我的评分：
-                                    <mu-icon value="grade"/>
-                                    <mu-icon value="grade"/>
-                                    <mu-icon value="grade"/>
-                                    <mu-icon value="grade"/>
-                                    <mu-icon value="grade"/>
+                                    <mu-icon value="grade"  v-for="item in myScore" :key="item"/>
+                                    <mu-icon value="star_border"  v-for="item in (5-myScore)" :key="item"/>
+                                    
                                 </mu-list-item>
-                            
-                                
                             </div>
-                            <mu-list-item :title="comment.name" v-for="comment in courseData.comments" :key="comment.id">
+                            <mu-list-item :title="comment.name" v-for="comment in courseData.courseComments" :key="comment.id">
                                 <mu-avatar :src="comment.port" slot="leftAvatar" />
-                                <mu-icon value="grade" v-for="item in comment.star" :key="item" />
-                                <mu-list-item slot="right" class="time">
+                                <mu-icon value="grade" v-for="item in comment.rate" :key="item"  />
+                                <mu-icon value="star_border" v-for="item in (5-comment.rate)" :key="item"  />
+                                <mu-list-item slot="right" class="time" disabled>
                                     {{comment.time}}
                                 </mu-list-item>
                             </mu-list-item>
                         </mu-list>
+                        <span class="getMore">详情>></span>
                     </div>
                     <div class="learner-list">
                         <mu-list>
                             <mu-sub-header>{{student_num}}人在学</mu-sub-header>
-                            <mu-list-item class="learner-avatar" v-for="student in courseData.students" :key="student.id">
+                            <mu-list-item class="learner-avatar" v-for="student in courseData.employees" :key="student.id">
                                 <mu-avatar slot="left" :src="student.port" />
                             </mu-list-item>
                         </mu-list>
+                        <span class="getMore">详情>></span>
                     </div>
                 </mu-col>
             </mu-row>
@@ -206,7 +220,11 @@ export default {
                     isNick: false
                 },
                 pageTotal: 100,
-                pageCurrent: 1
+                pageCurrent: 1,
+                setScore:0,
+                comment_tooltip:['十分不满意','不满意','中等','满意','非常满意'],
+                isScore:false,
+                myScore:0
             }
         },
         components: {
@@ -407,7 +425,20 @@ export default {
             handleClick(newIndex) {
                 this.pageCurrent = newIndex;
                 this.setDiscussion();
+            },
+            setScoreFull(item){
+            	this.setScore = item;
+            	console.log(this.setScore)
+            },
+            setScoreBorder(item){
+            	this.setScore += item;
+            	console.log(this.setScore)
+            },
+            sendScore(){
+            	this.isScore = true;
+            	this.myScore = this.setScore;
             }
+
         },
         computed: {
             cid: function() {
@@ -420,7 +451,7 @@ export default {
             },
             student_num() {
                 try {
-                    return this.courseData.students.length
+                    return this.courseData.employees.length
                 } catch (e) {
                     console.log('数据读取中')
 
@@ -459,6 +490,17 @@ export default {
         font-size: 16px;
         color: #ffc107
     }
+    .mu-icon-button{
+    	// position: relative;
+    	// top:5px;
+    	width: 24px;
+    	height: 24px;
+    	.mu-icon {
+        font-size: 24px;
+       
+    }
+    	
+    }
 }
 
 .learner-list {
@@ -469,10 +511,11 @@ export default {
     }
 }
 
-.notice-list{
+.notice-list {
     margin-bottom: 15px;
     border: 1px solid #ccc;
 }
+
 .tab-page {
     display: none;
 }
@@ -532,5 +575,15 @@ export default {
             color: @main-color
         }
     }
+}
+.getMore{
+	display: flex;
+	justify-content:flex-end;
+	padding: 10px;
+	color: #ccc;
+	cursor: pointer;
+	&:hover{
+		color: @main-color
+	}
 }
 </style>
