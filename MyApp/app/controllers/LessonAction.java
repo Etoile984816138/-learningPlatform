@@ -9,7 +9,7 @@ import models.*;
 /**
  * Created by C_C on 2017/6/29.
  */
-public class InformationAction extends Controller{
+public class LessonAction extends Controller{
 
     //获取某一课时的基本信息
     public static void get(){

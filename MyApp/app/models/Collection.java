@@ -11,7 +11,6 @@ import java.util.Date;
  */
 @Entity
 public class Collection extends Model {
-
     public String time;
 
     @ManyToOne
@@ -19,4 +18,10 @@ public class Collection extends Model {
 
     @ManyToOne
     public Course course;
+
+    public Collection(String time, Employee employee, Course course) {
+        this.time = time;
+        this.employee = employee;
+        this.course = course;
+    }
 }

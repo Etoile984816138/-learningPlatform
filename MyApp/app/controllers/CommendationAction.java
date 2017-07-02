@@ -17,6 +17,7 @@ import java.util.List;
 public class CommendationAction extends Controller {
 
     public static void suitForMe(int num) {
+        assert num > 0;
         RecommendFactory recommendFactory = new JDBCRecommendFactory();
         RecommendService service = recommendFactory.create();
         Employee employee = ActionHelper.getVisit();

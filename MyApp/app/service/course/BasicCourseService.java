@@ -9,24 +9,29 @@ import java.util.List;
  */
 public class BasicCourseService implements CourseService {
 
-    public Course details(Employee employee) {
-
-        Course course = Course.findById(employee.id);
-        course.hasjoin = isJoin(course, employee);
-        course.star = caculateStudiedInfo(employee, course);
-
-        return null;
+    public Course details(Employee employee, long id) {
+        Course course = Course.findById(id);
+        if (course != null) {
+            course.hasjoin = isJoin(course, employee);
+            course.hasStudy = caculateStudiedInfo(employee, course);
+            course.total = course.lessons.size();
+        } else {
+            course = new Course();
+            course.id = id;
+        }
+        return course;
     }
 
+
+
+
     private int caculateStudiedInfo(Employee employee, Course course) {
-        List<Chapter> chapters = course.chapters;
+        List<Lesson> lessons = course.lessons;
         int count = 0;
-        for (Chapter chapter : chapters) {
-            for (Information information : chapter.informations) {
-                for (History history : information.histories) {
-                    if (history.employee.equals(employee)) {
-                        count ++ ;
-                    }
+        for (Lesson lesson : lessons) {
+            for (History history : lesson.histories) {
+                if (history.employee.equals(employee)) {
+                    count++;
                 }
             }
         }

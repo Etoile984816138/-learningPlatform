@@ -8,5 +8,5 @@ import models.Employee;
  */
 public interface CourseService {
 
-    Course details(Employee employee);
+    Course details(Employee employee,  long id);
 }

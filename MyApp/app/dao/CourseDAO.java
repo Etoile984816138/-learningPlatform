@@ -1,6 +1,7 @@
 package dao;
 
 import models.Course;
+import models.CourseRate;
 import models.Generic;
 import models.History;
 import play.db.jpa.JPA;
@@ -27,5 +28,8 @@ public class CourseDAO {
                 .setParameter("id", course_id)
                 .getResultList();
     }
+
+
+
 
 }

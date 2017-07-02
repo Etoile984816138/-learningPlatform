@@ -2,6 +2,7 @@ import org.junit.*;
 import play.test.*;
 import models.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -11,7 +12,6 @@ import java.util.Map;
 public class TestDirection extends UnitTest {
     @Test
     public void test(){
-        Direction direction = new Direction("前端");
-        direction.save();
+
     }
 }

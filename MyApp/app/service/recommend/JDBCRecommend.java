@@ -21,8 +21,8 @@ public class JDBCRecommend implements RecommendService {
         // 根据gid
         List<Course> courses = Collections.EMPTY_LIST;
         if (history != null) {
-            int gid = history.information.chapter.course.g_id;
-            long courseId = history.information.chapter.course.id;
+            int gid = history.lesson.course.g_id;
+            long courseId = history.lesson.course.id;
             courses = CourseDAO.byGenericAndNotEqual(gid, courseId);
         }
         return courses;
