@@ -28,3 +28,4 @@ GET     /discuss/{course_id}/course/{type}      DiscussAction.getByCourse
 GET     /discuss/publish                        DiscussAction.publish
 GET     /discuss/note                           DiscussAction.note
 GET     /comment/add                            CommentAction.add
+GET     /course/details                         CourseAction.details

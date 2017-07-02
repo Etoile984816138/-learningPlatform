@@ -49,7 +49,7 @@ public class CourseAction extends Controller{
         int employee_id = Integer.parseInt(session.get("employeeID"));
 
         //获取该学员的权限列表
-        List <Authority> authorities = Power.find("SELECT p.authority FROM Power p WHERE p.employee.id = ?",employee_id).fetch();
+//        List <Authority> authorities = Power.find("SELECT p.authority FROM Power p WHERE p.employee.id = ?",employee_id).fetch();
 
         if("0".equals(s_id)) s_id = null;
         if("0".equals(g_id)) g_id = null;
@@ -59,7 +59,7 @@ public class CourseAction extends Controller{
         List<Course> courses = Course.find("SELECT new Course(id,description,title,cover,person,authority) FROM Course.c " +
                 "WHERE c.authority in (:authority) AND c.s_id = :s_id AND c.g_id = :g_id AND d_id = :d_id And c.title like:title " +
                 "ORDER BY "+condition+" desc")
-                .setParameter("authority",authorities)
+//                .setParameter("authority",authorities)
                 .setParameter("s_id",s_id)
                 .setParameter("g_id",g_id)
                 .setParameter("d_id",d_id)
@@ -77,4 +77,8 @@ public class CourseAction extends Controller{
         return map;
     }
 
+
+    public static Course details() {
+        return null;
+    }
 }

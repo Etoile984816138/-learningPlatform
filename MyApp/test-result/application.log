@@ -1,4 +1,4 @@
-29 六月 2017 16:39:23,218 INFO  ~ Starting /home/jsh3/IdeaProjects/job/MyApp/.
-29 六月 2017 16:39:25,723 WARN  ~ You're running Play! in DEV mode
-29 六月 2017 16:39:28,941 INFO  ~ Connected to jdbc:mysql://118.89.145.76:3306/plain?useUnicode=yes&connectionCollation=utf8_general_ci&characterEncoding=UTF-8 for default
-29 六月 2017 16:39:31,508 INFO  ~ Application 'y' is now started !
+02 七月 2017 09:28:38,558 INFO  ~ Starting /home/jsh3/IdeaProjects/job/MyApp/.
+02 七月 2017 09:28:40,181 WARN  ~ You're running Play! in DEV mode
+02 七月 2017 09:28:43,305 INFO  ~ Connected to jdbc:mysql://118.89.145.76:3306/plain?useUnicode=yes&connectionCollation=utf8_general_ci&characterEncoding=UTF-8 for default
+02 七月 2017 09:28:50,038 INFO  ~ Application 'y' is now started !

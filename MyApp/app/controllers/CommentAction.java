@@ -28,8 +28,8 @@ public class CommentAction extends Controller {
         Employee employee = Employee.findById(employee_id);
 
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
-        Comment comment = new Comment(0,content,df.format(new Date()),discuss.employee,employee,discuss);
-        comment.save();
+//        Comment comment = new Comment(0,content,df.format(new Date()),discuss.employee,employee,discuss);
+//        comment.save();
 
         map.put("success",true);
         map.put("failure","");
