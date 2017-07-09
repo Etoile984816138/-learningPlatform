@@ -4,7 +4,7 @@
         <v-rightSider></v-rightSider>
         <div id="content" class="content">
             <v-search :directions="directions" :generics="generics" :styles="styles" :title="title" @receiveIds="handleIds" :bus="bus"></v-search>
-            <v-courseList :tabShow="tabShow" :coursesUrl="coursesUrl" :pagination="pagination" :bus="bus"></v-courseList>
+            <v-courseList :tabShow="tabShow" :coursesUrl="coursesUrl" :pagination="pagination" :bus="bus" :pageShow="pageShow"></v-courseList>
         </div>
         <v-footer></v-footer>
     </div>
@@ -22,8 +22,9 @@ export default {
     data() {
             return {
                 tabShow: true,
+                pageShow:true,
                 unread: "20",
-                coursesUrl: '/course',
+                coursesUrl: '/course/new',
                 pagination: {
                     pageNum: 1,
                     pageSize: 8,
@@ -47,6 +48,7 @@ export default {
             'v-search': search
         },
         created() {
+
             this.title = this.handleUrl()['title'],
                 this.$http.get('/direction').then((response) => {
                     response = response.body
@@ -75,7 +77,8 @@ export default {
                     response = response.body
                         // console.log(response)
                         if (response.failure.length === 0) {
-                            console.log('success')
+                            console.log('-------')
+                            console.log(response.success)
                             this.styles = response.success
                         } else {
                             alert(response.failure[0])

@@ -11,6 +11,10 @@ import 'muse-ui/dist/muse-ui.css'
 import 'muse-ui/dist/theme-teal.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 
+import audio from 'entry/player/audio'
+import page from 'entry/player/page'
+import video from 'entry/player/video'
+
 Vue.use(MuseUI)
 Vue.use(VueAwesomeSwiper)
 
@@ -24,8 +28,11 @@ Vue.config.productionTip = false
 const router = new VueRouter({
   routes: [
     // 动态路径参数 以冒号开头
-    { path: '/header', component: header },
-  ]
+    { path: '/audio/:id', component: audio },
+    { path: '/page/:id', component: page },
+    { path: '/video/:id', component: video }
+  ],
+  linkActiveClass: 'active'
 })
 
 // 挂载到#app上

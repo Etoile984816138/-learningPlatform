@@ -6,16 +6,16 @@
         </div>
         <div class="course-list-content">
             <mu-grid-list class="gridlist-demo" :cols="gridrow">
-                <mu-grid-tile v-for="course in courses" :key="course.id">
-                    <img :src="course.cover" class="cover" />
+                <mu-grid-tile v-for="courseItem in courses" :key="courseItem.course.id">
+                    <img :src="courseItem.course.cover" class="cover" @click="toDetail(courseItem.course.id)"/>
                     <!-- <img src="./banner1.jpg" class="cover" /> -->
-                    <span slot="title">{{course.title}}</span>
-                    <span slot="subTitle">已完成{{course.hasStudy}}/{{course.total}}课时</span>
+                    <span slot="title">{{courseItem.course.title}}</span>
+                    <span slot="subTitle">已完成{{courseItem.course.hasStudy}}/{{courseItem.course.total}}课时</span>
                 </mu-grid-tile>
             </mu-grid-list>
         </div>
-        <mu-pagination :total="pageTotal*10" :current="pageNum" @pageChange="pageClick">
-        </mu-pagination>
+        <mu-pagination :total="pageTotal*10" :current="pageNum" @pageChange="pageClick"/>
+
     </div>
 </template>
 <script>
@@ -24,37 +24,38 @@ export default {
 }
 </script>
 <style lang="less">
-#myStudy{
+#myStudy {
     .search-wrapper {
-    float: right;
-    z-index: -1;
-    position: relative
-}
+        float: right;
+        z-index: -1;
+        position: relative
+    }
+    .course-list-content {
+        clear: both;
+    }
+    // @main-color: #009688;
+    .course-list {
+        margin-bottom: 20px;
+        position: relative;
+        width: 300px;
+        height: 200px;
+        img {
+            // position: absolute;
+            width: 100%;
+            height: 100%;
+        }
 
-.course-list-content {
-    clear: both;
-}
-
-// @main-color: #009688;
-.course-list {
-    margin-bottom: 20px;
-    position: relative;
-    width: 300px;
-    height: 200px;
-    img {
-        // position: absolute;
-        width: 100%;
-        height: 100%;
+    }
+    .mu-grid-tile{
+        cursor: pointer;
+    }
+    
+    .mu-pagination {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center
     }
 }
-
-.mu-pagination {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center
-}
-}
-
 </style>
 <script type="text/javascript">
 export default {
@@ -64,8 +65,8 @@ export default {
                 courses: [],
                 search_text: '',
                 gridrow: 3,
-                pageTotal:50,
-                pageNum:1
+                pageTotal: 500,
+                pageNum: 1
             }
         },
         created() {
@@ -88,13 +89,16 @@ export default {
                         // console.log(response)
                     if (response.failure.length === 0) {
                         console.log(response.success)
-                        this.courses = response.success.courses
-                        this.pageTotal = response.success.total
+                        this.courses = response.success
+                        this.pageTotal = response.total
                     } else {
                         alert(response.failure[0])
                     }
 
                 })
+            },
+            toDetail(id) {
+                window.location.href = '/module/courseDetail.html?cid=' + id
             }
         }
 }

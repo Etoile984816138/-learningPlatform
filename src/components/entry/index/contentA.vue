@@ -2,7 +2,7 @@
     <mu-flexbox class="mt4">
         <mu-flexbox-item class="sidebar">
             <mu-list>
-                <div class="mu-list-wrapper" v-for="direction in directions" :data-id="direction.d_id" :data-direction="direction.name" @mouseenter="showDetail" @mouseleave="hideDetail">
+                <div class="mu-list-wrapper" v-for="direction in setDirection" :data-id="direction.d_id" :data-direction="direction.name" @mouseenter="showDetail" @mouseleave="hideDetail">
                     <mu-list-item :title="direction.name">
                     </mu-list-item>
                 </div>
@@ -37,7 +37,10 @@
 .sidebar {
     position: relative;
 }
-
+// .carousel{
+//     position: relative;
+//     z-index: 0;
+// }
 .sidebar-submenu {
     position: absolute;
     top: 0;
@@ -107,7 +110,8 @@ export default {
         }
     },
     created() {
-      
+        console.log('888888')
+      console.log(this.generics)
     },
     methods: {
         showDetail(e) {
@@ -117,6 +121,8 @@ export default {
                 response = response.body
                     // console.log(response)
                     if (response.failure.length === 0) {
+                        console.log('378343')
+                        console.log(response.success)
                         this.generics = response.success
                     } else {
                         alert(response.failure[0])
@@ -133,6 +139,22 @@ export default {
         },
         outFlag() {
             this.mouseoverFlag = false
+        }
+    },
+    computed:{
+        setDirection:function(){
+            let arr = this.directions;
+            if(arr.length < 7){
+                for(let i=arr.length;i<7;i++){
+                    arr.push({
+                        d_id:0,
+                        name:''
+                    })
+                }
+            }else if(arr.length > 7){
+                arr = arr.slice(0,7)
+            }
+            return arr;
         }
     }
 

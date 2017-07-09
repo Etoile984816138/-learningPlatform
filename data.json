@@ -126,7 +126,9 @@
     },
     "courseDetail": {
         "failure": [
-
+            "4yKiJphjw2",
+            "H0mBFHoxGr",
+            "toUlE6BCJc"
         ],
         "success": {
             "title": "jTWW1pbKi4",
@@ -169,17 +171,20 @@
                 "comment": "TMR9thWddQ",
                 "time": "1497657054084"
             }],
-            "d_id": 56,
-            "g_id": 99169,
+            "d_name": "56",
+            "g_name": "99169",
             "type": "3NRILdpHwJ",
             "hasjoin": true,
             "hasStudy": 23820,
-            "total": 56759
+            "total": 56759,
+            "hasCollect": false
         }
     },
     "chapter": {
         "failure": [
-
+            "8cCySR0oeH",
+            "JRYyF0X8x1",
+            "dTeEwpsphH"
         ],
         "success": {
             "title": "jTWW1pbKi4",
@@ -187,9 +192,8 @@
             "cover": "http://df.jpg",
             "star": 3,
             "chapters": [{
-                "id": 1,
                 "title": "第一节",
-                "informations": [{
+                "lessons": [{
                     "id": 1,
                     "title": "标题",
                     "question": true,
@@ -201,100 +205,98 @@
                         "type": 0
                     }
                 }, {
-                    "id": 1,
+                    "id": 2,
                     "title": "标题",
                     "question": true,
                     "complete": true,
                     "noted": true,
                     "material": {
-                        "length": 69008,
-                        "page": 26220,
+                        "length": 40498,
+                        "page": 98088,
                         "type": 1
                     }
                 }, {
-                    "id": 1,
+                    "id": 3,
                     "title": "标题",
                     "question": true,
                     "complete": true,
                     "noted": true,
                     "material": {
-                        "length": 15807,
-                        "page": 39296,
+                        "length": 40498,
+                        "page": 98088,
                         "type": 2
                     }
                 }]
             }, {
-                "id": 1,
                 "title": "第一节",
-                "informations": [{
-                    "id": 1,
+                "lessons": [{
+                    "id": 4,
                     "title": "标题",
                     "question": true,
                     "complete": true,
                     "noted": true,
                     "material": {
-                        "length": 89372,
-                        "page": 20301,
-                        "type": 15795
+                        "length": 40498,
+                        "page": 98088,
+                        "type": 39447
                     }
                 }, {
-                    "id": 1,
+                    "id": 5,
                     "title": "标题",
                     "question": true,
                     "complete": true,
                     "noted": true,
                     "material": {
-                        "length": 15455,
-                        "page": 653,
-                        "type": 26047
+                        "length": 40498,
+                        "page": 98088,
+                        "type": 77953
                     }
                 }, {
-                    "id": 1,
+                    "id": 6,
                     "title": "标题",
                     "question": true,
                     "complete": true,
                     "noted": true,
                     "material": {
-                        "length": 37757,
-                        "page": 24341,
-                        "type": 41384
+                        "length": 40498,
+                        "page": 98088,
+                        "type": 76613
                     }
                 }]
             }, {
-                "id": 1,
                 "title": "第一节",
-                "informations": [{
-                    "id": 1,
+                "lessons": [{
+                    "id": 7,
                     "title": "标题",
                     "question": true,
                     "complete": true,
                     "noted": true,
                     "material": {
-                        "length": 6078,
-                        "page": 13718,
-                        "type": 88674
+                        "length": 40498,
+                        "page": 98088,
+                        "type": 49218
                     }
                 }, {
-                    "id": 1,
+                    "id": 8,
                     "title": "标题",
                     "question": true,
                     "complete": true,
                     "noted": true,
                     "material": {
-                        "length": 23941,
-                        "page": 71499,
-                        "type": 18306
+                        "length": 40498,
+                        "page": 98088,
+                        "type": 18787
                     }
                 }, {
-                    "id": 1,
+                    "id": 9,
                     "title": "标题",
                     "question": true,
                     "complete": true,
                     "noted": true,
                     "material": {
-                        "length": 14769,
-                        "page": 96552,
-                        "type": 28682
+                        "length": 40498,
+                        "page": 98088,
+                        "type": 15558
                     }
                 }]
             }],
@@ -311,211 +313,225 @@
     },
     "discusion": {
         "failure": [
-
+            "oRhICDS3Rx",
+            "W4l9XcYRtC",
+            "vQf3ibV0Dp"
         ],
         "success": [{
             "id": 2,
-            "content": "MA4NDS6Cxo",
+            "content": "G7PRWD8goJ",
             "grate": 12,
             "view": 3,
-            "time": "1498785184258",
-            "title": "F2UrCRoiZA",
+            "time": "1499496774818",
+            "title": "zvnfQxgKFR",
             "commends": [{
-                "content": "a6uuwohKyX",
+                "content": "nPLHS1F5Tk",
                 "grate": 12,
-                "time": "1498785180859",
+                "time": "1499495093000",
                 "to": {
-                    "id": 75443,
-                    "name": "mJ10ToZdnI",
-                    "isTeacher": true
+                    "id": 90236,
+                    "name": "rqrC5lTK83",
+                    "identity": 96294
                 },
                 "from": {
-                    "id": 75762,
-                    "name": "M3fYd5vq60",
-                    "port": "8tDdBCW1BB",
-                    "isTeacher": false
+                    "id": 90481,
+                    "name": "FUghyv0ka9",
+                    "port": "sIJnZeOY5u",
+                    "identity": 60002
                 }
             }, {
-                "content": "0hNMPFGqlN",
+                "content": "Voe11YvP86",
                 "grate": 12,
-                "time": "1498786458177",
+                "time": "1499494562848",
                 "to": {
-                    "id": 76482,
-                    "name": "yewbrjiYxQ",
-                    "isTeacher": true
+                    "id": 90877,
+                    "name": "UhflFWBcO1",
+                    "identity": 73886
                 },
                 "from": {
-                    "id": 76887,
-                    "name": "PvO9uJRy1B",
-                    "port": "PQlTc2T8kb",
-                    "isTeacher": false
+                    "id": 91222,
+                    "name": "I8AGEtQBEm",
+                    "port": "Zaj63x8R4M",
+                    "identity": 47473
                 }
             }, {
-                "content": "PM2Fa3DLEb",
+                "content": "mHQc28TZeP",
                 "grate": 12,
-                "time": "1498785978925",
+                "time": "1499494905570",
                 "to": {
-                    "id": 77508,
-                    "name": "9vkZYVfROb",
-                    "isTeacher": false
+                    "id": 91697,
+                    "name": "bHNNXgYr3c",
+                    "identity": 41268
                 },
                 "from": {
-                    "id": 78331,
-                    "name": "qDhqsHzDzb",
-                    "port": "Rvb08fjzoX",
-                    "isTeacher": false
+                    "id": 92081,
+                    "name": "UbMX3Kh2Zk",
+                    "port": "gWYFzyXTcn",
+                    "identity": 17623
                 }
             }],
             "employee": {
-                "id": 78642,
-                "name": "sxY4hjqX5I",
-                "port": "YailSIDNp2"
-            }
+                "id": 92582,
+                "name": "tEyLeACqaZ",
+                "port": "mcriVeArWh",
+                "identity": 0
+            },
+            "cover": "gRvvRAWr0M"
         }, {
             "id": 2,
-            "content": "zaJcPZfAWp",
+            "content": "v8q3Afp7P0",
             "grate": 12,
             "view": 3,
-            "time": "1498786087308",
-            "title": "h74V2lMW1V",
+            "time": "1499496301845",
+            "title": "EvWN58wXbP",
             "commends": [{
-                "content": "pe060VVmrn",
+                "content": "zpKGu06DX9",
                 "grate": 12,
-                "time": "1498786264300",
+                "time": "1499494974835",
                 "to": {
-                    "id": 79097,
-                    "name": "xcIB7d06pB",
-                    "isTeacher": true
+                    "id": 93215,
+                    "name": "NsErO0I8cZ",
+                    "identity": 43470
                 },
                 "from": {
-                    "id": 79571,
-                    "name": "q97QXQXCQP",
-                    "port": "ymeEkx2Zk5",
-                    "isTeacher": true
+                    "id": 94121,
+                    "name": "A3ezj0FfKa",
+                    "port": "Rloswzh8A4",
+                    "identity": 53519
                 }
             }, {
-                "content": "9i8WGDBqd6",
+                "content": "zcut52XYg6",
                 "grate": 12,
-                "time": "1498786624317",
+                "time": "1499496408684",
                 "to": {
-                    "id": 80254,
-                    "name": "fSHXtLj5xk",
-                    "isTeacher": false
+                    "id": 94908,
+                    "name": "pfk4DH683J",
+                    "identity": 75367
                 },
                 "from": {
-                    "id": 80978,
-                    "name": "0LMVHiVl7e",
-                    "port": "201Trbo72E",
-                    "isTeacher": true
+                    "id": 95884,
+                    "name": "So49ejNMHh",
+                    "port": "vVnwsL3HIc",
+                    "identity": 12845
                 }
             }, {
-                "content": "JMgQ5jvxu9",
+                "content": "l9XZSz18fF",
                 "grate": 12,
-                "time": "1498784900695",
+                "time": "1499496286857",
                 "to": {
-                    "id": 80988,
-                    "name": "GCDtqJx4cL",
-                    "isTeacher": false
+                    "id": 96695,
+                    "name": "NuEiuMxnrM",
+                    "identity": 59165
                 },
                 "from": {
-                    "id": 81981,
-                    "name": "7rmcWt3UnO",
-                    "port": "4urtql9TS9",
-                    "isTeacher": false
+                    "id": 96814,
+                    "name": "LNdp8dq8Z0",
+                    "port": "zQ4a9yJ3m6",
+                    "identity": 90218
                 }
             }],
             "employee": {
-                "id": 82265,
-                "name": "T1FtzSU7Ts",
-                "port": "mq7LX5NoTn"
-            }
+                "id": 97052,
+                "name": "nmhTMLH39H",
+                "port": "KYKJyHlWSW",
+                "identity": 1
+            },
+            "cover": "lDxwpxbEA4"
         }, {
             "id": 2,
-            "content": "rehGwv62w9",
+            "content": "WN16pg9TJC",
             "grate": 12,
             "view": 3,
-            "time": "1498786920961",
-            "title": "LNSaknjo3k",
+            "time": "1499495760017",
+            "title": "P1Y0C3yqhY",
             "commends": [{
-                "content": "EziTkMryG9",
+                "content": "qBo6YabOGO",
                 "grate": 12,
-                "time": "1498785116670",
+                "time": "1499495747466",
                 "to": {
-                    "id": 82362,
-                    "name": "9yInVvm5cQ",
-                    "isTeacher": true
+                    "id": 97623,
+                    "name": "6dUFvFhVwT",
+                    "identity": 88143
                 },
                 "from": {
-                    "id": 83112,
-                    "name": "H1pXdvoh6i",
-                    "port": "bGOmlKMgoy",
-                    "isTeacher": true
+                    "id": 97714,
+                    "name": "0K9SCx53WI",
+                    "port": "AwWmcybmjR",
+                    "identity": 85521
                 }
             }, {
-                "content": "Fu6MCERPte",
+                "content": "H9Q07XVJka",
                 "grate": 12,
-                "time": "1498785036382",
+                "time": "1499495347604",
                 "to": {
-                    "id": 83318,
-                    "name": "Ab79mfTPrP",
-                    "isTeacher": true
+                    "id": 97976,
+                    "name": "IqWRvWS3Bt",
+                    "identity": 90225
                 },
                 "from": {
-                    "id": 83496,
-                    "name": "j714ECCuxb",
-                    "port": "EhwbrSF5hE",
-                    "isTeacher": false
+                    "id": 98960,
+                    "name": "3pbspi5j2Y",
+                    "port": "RFd1rYk7RC",
+                    "identity": 92905
                 }
             }, {
-                "content": "U4UKK9cGTn",
+                "content": "Xm2mW5khxy",
                 "grate": 12,
-                "time": "1498785435105",
+                "time": "1499496488663",
                 "to": {
-                    "id": 83687,
-                    "name": "t2xDw5cJi4",
-                    "isTeacher": true
+                    "id": 99094,
+                    "name": "yG9tqL7nLZ",
+                    "identity": 96501
                 },
                 "from": {
-                    "id": 84179,
-                    "name": "11lu2VxtH6",
-                    "port": "LJRKGvDxg8",
-                    "isTeacher": false
+                    "id": 99739,
+                    "name": "7O0mHX4wHr",
+                    "port": "3ItIhlnXhS",
+                    "identity": 92709
                 }
             }],
             "employee": {
-                "id": 84814,
-                "name": "Z92ws90mzz",
-                "port": "zUcXRFuT99"
-            }
+                "id": 100542,
+                "name": "fjb9dOjlTx",
+                "port": "7hpMKTKsg8",
+                "identity": 2
+            },
+            "cover": "o4goIH8pvH"
         }],
-        "total": 79572
+        "total": 94412
     },
     "study": {
         "failure": [
-
+            "0tZM25rY5h",
+            "9KRhd6lksx",
+            "Oko9yTVfOm"
         ],
-        "success": {
-            "courses": [{
-                "id": "73586",
-                "cover": "7cJNkyAaso",
-                "title": "eRGV2zED9Y",
-                "hasStudy": 88068,
-                "total": 7454
-            }, {
-                "id": "74498",
-                "cover": "fasfZCT29f",
-                "title": "SDDreBMhrQ",
-                "hasStudy": 15954,
-                "total": 97617
-            }, {
-                "id": "74936",
-                "cover": "qBLJxh6QU0",
-                "title": "JbNnd0dTqB",
-                "hasStudy": 32818,
-                "total": 15753
-            }],
-            "total": 62520
-        }
+        "success": [{
+            "course": {
+                "id": "64922",
+                "cover": "RkPqNHtENj",
+                "title": "2eH3hhrS27",
+                "hasStudy": "Uh6XFErA4a",
+                "total": "hnNJlHB4zm"
+            }
+        }, {
+            "course": {
+                "id": "65406",
+                "cover": "T6PJkIWwKc",
+                "title": "2inXspwNEl",
+                "hasStudy": "wZHydCWpgr",
+                "total": "dVkvvGgXeW"
+            }
+        }, {
+            "course": {
+                "id": "65965",
+                "cover": "3YPYmMWij6",
+                "title": "qgFF9KbCyA",
+                "hasStudy": "YOGv9P0wcP",
+                "total": "X1bT6CYbMC"
+            }
+        }],
+        "total": 27211
     },
     "collection": {
         "failure": [
@@ -549,154 +565,156 @@
     },
     "history": {
         "failure": [
-
+            "gdWCr4ltbO",
+            "xSkCGWnn5R",
+            "7UqnEPO9Ug"
         ],
         "success": [{
             "time": "2017-7-1",
             "list": [{
-                "cover": "BVj7dileyL",
-                "point": "cYcwb6jHtR",
+                "cover": "KJF0ta0Ypb",
+                "point": "qthhW3VjGn",
                 "time": "2017-7-1 14:20:30",
                 "lesson": {
-                    "id": 77771,
-                    "title": "1d3jfWcLof",
-                    "chapter": 21362,
-                    "number": "2eP0ZYKdAY",
+                    "id": 92201,
+                    "title": "7b1WmnoWhf",
+                    "chapter": 71285,
+                    "number": "OHNkVn2FKC",
                     "material": {
-                        "length": 31308,
-                        "page": 17286,
-                        "type": 46472
+                        "length": 93592,
+                        "page": 26084,
+                        "type": 71886
                     }
                 }
             }, {
-                "cover": "qytteadBzW",
-                "point": "FIbB0tOnsI",
+                "cover": "RAWxiWCAsF",
+                "point": "fQKQPceYFn",
                 "time": "2017-7-1 14:20:30",
                 "lesson": {
-                    "id": 78180,
-                    "title": "rTDILOeSr4",
-                    "chapter": 73294,
-                    "number": "CUutQqXnGl",
+                    "id": 92351,
+                    "title": "tpCZFcEdvX",
+                    "chapter": 714,
+                    "number": "ESjl8zHnVA",
                     "material": {
-                        "length": 80617,
-                        "page": 48402,
-                        "type": 95639
+                        "length": 12492,
+                        "page": 87126,
+                        "type": 82433
                     }
                 }
             }, {
-                "cover": "mgtIFYTHGw",
-                "point": "r50bUnrEno",
+                "cover": "Kgt2TCFID6",
+                "point": "jK6FeNsOdA",
                 "time": "2017-7-1 14:20:30",
                 "lesson": {
-                    "id": 78260,
-                    "title": "Bvnao3g1Uy",
-                    "chapter": 50878,
-                    "number": "2glUsOBBFh",
+                    "id": 92952,
+                    "title": "A1iSE32pL6",
+                    "chapter": 31952,
+                    "number": "HzO8196ihe",
                     "material": {
-                        "length": 82356,
-                        "page": 34923,
-                        "type": 99674
+                        "length": 77721,
+                        "page": 73756,
+                        "type": 91184
                     }
                 }
             }]
         }, {
             "time": "2017-7-1",
             "list": [{
-                "cover": "alkw9EmKPw",
-                "point": "ZY4qCtBE0y",
+                "cover": "osQaITomXj",
+                "point": "f4Dqwk3IBd",
                 "time": "2017-7-1 14:20:30",
                 "lesson": {
-                    "id": 78678,
-                    "title": "nVjjFvUAca",
-                    "chapter": 11927,
-                    "number": "HUUK2orHwA",
+                    "id": 93189,
+                    "title": "t4W8ZqSLcZ",
+                    "chapter": 90559,
+                    "number": "Qfj7oqXXRU",
                     "material": {
-                        "length": 50273,
-                        "page": 25523,
-                        "type": 5655
+                        "length": 27187,
+                        "page": 16659,
+                        "type": 79757
                     }
                 }
             }, {
-                "cover": "1bfUXcZh9j",
-                "point": "V4uNbEiSwo",
+                "cover": "RnciG48oaP",
+                "point": "9kRGYUcN1T",
                 "time": "2017-7-1 14:20:30",
                 "lesson": {
-                    "id": 79399,
-                    "title": "3FPk1kHjUa",
-                    "chapter": 84536,
-                    "number": "yZxMrkoWqJ",
+                    "id": 93997,
+                    "title": "AeCF3slhd3",
+                    "chapter": 29334,
+                    "number": "7N37OVCiPS",
                     "material": {
-                        "length": 53102,
-                        "page": 58744,
-                        "type": 53140
+                        "length": 56014,
+                        "page": 80093,
+                        "type": 90051
                     }
                 }
             }, {
-                "cover": "jyi3eg25Uf",
-                "point": "CLguE6ExbN",
+                "cover": "Teklkn7DbT",
+                "point": "fzfK4ryFqI",
                 "time": "2017-7-1 14:20:30",
                 "lesson": {
-                    "id": 79942,
-                    "title": "7570bxAs9z",
-                    "chapter": 19950,
-                    "number": "DfFWwhxDWj",
+                    "id": 94818,
+                    "title": "vVwNPjB0KQ",
+                    "chapter": 2435,
+                    "number": "y5SZZ4XYhe",
                     "material": {
-                        "length": 11355,
-                        "page": 70959,
-                        "type": 3121
+                        "length": 87032,
+                        "page": 779,
+                        "type": 3372
                     }
                 }
             }]
         }, {
             "time": "2017-7-1",
             "list": [{
-                "cover": "Brp8kzUZQN",
-                "point": "wgH6L1qia4",
+                "cover": "AJ4s7GBf09",
+                "point": "Qw8U6k8X3l",
                 "time": "2017-7-1 14:20:30",
                 "lesson": {
-                    "id": 80128,
-                    "title": "lggZpowZg0",
-                    "chapter": 81647,
-                    "number": "D1ghSpkFeY",
+                    "id": 95115,
+                    "title": "WZzJjKDraC",
+                    "chapter": 91547,
+                    "number": "A3wy4LLDa9",
                     "material": {
-                        "length": 68591,
-                        "page": 58301,
-                        "type": 17608
+                        "length": 53200,
+                        "page": 61435,
+                        "type": 69234
                     }
                 }
             }, {
-                "cover": "vPNg0FMGDB",
-                "point": "NIPfRm31lD",
+                "cover": "rioiB2pyan",
+                "point": "IEl4ZS5sQK",
                 "time": "2017-7-1 14:20:30",
                 "lesson": {
-                    "id": 80276,
-                    "title": "q7INz2kwUb",
-                    "chapter": 39796,
-                    "number": "8Gybxmzo0p",
+                    "id": 95394,
+                    "title": "tYMV0lfCgW",
+                    "chapter": 21280,
+                    "number": "W2vciTwUmC",
                     "material": {
-                        "length": 3741,
-                        "page": 93586,
-                        "type": 47534
+                        "length": 70459,
+                        "page": 62489,
+                        "type": 44992
                     }
                 }
             }, {
-                "cover": "8nkKOn4nIL",
-                "point": "RnX5wikxXq",
+                "cover": "Lu91rqDfx9",
+                "point": "TLGKqYybor",
                 "time": "2017-7-1 14:20:30",
                 "lesson": {
-                    "id": 80909,
-                    "title": "VFahXay9ee",
-                    "chapter": 59520,
-                    "number": "IMsJfPR1im",
+                    "id": 96014,
+                    "title": "umYM26C25r",
+                    "chapter": 51838,
+                    "number": "EaWskOTM1G",
                     "material": {
-                        "length": 6457,
-                        "page": 4937,
-                        "type": 90109
+                        "length": 88275,
+                        "page": 65414,
+                        "type": 66161
                     }
                 }
             }]
         }],
-        "total": 77849
+        "total": 73137
     },
     "note": {
         "failure": [
@@ -745,5 +763,118 @@
             "content": "pHM3z9CcfW"
         }]
     },
-    "danmakuData": { "code": 1, "danmaku": [{ "author": "bilibili38b92bbd", "time": "0", "text": "拔剑吧，打底裤", "color": "#ff0000", "type": "right" }, { "author": "bilibilic743f40f", "time": "0", "text": "这是我老婆", "color": "#ff0000", "type": "right" }, { "author": "bilibili11b2034b", "time": "24.02499961853", "text": "说像西野翔的脑子有病吧，说人家像av女忧好玩吗？！", "color": "#ff0000", "type": "right" }, { "author": "bilibilid38909d8", "time": "50.686000823975", "text": "不是人妻！！！", "color": "#e70012", "type": "right" }, { "author": "bilibili387e47ce", "time": "53.053001403809", "text": "说破站的你别来这个网站啊", "color": "#ff0000", "type": "right" }, { "author": "bilibilic743f40f", "time": "141.17799377441", "text": "我是地上的树叶", "color": "#ff0000", "type": "right" }, { "author": "bilibilia6f40ed1", "time": "222.34199523926", "text": "为你下b站", "color": "#ff0000", "type": "right" }, { "author": "bilibilib5c22ddd", "time": "173.49000549316", "text": "灵魂黑车", "color": "#ff0000", "type": "right" }, { "author": "bilibili2b24d1e5", "time": "102.77899932861", "text": "怎么没人打篮球", "color": "#fef102", "type": "top" }, { "author": "bilibilie3aa0325", "time": "14.215999603271", "text": "赞", "color": "#ff0000", "type": "right" }, { "author": "bilibilie3aa0325", "time": "166.4700012207", "text": "叼", "color": "#ff0000", "type": "right" }, { "author": "bilibilif2c1e66f", "time": "115.41899871826", "text": "粉色", "color": "#ff0000", "type": "right" }, { "author": "bilibili11b2034b", "time": "156.5119934082", "text": "截图成功", "color": "#ffff00", "type": "top" }, { "author": "bilibilidf50156f", "time": "9.3009996414185", "text": "女神的弹幕由我组成", "color": "#e70012", "type": "right" }, { "author": "bilibilia928a1ca", "time": "30.184999465942", "text": "营养不良", "color": "#fef102", "type": "right" }, { "author": "bilibili6f21d1b9", "time": "61.821998596191", "text": "好美", "color": "#e70012", "type": "bottom" }, { "author": "bilibili3874ed5c", "time": "43.964000701904", "text": "是时候展现真正的技术了", "color": "#ff0000", "type": "right" }, { "author": "bilibili44636886", "time": "82.095001220703", "text": "我是白线", "color": "#ff0000", "type": "top" }, { "author": "bilibili44636886", "time": "139.3509979248", "text": "我会变色，我还会直", "color": "#ffff00", "type": "top" }, { "author": "bilibilic0424270", "time": "125.63500213623", "text": "午时己到!", "color": "#ff0000", "type": "right" }, { "author": "bilibili4e30c28e", "time": "47.637001037598", "text": "营养不良", "color": "#ff0000", "type": "right" }, { "author": "bilibili4e30c28e", "time": "99.121002197266", "text": "媳妇儿 我们回家了", "color": "#ff0000", "type": "top" }, { "author": "bilibili882837a5", "time": "47.701000213623", "text": "我是女神专用黄瓜", "color": "#009843", "type": "top" }, { "author": "bilibili3db672a2", "time": "4.6570000648499", "text": "大家支持MBK 支持DIA谢谢！！！", "color": "#ff0000", "type": "right" }, { "author": "bilibili3db672a2", "time": "49.451999664307", "text": "支持DIA谢谢", "color": "#ff0000", "type": "right" }, { "author": "bilibili3db672a2", "time": "51.752998352051", "text": "换个颜色再发一遍 大家支持dia", "color": "#ccff00", "type": "right" }, { "author": "bilibili3db672a2", "time": "175.37899780273", "text": "想看抬腿的请搜索DIA somehow 支持DIA ", "color": "#ccff00", "type": "right" }, { "author": "bilibili34c79c89", "time": "43.650001525879", "text": "所有舞蹈都一个感觉", "color": "#ff0000", "type": "right" }, { "author": "bilibili34c79c89", "time": "68.208000183105", "text": "看一下子就出门左拐", "color": "#ff0000", "type": "right" }, { "author": "bilibili1251eb83", "time": "59.818000793457", "text": "颜值巅峰", "color": "#ff0000", "type": "right" }, { "author": "bilibiliebdde3c9", "time": "107.93499755859", "text": "穿丝袜了", "color": "#ff0000", "type": "right" }, { "author": "bilibili2e1f27c6", "time": "95.241996765137", "text": "口水。。。", "color": "#ff0000", "type": "right" }, { "author": "bilibili2e1f27c6", "time": "128.08200073242", "text": "色色了", "color": "#e2027f", "type": "right" }, { "author": "bilibili492f69bc", "time": "46.604999542236", "text": "好看美女", "color": "#ff0000", "type": "right" }, { "author": "bilibili2795b0ea", "time": "67.641998291016", "text": "这腿我要了", "color": "#ff0000", "type": "right" }, { "author": "bilibili0e445f47", "time": "152.67999267578", "text": "找了位置发好难呀，内增高跳舞最难了", "color": "#ff0000", "type": "right" }, { "author": "bilibili0e445f47", "time": "189.13000488281", "text": "大家猜猜罩杯", "color": "#ff0000", "type": "right" }, { "author": "bilibili0e445f47", "time": "209.92999267578", "text": " 泥垢垢垢！", "color": "#ff0000", "type": "right" }, { "author": "bilibili0e445f47", "time": "227.0359954834", "text": "貌似很深", "color": "#ff0000", "type": "right" }, { "author": "bilibilic13a6a4d", "time": "229.42799377441", "text": "帽子君：这个角度不错", "color": "#ff0000", "type": "right" }, { "author": "bilibili94347377", "time": "162.32099914551", "text": "舔", "color": "#ff0000", "type": "right" }, { "author": "bilibili11b2034b", "time": "157.20300292969", "text": "截图成功", "color": "#ffff00", "type": "top" }, { "author": "bilibili8dcf7242", "time": "70.591003417969", "text": "不好意思 在下压不住了  先去解决了", "color": "#ff0000", "type": "right" }, { "author": "bilibili430f087f", "time": "8.4989995956421", "text": "最喜欢开头这段", "color": "#ff0000", "type": "right" }, { "author": "bilibili430f087f", "time": "229.27900695801", "text": "元气满满的感觉啊 ", "color": "#ff0000", "type": "right" }, { "author": "bilibili5879067e", "time": "64.782997131348", "text": "一笑倾城", "color": "#ff0000", "type": "right" }, { "author": "bilibili819bcb28", "time": "75.348999023438", "text": "啦啦啦", "color": "#e2027f", "type": "right" }, { "author": "bilibili639b5eda", "time": "133.67399597168", "text": "我没黄", "color": "#fef102", "type": "right" }, { "author": "bilibilia9957006", "time": "62.470001220703", "text": "测网速", "color": "#ff0000", "type": "right" }, { "author": "bilibilia9957006", "time": "147.56199645996", "text": "表情丰富", "color": "#ffff00", "type": "right" }, { "author": "bilibilia9957006", "time": "167.64500427246", "text": "换个颜色继续", "color": "#000000", "type": "right" }, { "author": "bilibili409e7c66", "time": "90.082000732422", "text": " VIP专用色", "color": "#fef102", "type": "right" }, { "author": "bilibili9877f2e6", "time": "12.873000144958", "text": "帅气！！！", "color": "#ff0000", "type": "right" }, { "author": "bilibilic743f40f", "time": "0", "text": "一天不看浑身难受", "color": "#ff0000", "type": "right" }, { "author": "bilibili13c762aa", "time": "223.2740020752", "text": "感觉身体倍儿掏空", "color": "#fef102", "type": "top" }, { "author": "bilibilie3af0ff9", "time": "185.44599914551", "text": "好美~", "color": "#ff0000", "type": "right" }, { "author": "bilibilie3af0ff9", "time": "213.4940032959", "text": "好会扭~", "color": "#ff0000", "type": "right" }, { "author": "bilibilif3777b0a", "time": "42.270000457764", "text": "坐上来自己动", "color": "#ff0000", "type": "right" }, { "author": "bilibilif2887b22", "time": "202.17999267578", "text": "诸君拔剑吧", "color": "#ff0000", "type": "right" }, { "author": "bilibili29538393", "time": "38.701000213623", "text": "骑车的骑车安全！！！！！哈哈哈哈哈", "color": "#ffff33", "type": "top" }, { "author": "bilibili29538393", "time": "218.56900024414", "text": "为什么我粉儿了~~~", "color": "#ff99ff", "type": "top" }, { "author": "bilibili534c6416", "time": "0", "text": "艳艳明", "color": "#ff0000", "type": "right" }, { "author": "bilibili1719a22b", "time": "26.572999954224", "text": "这是在川师吗？", "color": "#ff0000", "type": "right" }, { "author": "bilibilib393b450", "time": "61.900001525879", "text": "我是纯洁白", "color": "#ffff00", "type": "right" }, { "author": "bilibilia8792f0e", "time": "31.059999465942", "text": "lalal", "color": "#ff0000", "type": "right" }, { "author": "bilibili94347377", "time": "70.779998779297", "text": "这破站我就服我仙女", "color": "#ff0000", "type": "right" }, { "author": "bilibilia2b317e8", "time": "231.71800231934", "text": "前面 你们玩球 玩什么球", "color": "#ff0000", "type": "right" }, { "author": "bilibilia82a8c77", "time": "46.801998138428", "text": "参见羞耻女王", "color": "#e2027f", "type": "right" }, { "author": "bilibilia3d91c8c", "time": "66.346000671387", "text": "广大撸友接我一招午时已到", "color": "#ff0000", "type": "right" }, { "author": "bilibili11b2034b", "time": "156.46899414062", "text": "弹幕护体", "color": "#ffff00", "type": "top" }, { "author": "bilibili7d07a569", "time": "23.420000076294", "text": "每两天看一次", "color": "#ff0000", "type": "right" }, { "author": "bilibili7d07a569", "time": "62.220001220703", "text": "我喜欢女神的笑颜，长腿，和长发^ω^", "color": "#84c0cb", "type": "right" }, { "author": "bilibili91668642", "time": "111.41200256348", "text": "笑容好犯规／／／", "color": "#ff0000", "type": "right" }, { "author": "bilibili2e674792", "time": "67.157997131348", "text": "我一个女的居然看黄了", "color": "#fef102", "type": "bottom" }, { "author": "bilibilic9ac64d5", "time": "153.98599243164", "text": "前方高能", "color": "#fef102", "type": "right" }, { "author": "bilibili810c2282", "time": "53.937000274658", "text": "啊哈哈", "color": "#e70012", "type": "top" }, { "author": "bilibili8a9cb6fd", "time": "195.83999633789", "text": "裤裙阿这是  ", "color": "#e70012", "type": "right" }, { "author": "bilibili7d07a569", "time": "25.10000038147", "text": "没隔两天就要看一次，", "color": "#84c0cb", "type": "right" }, { "author": "bilibilieb6d95ed", "time": "1.8569999933243", "text": "映雪❤小仙女", "color": "#ff0000", "type": "right" }, { "author": "bilibilieb6d95ed", "time": "13.930999755859", "text": "映雪❤小仙女", "color": "#e70012", "type": "bottom" }, { "author": "bilibilieb6d95ed", "time": "23.266000747681", "text": "映雪❤小仙女", "color": "#e70012", "type": "bottom" }, { "author": "bilibili2d6b14db", "time": "216.06199645996", "text": "我微身材没的说", "color": "#fef102", "type": "right" }, { "author": "bilibilif692d1ea", "time": "59.918998718262", "text": "我一个‘’闪‘’反弹不谢", "color": "#e70012", "type": "top" }, { "author": "bilibilid29d7f23", "time": "5.606999874115", "text": "我来看一字马", "color": "#ff0000", "type": "right" }, { "author": "bilibili262ed39b", "time": "210.09599304199", "text": "以示清白", "color": "#ffff00", "type": "top" }, { "author": "bilibili06b030b4", "time": "56.215999603271", "text": "大家好，我叫龘迪库", "color": "#fef102", "type": "right" }, { "author": "bilibili838e27ab", "time": "41.21900177002", "text": "没有人吗", "color": "#ff0000", "type": "right" }, { "author": "bilibilicdb2b7dd", "time": "52.151000976562", "text": "拔刀！", "color": "#ff0000", "type": "right" }, { "author": "bilibilia7464170", "time": "82.901000976562", "text": "诸位。亮剑吧", "color": "#ff0000", "type": "right" }, { "author": "bilibili615967f5", "time": "16.424999237061", "text": "BOOM  BOOM  BOOM", "color": "#ff0000", "type": "right" }, { "author": "bilibili21c00230", "time": "69.959999084473", "text": "1", "color": "#ff3300", "type": "right" }, { "author": "bilibili0d430c18", "time": "5.9349999427795", "text": "这次应该没黄", "color": "#ff0000", "type": "right" }, { "author": "bilibili4f41dcfa", "time": "38.698001861572", "text": "动作棒", "color": "#ff0000", "type": "right" }, { "author": "bilibilia3a72ccb", "time": "218.12699890137", "text": "我最喜欢她这个笑容", "color": "#ff0000", "type": "right" }, { "author": "bilibilia6faab14", "time": "102.02500152588", "text": "这是裙裤吧", "color": "#ff0000", "type": "right" }, { "author": "bilibili5f32eba1", "time": "28.304000854492", "text": "弹幕类？", "color": "#ff0000", "type": "right" }, { "author": "bilibili518fc86f", "time": "193.23399353027", "text": "双手打字", "color": "#ff0000", "type": "right" }, { "author": "bilibili11b2034b", "time": "0.43500000238419", "text": "熟悉的配方", "color": "#ff0000", "type": "right" }, { "author": "bilibili71e0f8cf", "time": "126.81999969482", "text": "女神笑的太治愈了（∩△∩）", "color": "#ff0000", "type": "right" }, { "author": "bilibili613e4709", "time": "41.140998840332", "text": "尴尬女王", "color": "#ff0000", "type": "right" }, { "author": "bilibili6ff6ac4a", "time": "127.20500183105", "text": "回家吧！孩子在家都饿了。。。。", "color": "#ff0000", "type": "right" }, { "author": "bilibili55b115e5", "time": "158.78500366211", "text": "素质素质，都哪去了。别拦着我，我也要看", "color": "#e70012", "type": "right" }, { "author": "bilibili75fa57d7", "time": "83.228996276855", "text": "群裤一体", "color": "#ff0000", "type": "right" }, { "author": "bilibili7216b638", "time": "167.81799316406", "text": "说了是裤裙！裤裙！裤裙！就是网球裙！裙子自带的！", "color": "#ff0000", "type": "right" }, { "author": "bilibilia1709aad", "time": "33.831001281738", "text": "T-ara师妹团", "color": "#ff0000", "type": "right" }, { "author": "bilibilia8bfd1f4", "time": "98.015998840332", "text": "我是黑鹰 女神的天空由我来守护", "color": "#ff0000", "type": "right" }, { "author": "bilibili985fd3e7", "time": "2.9489998817444", "text": "我觉得这个女孩子跳的非常好，一定会红的", "color": "#ff0000", "type": "right" }, { "author": "bilibili4643dc53", "time": "36.467998504639", "text": "好看。", "color": "#ff0000", "type": "right" }, { "author": "bilibilic6a55a37", "time": "78.194999694824", "text": "#B失色", "color": "#ff0000", "type": "right" }, { "author": "bilibili5a3ae0e6", "time": "128.94500732422", "text": "看字幕的，你不是一个，我都懒得打字啊", "color": "#ff0000", "type": "right" }, { "author": "bilibilibb705af3", "time": "134.50999450684", "text": "用我弹幕，挡你底裤", "color": "#ff0000", "type": "right" }, { "author": "bilibili26171d83", "time": "185.17300415039", "text": "漫长的三分钟", "color": "#ff0000", "type": "top" }, { "author": "bilibilidd1df642", "time": "24", "text": "卡在奇怪的地方(≧3≦)", "color": "#ff0000", "type": "right" }, { "author": "bilibilif425c40a", "time": "1.345999956131", "text": "封面，封面！！", "color": "#fef102", "type": "right" }, { "author": "bilibili787a83e5", "time": "50.993000030518", "text": " 人与人之间最基本的信任呢", "color": "#00ff00", "type": "top" }, { "author": "bilibili2e9fc4e9", "time": "102.80400085449", "text": "帽子竟然不掉！", "color": "#ff0000", "type": "right" }, { "author": "bilibilifebf055c", "time": "71.081001281738", "text": "完美  完美 完美", "color": "#ff0000", "type": "right" }, { "author": "bilibili1ac0643f", "time": "164.1309967041", "text": "看她跳舞好开心", "color": "#ff0000", "type": "right" }, { "author": "bilibilidb12de14", "time": "127.54000091553", "text": "我，，，变色了", "color": "#ffff00", "type": "right" }, { "author": "bilibilif3d677af", "time": "21.211000442505", "text": "帽子呢", "color": "#ff0000", "type": "right" }, { "author": "bilibilif3d677af", "time": "210.1369934082", "text": "小薇，别跳了，跟我回去吧", "color": "#ff0000", "type": "right" }, { "author": "bilibiliffeda74f", "time": "91", "text": "23333", "color": "#776f53", "type": "right" }, { "author": "bilibili0cea6648", "time": "156.52900695801", "text": "黄？黄什么黄？什么是黄？", "color": "#fef102", "type": "top" }, { "author": "bilibili7c9b8288", "time": "130.61999511719", "text": "很好看啊 很漂亮", "color": "#ff0000", "type": "right" }, { "author": "bilibili752a623b", "time": "64.397003173828", "text": "不要拿欧阳娜娜和仙女比好吗", "color": "#ff0000", "type": "right" }, { "author": "bilibili740c4990", "time": "3.9539999961853", "text": "谁もなかった", "color": "#ff0000", "type": "right" }, { "author": "bilibili740c4990", "time": "11.913999557495", "text": "女神私はあなたを爱し", "color": "#ff0000", "type": "right" }, { "author": "bilibilie532413a", "time": "188.24699401855", "text": "小黑车来来往往几次了", "color": "#ff0000", "type": "right" }, { "author": "bilibilic3de9ae8", "time": "43.67200088501", "text": "后面骑车的看什么看，看你前面的路", "color": "#666600", "type": "top" }, { "author": "bilibilidd91b58e", "time": "61.056999206543", "text": "硬币自己跑过去了", "color": "#ff0000", "type": "right" }, { "author": "bilibili929bc214", "time": "16.579999923706", "text": "黄色", "color": "#ff0000", "type": "right" }, { "author": "bilibilib68dba71", "time": "16.256999969482", "text": "看封面进来", "color": "#ff0000", "type": "right" }, { "author": "bilibili3a282661", "time": "156.61000061035", "text": "黄字素质忒差←_←", "color": "#e2027f", "type": "bottom" }, { "author": "bilibilidb94aea7", "time": "121.95999908447", "text": "弯了", "color": "#ccff00", "type": "bottom" }, { "author": "bilibili8e749167", "time": "201.06300354004", "text": "能解锁好多姿势", "color": "#ff0000", "type": "right" }, { "author": "bilibilid51f3593", "time": "41.687999725342", "text": "表情自然  表情满分 貌似在享受 嘿嘿嘿嘿", "color": "#ff0000", "type": "right" }, { "author": "bilibili42bf5485", "time": "197.67399597168", "text": "一剑在手", "color": "#ff0000", "type": "right" }, { "author": "bilibili03d91d44", "time": "6.4190001487732", "text": "我飞。。。", "color": "#ff0000", "type": "right" }, { "author": "bilibili03d91d44", "time": "22.298999786377", "text": "不要强 我承包了", "color": "#ff0000", "type": "right" }, { "author": "bilibili03d91d44", "time": "73.819000244141", "text": "后面两密妹", "color": "#ff0000", "type": "right" }, { "author": "bilibili03d91d44", "time": "105.53900146484", "text": "流至死血", "color": "#ff0000", "type": "right" }, { "author": "bilibili03d91d44", "time": "181.41900634766", "text": "灵魂战车路过。。。。", "color": "#ff0000", "type": "right" }, { "author": "bilibilif5a860e1", "time": "219.5590057373", "text": "吓得我直接黄了", "color": "#ffff00", "type": "right" }, { "author": "bilibili30e6e0a9", "time": "8.8020000457764", "text": "每日一看!", "color": "#ffccff", "type": "right" }, { "author": "bilibili30e6e0a9", "time": "57.851001739502", "text": "wow", "color": "#ffccff", "type": "top" }, { "author": "bilibili8cd64825", "time": "75.269996643066", "text": "鬼畜需要你啊", "color": "#00ccff", "type": "right" }, { "author": "bilibili484e8cfa", "time": "218.42300415039", "text": "后面的俩张乒乓球桌", "color": "#ff0000", "type": "right" }, { "author": "bilibili04236fd4", "time": "75.181999206543", "text": "哈哈哈  后宫人呢?都去跳舞了么", "color": "#ff0000", "type": "right" }, { "author": "bilibili1dacf42a", "time": "70.272003173828", "text": "这是对我们男生的不信任", "color": "#ff0000", "type": "right" }, { "author": "bilibilie9b9deed", "time": "78.070999145508", "text": "微小微的颜值好高", "color": "#ff0000", "type": "right" }, { "author": "bilibilie9b9deed", "time": "2.2160000801086", "text": "片尾的魔性笑容由我来守护！！", "color": "#00ff00", "type": "top" }, { "author": "bilibili9b9527f9", "time": "98.139999389648", "text": "就算有底裤我还是很兴奋，怎么办，我黄了吗= =", "color": "#ffff00", "type": "right" }, { "author": "bilibili9b9527f9", "time": "156.49899291992", "text": "这个姿势由我来保护~~~", "color": "#ffff00", "type": "top" }, { "author": "bilibilid688d6c6", "time": "78.218002319336", "text": "这集不怎么羞耻啊", "color": "#ff0000", "type": "right" }, { "author": "bilibilieec85eb1", "time": "7.8619999885559", "text": "有多少是冲着封面进来的", "color": "#ff0000", "type": "right" }, { "author": "bilibili45c4659a", "time": "33.312999725342", "text": "这个动作最赞！", "color": "#ff0000", "type": "right" }, { "author": "bilibili35e2de03", "time": "209.7380065918", "text": "拔剑吧，米娜桑", "color": "#ff0000", "type": "right" }, { "author": "bilibilidd1f1f59", "time": "68.08699798584", "text": "拔刀把", "color": "#ffff00", "type": "right" }, { "author": "bilibilidd1f1f59", "time": "156.42599487305", "text": "你们这些挡屏狗，啊  可恶！", "color": "#0000ff", "type": "right" }, { "author": "bilibilidd1f1f59", "time": "184.10800170898", "text": "  可恶的挡屏狗", "color": "#ff0000", "type": "top" }, { "author": "bilibilidd1f1f59", "time": "199.16299438477", "text": "来一战 不死不休", "color": "#ff0000", "type": "top" }, { "author": "bilibili1de561dd", "time": "212.3090057373", "text": "双手打字以证清白", "color": "#ff0000", "type": "right" }, { "author": "bilibili484e8cfa", "time": "14.578000068665", "text": "好有活力笑颜大赞", "color": "#ff0000", "type": "right" }, { "author": "bilibili8175936b", "time": "49.507999420166", "text": "粉红色", "color": "#ff0000", "type": "right" }, { "author": "bilibili5a7f5015", "time": "167.19799804688", "text": "我也是，作为一个妹子", "color": "#ff0000", "type": "right" }, { "author": "bilibilibb062714", "time": "202.10000610352", "text": "帽子表示：为什么总是甩我", "color": "#e70012", "type": "right" }, { "author": "bilibilidfe63498", "time": "77.459999084473", "text": "男生不知道裙裤的存在吧(๑´ㅂ`๑)", "color": "#e2027f", "type": "right" }, { "author": "bilibilidfe63498", "time": "1.7300000190735", "text": "科普一下，这是裙裤，就是外表看上去是裙子", "color": "#e2027f", "type": "top" }, { "author": "bilibilidfe63498", "time": "1.7300000190735", "text": "也可以这么理解", "color": "#e2027f", "type": "top" }, { "author": "bilibilidfe63498", "time": "1.7300000190735", "text": "但裙裤是连在一起的", "color": "#e2027f", "type": "top" }, { "author": "bilibili6dbbeadf", "time": "147.375", "text": "好眼熟的舞步。。", "color": "#ff0000", "type": "right" }, { "author": "bilibili77e96189", "time": "3.0720000267029", "text": "好腿，喜欢~~", "color": "#ff0000", "type": "right" }, { "author": "bilibili42bf5485", "time": "76.25", "text": "唯有一战，诸君，拔剑吧", "color": "#ff0000", "type": "right" }, { "author": "bilibili3831816b", "time": "35.639999389648", "text": "美美美", "color": "#e70012", "type": "top" }, { "author": "bilibili6dbf048a", "time": "183.16799926758", "text": "一般吧", "color": "#ff0000", "type": "right" }, { "author": "bilibilie9847acb", "time": "46.188999176025", "text": "你们那些宅男走开，女神是我的！⊙▽⊙", "color": "#ff0000", "type": "right" }, { "author": "bilibilie9847acb", "time": "161.79299926758", "text": "前面69的别走，等我。", "color": "#ff0000", "type": "right" }, { "author": "bilibili8691c03b", "time": "34.067001342773", "text": "65", "color": "#ff0000", "type": "right" }, { "author": "bilibili8691c03b", "time": "145.48300170898", "text": "电动小马达", "color": "#ff0000", "type": "right" }, { "author": "bilibilifd11ecd1", "time": "197.54200744629", "text": "有本事关掉声音", "color": "#ff0000", "type": "right" }, { "author": "bilibili1ca9c297", "time": "61.824001312256", "text": "你的笑容让我来守护", "color": "#ff0000", "type": "right" }, { "author": "bilibili1ca9c297", "time": "227.11399841309", "text": "你的笑容我来守护", "color": "#ff0000", "type": "right" }, { "author": "bilibili497b4a22", "time": "68.140998840332", "text": "羞耻女王", "color": "#ff0000", "type": "right" }, { "author": "bilibili497b4a22", "time": "94.651000976562", "text": "BGM：somehow", "color": "#ff0000", "type": "right" }, { "author": "bilibili497b4a22", "time": "0", "text": "羞耻女王", "color": "#ff0000", "type": "right" }, { "author": "bilibilide300301", "time": "26.513999938965", "text": "0v0", "color": "#ff0000", "type": "right" }, { "author": "bilibili292c228a", "time": "43.625", "text": "不知道这个裙子是带裤的么？实际上是裤子来的", "color": "#e2027f", "type": "top" }, { "author": "bilibiliaffcab52", "time": "37.520000457764", "text": "顶顶顶顶", "color": "#f0ab2a", "type": "right" }, { "author": "bilibilibb062714", "time": "52.380001068115", "text": "我被射中了", "color": "#fef102", "type": "right" }, { "author": "bilibilibb062714", "time": "164.03999328613", "text": "老婆别跳了，今晚有你好受的", "color": "#fef102", "type": "right" }, { "author": "bilibilibb062714", "time": "214.10000610352", "text": "笑容好美好美", "color": "#fef102", "type": "right" }, { "author": "bilibili979ae2cf", "time": "70.436996459961", "text": "我觉得这个女孩跳的非常好，一定会红的", "color": "#ff0000", "type": "right" }, { "author": "bilibiliec776ce6", "time": "49.756999969482", "text": "D.va上线了", "color": "#ff0000", "type": "right" }, { "author": "bilibiliec776ce6", "time": "76.452003479004", "text": "D.Va爱你哦", "color": "#ff0000", "type": "right" }, { "author": "bilibilifc960763", "time": "234.5", "text": "直接变色了", "color": "#00ff00", "type": "right" }, { "author": "bilibili427e8971", "time": "156.75399780273", "text": "一道白边", "color": "#ff0000", "type": "top" }, { "author": "bilibili427e8971", "time": "226.96800231934", "text": "这个笑容由我来守护", "color": "#ff0000", "type": "top" }, { "author": "bilibilida2fa383", "time": "185.52099609375", "text": "我变了", "color": "#e2027f", "type": "right" }, { "author": "bilibili7f431c01", "time": "211.69599914551", "text": "啦~啦啦啦啦~啦~啦啦啦啦~", "color": "#ff0000", "type": "top" }, { "author": "bilibiliff908cf8", "time": "17.938999176025", "text": "转起来", "color": "#ff0000", "type": "right" }, { "author": "bilibiliff908cf8", "time": "77.680999755859", "text": "我变黄了", "color": "#ffff00", "type": "right" }, { "author": "bilibiliff908cf8", "time": "215.54299926758", "text": "大家都好喜欢我老婆", "color": "#00ffff", "type": "right" }, { "author": "bilibili601e6b67", "time": "123.12599945068", "text": "这腿真心不错", "color": "#ff0000", "type": "right" }, { "author": "bilibilibb062714", "time": "142.82000732422", "text": "粉I字你够了", "color": "#e2027f", "type": "right" }, { "author": "bilibilibb062714", "time": "227.95599365234", "text": "我是女神的手", "color": "#e2027f", "type": "right" }, { "author": "bilibiliadf5f1ac", "time": "0.65399998426437", "text": "开头循环200次。。。。。。。。。。", "color": "#ff0000", "type": "right" }, { "author": "bilibilifa6502ab", "time": "42.304000854492", "text": "美美美", "color": "#ff0000", "type": "right" }, { "author": "bilibiliecba955e", "time": "7.7379999160767", "text": "半夜来看女神", "color": "#ff0000", "type": "right" }, { "author": "bilibiliecba955e", "time": "28.010000228882", "text": "仙女每期都好美", "color": "#ff0000", "type": "right" }, { "author": "bilibilib25e5699", "time": "25.232000350952", "text": "我还是纯洁的白色", "color": "#ffff00", "type": "right" }, { "author": "bilibilib25e5699", "time": "156.49499511719", "text": "粉色的！", "color": "#ffccff", "type": "bottom" }, { "author": "bilibilib25e5699", "time": "111.62200164795", "text": "要这硬币有什么用", "color": "#66ffff", "type": "right" }, { "author": "bilibili7ea22ad8", "time": "24.943000793457", "text": "黄河鬼棺", "color": "#fef102", "type": "right" }, { "author": "bilibilia905b24d", "time": "113.672996521", "text": "为什么黄了？", "color": "#ffff00", "type": "right" }, { "author": "bilibili0e6e5797", "time": "45.256000518799", "text": "日常神经", "color": "#ffff00", "type": "right" }, { "author": "bilibilid7f83569", "time": "201.74200439453", "text": "这都一般？", "color": "#ff0000", "type": "right" }, { "author": "bilibili22bee642", "time": "100.22399902344", "text": "后面路过一辆AE86", "color": "#ff0000", "type": "right" }, { "author": "bilibilif95e233f", "time": "117.0299987793", "text": "诸君，拔枪吧！", "color": "#ff0000", "type": "right" }, { "author": "bilibilifdcc151b", "time": "12.276000022888", "text": "弹幕呢", "color": "#ff0000", "type": "right" }, { "author": "bilibili9e27b165", "time": "115.38200378418", "text": "我是不会黄的？！！！", "color": "#fef102", "type": "right" }, { "author": "bilibilif6e76ea6", "time": "159.46800231934", "text": "截图成功", "color": "#ff0000", "type": "right" }, { "author": "bilibili08e7df1d", "time": "63.699001312256", "color": "#fef102", "type": "top" }, { "author": "bilibili60089283", "time": "158.27200317383", "text": "你们这群挡屏狗(눈_눈)", "color": "#e70012", "type": "top" }, { "author": "bilibiliaf263a8c", "time": "58.608001708984", "text": "透逼吧", "color": "#ff0000", "type": "right" }, { "author": "bilibili7f72e39d", "time": "98.81600189209", "text": "啪啪啪", "color": "#e2027f", "type": "bottom" }, { "author": "bilibili9b513558", "time": "136.67599487305", "text": "b战第一腿", "color": "#ff0000", "type": "right" }, { "author": "bilibilifb507e42", "time": "64.999000549316", "text": "白", "color": "#ff0000", "type": "right" }, { "author": "bilibilifb507e42", "time": "203.70399475098", "text": "我是中场白线", "color": "#ff0000", "type": "right" }, { "author": "bilibilieae57d71", "time": "166.56199645996", "text": "截图成功", "color": "#ff0000", "type": "right" }, { "author": "bilibilifb507e42", "time": "80.999000549316", "text": "裤子好嚣张啊", "color": "#ff0000", "type": "right" }, { "author": "bilibilifb507e42", "time": "132.15899658203", "text": "看成69了", "color": "#fef102", "type": "right" }, { "author": "bilibilifb507e42", "time": "148.17900085449", "text": "696969", "color": "#fef102", "type": "right" }, { "author": "bilibilifb507e42", "time": "164.19900512695", "text": "卧槽！万恶啊", "color": "#fef102", "type": "right" }, { "author": "bilibilid81ee347", "time": "91.556999206543", "text": "振站女王最近好安静", "color": "#ff0000", "type": "right" }, { "author": "bilibili5991e666", "time": "43.220001220703", "text": "粉了", "color": "#ff0000", "type": "right" }, { "author": "bilibilie474315e", "time": "0.77899998426437", "text": "把封面交出来", "color": "#ff0000", "type": "right" }, { "author": "bilibili7b719c32", "time": "14.899000167847", "text": "笑得好可爱", "color": "#ff0000", "type": "right" }, { "author": "bilibili7c070f46", "time": "97.061996459961", "text": "教练：运动去！跳啥呢", "color": "#ff0000", "type": "right" }, { "author": "bilibili12fffb5a", "time": "102.76100158691", "text": "73", "color": "#ff0000", "type": "right" }, { "author": "bilibilifb507e42", "time": "21.839000701904", "text": "696969", "color": "#ff0000", "type": "right" }, { "author": "bilibilifb507e42", "time": "49.75899887085", "text": "我的麒麟", "color": "#ff0000", "type": "right" }, { "author": "bilibili43232226", "time": "0", "text": "啊啊", "color": "#ff0000", "type": "right" }, { "author": "bilibilifb8c4ae4", "time": "36.46900177002", "text": "↓好好骑车", "color": "#ff0000", "type": "right" }, { "author": "bilibili83ef020b", "time": "197.58500671387", "text": "诸君拔剑吧！开枪吧！", "color": "#e70012", "type": "top" }, { "author": "bilibili83ef020b", "time": "197.58500671387", "text": "诸君拔剑吧！开枪吧！", "color": "#009843", "type": "top" }, { "author": "bilibilie66b3466", "time": "34.580001831055", "text": "舞跳的不错", "color": "#ff0000", "type": "right" }, { "author": "bilibilibe971c50", "time": "163.23399353027", "text": "镇", "color": "#ff0000", "type": "right" }, { "author": "bilibilic921bca1", "time": "45.715999603271", "text": "讨厌裤裙！！！", "color": "#ff0000", "type": "right" }, { "author": "bilibili084b5a25", "time": "106.19499969482", "text": "粉色", "color": "#ff0000", "type": "right" }, { "author": "bilibilid2cd23ee", "time": "6.7610001564026", "text": "我怎么黄了", "color": "#fef102", "type": "right" }, { "author": "bilibili2c8c6369", "time": "155.40199279785", "text": "关掉弹幕和声音简直", "color": "#00ffff", "type": "top" }, { "author": "bilibili2c8c6369", "time": "41.25", "text": "双手打字，表清白", "color": "#ffff00", "type": "top" }, { "author": "bilibili8a733574", "time": "64.263000488281", "text": "整个站我是看见你的作品就进来了", "color": "#ff0000", "type": "right" }, { "author": "bilibili8a733574", "time": "232.67999267578", "text": "我服了", "color": "#ff0000", "type": "right" }, { "author": "bilibiliac72827a", "time": "104.50299835205", "text": "驾校，教练车", "color": "#ff0000", "type": "right" }, { "author": "bilibiliba73f22f", "time": "128.24699401855", "text": "忍不住登陆 。。。。。", "color": "#ff0000", "type": "right" }, { "author": "bilibiliba73f22f", "time": "180.36700439453", "text": "崩了崩了", "color": "#ff0000", "type": "right" }, { "author": "bilibiliba73f22f", "time": "35.453998565674", "text": "带我老婆全世界去跳舞", "color": "#ff0000", "type": "right" }, { "author": "bilibilica53c2f4", "time": "9.201000213623", "text": "微女神唤醒新的一天", "color": "#ff0000", "type": "right" }, { "author": "bilibilica53c2f4", "time": "51.918998718262", "text": "祝君，拔剑吧，怎能容许你们yy我老婆", "color": "#e70012", "type": "top" }, { "author": "bilibili4bf5e30b", "time": "113.85299682617", "text": "其实我是来看弹幕的", "color": "#683a7b", "type": "right" }, { "author": "bilibilic2b6e855", "time": "17.350999832153", "text": "冲封面来的", "color": "#ff3366", "type": "right" }, { "author": "bilibili5ad4f2ed", "time": "128.0299987793", "text": "nvshrn ", "color": "#ff0000", "type": "right" }, { "author": "bilibili5ad4f2ed", "time": "209.05999755859", "text": "刚跪了一把，心情不爽，一遍就治愈了", "color": "#ff0000", "type": "right" }, { "author": "bilibili3bcd36cc", "time": "97.900001525879", "text": "白线站住", "color": "#ff0000", "type": "right" }, { "author": "bilibili3bcd36cc", "time": "143.73399353027", "text": "元气爆棚", "color": "#ffffff", "type": "right" }, { "author": "bilibili1c701740", "time": "63.852001190186", "text": "撞裙啦，", "color": "#002e72", "type": "right" }, { "author": "bilibili30cb6bde", "time": "7.4759998321533", "text": "根本停不下来", "color": "#ffffff", "type": "right" }, { "author": "bilibili79eb4a3c", "time": "158.90100097656", "text": "完美截图", "color": "#000000", "type": "right" }, { "author": "bilibili88e8b908", "time": "66.089996337891", "text": "这不是嗲的出道曲", "color": "#ffffff", "type": "right" }, { "author": "bilibilib80747b9", "time": "161.26100158691", "text": "咩咩咩！", "color": "#fef102", "type": "right" }, { "author": "bilibili9ffca32a", "time": "24.555000305176", "text": "这么正常我不信", "color": "#ffffff", "type": "right" }, { "author": "bilibili6da95171", "time": "41.94100189209", "text": "老婆快回家吧 外边凉", "color": "#ffffff", "type": "right" }, { "author": "bilibilicb28417a", "time": "209.89399719238", "text": "好腰", "color": "#ffffff", "type": "right" }, { "author": "bilibili73420f70", "time": "37.630001068115", "text": "看起来好像女神经", "color": "#00a0ea", "type": "top" }, { "author": "bilibili67c7a9e1", "time": "125.61399841309", "text": "桑塔纳第三遍了", "color": "#ffffff", "type": "right" }, { "author": "bilibili67c7a9e1", "time": "162.70199584961", "text": "疼疼疼", "color": "#3333ff", "type": "right" }, { "author": "bilibili67c7a9e1", "time": "207.61500549316", "text": "底裤色", "color": "#ff00ff", "type": "right" }, { "author": "bilibili42556638", "time": "192.44500732422", "text": "坐上来自己动", "color": "#ffffff", "type": "right" }, { "author": "bilibilifb507e42", "time": "129.69500732422", "text": "696969", "color": "#ffffff", "type": "right" }, { "author": "bilibili2a9e37be", "time": "156.6309967041", "text": "明明粉色里面是白色的", "color": "#ffffff", "type": "right" }, { "author": "bilibili483e4aa7", "time": "111.1429977417", "text": "教练，我想学跳舞", "color": "#ffffff", "type": "right" }, { "author": "bilibili483e4aa7", "time": "140.80999755859", "text": "我有这硬币有何用", "color": "#ffffff", "type": "right" }, { "author": "bilibili7368ba8f", "time": "53.034000396729", "text": "我微美如画，都让我 变蓝了", "color": "#00a0ea", "type": "right" }, { "author": "bilibili12fffb5a", "time": "197.68099975586", "text": "颜值巅峰", "color": "#ffffff", "type": "right" }, { "author": "bilibili30cb6bde", "time": "11.831000328064", "text": "助攻百万，仙气弥漫。", "color": "#ffffff", "type": "right" }, { "author": "bilibilida669d21", "time": "86.959999084473", "text": "这车开了两个来回了?", "color": "#ffffff", "type": "right" }, { "author": "bilibilida669d21", "time": "108.2799987793", "text": "三个来回了", "color": "#ffffff", "type": "right" }, { "author": "bilibilie9b9deed", "time": "159.40400695801", "text": "倒回去，仔细看", "color": "#ffffff", "type": "right" }, { "author": "bilibili4d09713e", "time": "48.060001373291", "text": "我愛我女神", "color": "#ffffff", "type": "right" }, { "author": "bilibili4d09713e", "time": "144.7200012207", "text": "我的硬幣只為女神", "color": "#ffffff", "type": "right" }, { "author": "bilibili3b6539c9", "time": "2.9760000705719", "text": "流氓，，，", "color": "#ffffff", "type": "right" }, { "author": "bilibili2f45c9fd", "time": "201.70899963379", "text": "来吧，我刀呢？", "color": "#ffffff", "type": "right" }, { "author": "bilibili13ef744f", "time": "226.85800170898", "text": "我是粉的吗", "color": "#e2027f", "type": "right" }, { "author": "bilibili43ee0256", "time": "85.74299621582", "text": "瞧瞧那腰，宝宝我可以玩好几年", "color": "#ffffff", "type": "right" }, { "author": "bilibili979ae2cf", "time": "22.058000564575", "text": "女神我又回来了", "color": "#ffffff", "type": "right" }, { "author": "bilibilic6b419ec", "time": "231.64999389648", "text": "这个笑容我来守护", "color": "#ffffff", "type": "right" }, { "author": "bilibilic6b419ec", "time": "32.028999328613", "text": "情敌们拔刀吧", "color": "#ffffff", "type": "right" }, { "author": "bilibili41c73246", "time": "137.96000671387", "text": "谢谢提醒我把手机倒过来看的司机师傅", "color": "#ffffff", "type": "right" }, { "author": "bilibili75c642ed", "time": "9.8620004653931", "text": "枫少❤小仙女", "color": "#ff0000", "type": "right" }, { "author": "bilibili484e8cfa", "time": "6.6180000305176", "text": "表白仙女", "color": "#ffffff", "type": "right" }, { "author": "bilibili484e8cfa", "time": "87.886001586914", "text": "表白仙女", "color": "#ffffff", "type": "right" }, { "author": "bilibiliac1a9aab", "time": "55.703998565674", "text": "像宋茜吖", "color": "#ffffff", "type": "right" }, { "author": "bilibili7d07a569", "time": "71.879997253418", "text": "看着比那些所谓的明星舒服多了", "color": "#84c0cb", "type": "right" }, { "author": "bilibili7d07a569", "time": "162.17999267578", "text": "老婆别跳了，得回家做饭了", "color": "#84c0cb", "type": "top" }, { "author": "bilibili63050fb0", "time": "85.376998901367", "text": "牛逼", "color": "#ffffff", "type": "right" }, { "author": "bilibilif4dd9bab", "time": "102.29000091553", "text": "我怎么觉得她的鞋很少呢、", "color": "#ffffff", "type": "right" }, { "author": "bilibili7209eb5e", "time": "53.534000396729", "text": "我女神才不像欧阳娜娜呢哼", "color": "#ffffff", "type": "right" }, { "author": "bilibili7209eb5e", "time": "69", "text": "女神", "color": "#ffffff", "type": "right" }, { "author": "bilibilida13b36c", "time": "226.64500427246", "text": "=_=", "color": "#e2027f", "type": "right" }, { "author": "bilibili00403e2a", "time": "24.020000457764", "text": "空降成功  谢谢指挥部", "color": "#fef102", "type": "top" }, { "author": "bilibili98b8fe51", "time": "156.46600341797", "text": "截图成功", "color": "#ffffff", "type": "right" }, { "author": "bilibilif4005217", "time": "217.25300598145", "text": "。", "color": "#ffffff", "type": "right" }, { "author": "bilibilib268d95d", "time": "65.49299621582", "text": "厉害", "color": "#ffffff", "type": "right" }, { "author": "bilibilidb70dd5e", "time": "77.360000610352", "text": "老夫的麒麟臂快控制不住了", "color": "#ffffff", "type": "right" }, { "author": "bilibilia38999c4", "time": "122.36199951172", "text": "刚哪个说关上声音的？笑的我已经不行了", "color": "#fef102", "type": "right" }, { "author": "bilibilia1b53fcd", "time": "85.077003479004", "text": "想想办法干他娘的一炮", "color": "#00a0ea", "type": "right" }, { "author": "bilibili484e8cfa", "time": "11.904000282288", "text": "表白仙女", "color": "#ffffff", "type": "right" }, { "author": "bilibili381bcf0c", "time": "156.41900634766", "text": "请以这张图写一篇观后感", "color": "#ff0000", "type": "top" }, { "author": "bilibilib89085e4", "time": "65.96199798584", "text": "嗲团...", "color": "#ffffff", "type": "right" }, { "author": "bilibiliecf33c3b", "time": "64.443000793457", "text": "五星好评", "color": "#ffffff", "type": "right" }, { "author": "bilibili109882b1", "time": "63.912998199463", "text": "dia这首出道曲超好听", "color": "#e2027f", "type": "top" }, { "author": "bilibili87013f0a", "time": "71.341003417969", "text": "…这是裙裤", "color": "#ffffff", "type": "right" }, { "author": "bilibili0ae26f89", "time": "7.4320001602173", "text": "见封滚", "color": "#ffffff", "type": "right" }, { "author": "bilibilid66dfdc8", "time": "46.61600112915", "text": "笑容好治愈！！", "color": "#e70012", "type": "right" }, { "author": "bilibilida424f48", "time": "1.0349999666214", "text": "第一羞耻是我的 诸位 拔刀吧！！！！！！", "color": "#cc0000", "type": "top" }, { "author": "bilibili2cce4218", "time": "68.644996643066", "text": "微", "color": "#ffffff", "type": "right" }, { "author": "bilibili73b9f615", "time": "56.305999755859", "text": "迷之诱惑", "color": "#ffffff", "type": "right" }, { "author": "bilibili0481d35c", "time": "110.27600097656", "text": "表情满分", "color": "#ffffff", "type": "right" }, { "author": "bilibiliaf0195e7", "time": "63.337001800537", "text": "不行，忍不住了，当场表白女神", "color": "#ffffff", "type": "right" }, { "author": "bilibili563643c2", "time": "63.853000640869", "text": "哈", "color": "#ffffff", "type": "right" }, { "author": "bilibili563643c2", "time": "67.047996520996", "text": "哈", "color": "#f0ab2a", "type": "right" }, { "author": "bilibili8d9270a2", "time": "128.19999694824", "text": "我老婆好美啊", "color": "#00a0ea", "type": "top" }, { "author": "bilibilic330a5d0", "time": "179.76400756836", "text": "你们可以走吗", "color": "#ffff00", "type": "top" }, { "author": "bilibilic330a5d0", "time": "193.54100036621", "text": "你们可以走了", "color": "#ffff00", "type": "top" }, { "author": "bilibili484e8cfa", "time": "6.2859997749329", "text": "表白仙女", "color": "#ffffff", "type": "right" }, { "author": "bilibilidd1f1f59", "time": "17.70299911499", "text": "B", "color": "#ffffff", "type": "top" }, { "author": "bilibilidd1f1f59", "time": "33.323001861572", "text": "B站  我只服你、", "color": "#ffffff", "type": "top" }, { "author": "bilibili501078fc", "time": "215.10699462891", "text": "报告首长，撒旦洲际弹道导弹已经升空。刚才谁说要决斗的？", "color": "#ffffff", "type": "right" }, { "author": "bilibili484e8cfa", "time": "124.21199798584", "text": "表白仙女", "color": "#ffffff", "type": "right" }, { "author": "bilibilic626e9a7", "time": "74.416999816895", "color": "#ffffff", "type": "right" }, { "author": "bilibilieb6d95ed", "time": "44.303001403809", "text": "映雪❤小仙女", "color": "#e70012", "type": "bottom" }, { "author": "bilibilieb6d95ed", "time": "54.51900100708", "text": "映雪承包仙女白鞋❤", "color": "#e70012", "type": "bottom" }, { "author": "bilibili4bdb80a9", "time": "7.9140000343323", "text": "诸君，拔剑吧！", "color": "#ffffff", "type": "right" }, { "author": "bilibili3e885019", "time": "37.861999511719", "text": "B站就服你一个", "color": "#ffffff", "type": "right" }, { "author": "bilibili82ef400d", "time": "146.78999328613", "text": "我觉得小薇的笑容最好看", "color": "#ffffff", "type": "right" }, { "author": "bilibili8ad0114f", "time": "152.27799987793", "text": "别这样，我把持不住了", "color": "#ffffff", "type": "right" }, { "author": "bilibili12fffb5a", "time": "221.38999938965", "text": "仙女最美", "color": "#ffffff", "type": "right" }, { "author": "bilibili4328e856", "time": "171.72900390625", "text": "后面撞车就神作了", "color": "#ffffff", "type": "right" }, { "author": "bilibili5c55d61d", "time": "215.72300720215", "text": "所以是谁在摄像……", "color": "#ffffff", "type": "right" }, { "author": "bilibili0fa80c68", "time": "95.541999816895", "text": "双手打字  ", "color": "#fef102", "type": "right" }, { "author": "bilibili431ac390", "time": "66.944000244141", "text": "跟我抢 二营长劳资的意大利炮呢", "color": "#ffffff", "type": "right" }, { "author": "bilibili63330e6e", "time": "9.2600002288818", "text": "女神", "color": "#fef102", "type": "right" }, { "author": "bilibili36e0a29e", "time": "99.083999633789", "text": "后面这辆车难道是传说中的86", "color": "#ffffff", "type": "right" }, { "author": "bilibili20a885b7", "time": "72.542999267578", "text": "不对啊！！说好的女神经呢！！！", "color": "#cc9933", "type": "top" }, { "author": "bilibilife64d6bb", "time": "79.667999267578", "text": "笑容好美", "color": "#ffffff", "type": "right" }, { "author": "bilibili98b8fe51", "time": "230.79100036621", "text": "这个笑容由我守护", "color": "#00ff00", "type": "top" }, { "author": "bilibili4277a0ae", "time": "123.34999847412", "text": "我是裙子O(∩_∩)O哈哈哈~", "color": "#ff99cc", "type": "right" }, { "author": "bilibili47aa7c67", "time": "70.542999267578", "text": "我一直在想这样戴帽子帽子不会掉下去吗", "color": "#ffffff", "type": "right" }, { "author": "bilibili81c842f4", "time": "156.63999938965", "text": "屏保生成完毕", "color": "#ffcc33", "type": "top" }, { "author": "bilibili39609a60", "time": "107.79299926758", "text": "我女神的 身高   和我 简称完美！", "color": "#ff0000", "type": "right" }, { "author": "bilibili61c6ec89", "time": "124.32599639893", "text": " 咦，我怎么黄了？", "color": "#ffff00", "type": "right" }, { "author": "bilibilifbbe1a95", "time": "26.510999679565", "text": "服装好评", "color": "#ffffff", "type": "right" }, { "author": "bilibili29f58f76", "time": "81.236999511719", "color": "#ffffff", "type": "right" }, { "author": "bilibili28358601", "time": "69.334999084473", "text": "突然正常了 ", "color": "#00ff00", "type": "right" }, { "author": "bilibili079d0ce4", "time": "85.819000244141", "color": "#ffffff", "type": "right" }, { "author": "bilibilib7587b3a", "time": "8.8280000686646", "text": "吧封面叫出来", "color": "#ffffff", "type": "right" }, { "author": "bilibilic417cfda", "time": "24.712999343872", "text": "卡在奇怪的地方了", "color": "#ffffff", "type": "right" }, { "author": "bilibili3cd302c7", "time": "123.87799835205", "text": "(๑˙❥˙๑)憋说话吻我", "color": "#ffffff", "type": "right" }, { "author": "bilibili61ffa5bb", "time": "46.208999633789", "text": "各位拔刀吧", "color": "#ffffff", "type": "right" }, { "author": "bilibili61ffa5bb", "time": "201.7140045166", "text": "帽子是我的", "color": "#ffffff", "type": "right" }, { "author": "bilibilieb7bbc28", "time": "24.261999130249", "text": "啊啊啊啊啊啊啊 洪荒之力在涌动", "color": "#ffffff", "type": "right" }, { "author": "bilibilieb7bbc28", "time": "35.229999542236", "text": "这动作好帅啊", "color": "#ffffff", "type": "right" }, { "author": "bilibilieb7bbc28", "time": "95.524002075195", "text": "挺会扭啊(ಡωಡ)", "color": "#ffffff", "type": "right" }, { "author": "bilibilieb7bbc28", "time": "158.86399841309", "text": "好牛", "color": "#ffffff", "type": "right" }, { "author": "bilibilieb7bbc28", "time": "231.04800415039", "text": "萌萌哒", "color": "#ffffff", "type": "right" }, { "author": "bilibilifeae90a4", "time": "45.57799911499", "text": "我要看字幕", "color": "#ffffff", "type": "right" }, { "author": "bilibiliaac1e318", "time": "37.296001434326", "text": "有毒", "color": "#ffffff", "type": "right" }, { "author": "bilibiliaac1e318", "time": "62.063999176025", "text": "我有枪", "color": "#ffffff", "type": "right" }, { "author": "bilibili9eb27f7c", "time": "38.478000640869", "text": "我已经变黄了", "color": "#ccff00", "type": "right" }, { "author": "bilibili4fd5b9a7", "time": "21.781000137329", "text": "人与人的信任呢", "color": "#ffffff", "type": "right" }, { "author": "bilibili8492fce9", "time": "52.792999267578", "text": "说拔剑的，问过我手中的胜利之光(迪迦变身器)吗？", "color": "#e70012", "type": "right" }, { "author": "bilibili3b111482", "time": "226.52200317383", "text": "其实不用等到长发及腰的，现在及腰了，走吧！回去和我结婚吧！", "color": "#e70012", "type": "right" }, { "author": "bilibili5df829ab", "time": "0", "text": "我是来被治愈的", "color": "#ffffff", "type": "right" }, { "author": "bilibili86833104", "time": "73.218002319336", "text": "哦，在这狂混", "color": "#ffffff", "type": "right" }, { "author": "bilibili655122da", "time": "226.17999267578", "text": "粉了", "color": "#e2027f", "type": "right" }, { "author": "bilibilia82c90a7", "time": "111.7440032959", "text": "底裤差评！哈哈哈", "color": "#ffffff", "type": "right" }, { "author": "bilibilie22e4ad5", "time": "93.027000427246", "text": "啊啊啊。。我怎么黄了", "color": "#fef102", "type": "top" }, { "author": "bilibili35bd0ce8", "time": "93.181999206543", "text": "我是什么颜色？没黄吧", "color": "#fef102", "type": "top" }, { "author": "bilibili35bd0ce8", "time": "154.99600219727", "text": "这里由我来守护！！", "color": "#fef102", "type": "top" }, { "author": "bilibili78360835", "time": "0", "text": "997", "color": "#ffffff", "type": "right" }, { "author": "bilibili78360835", "time": "39", "text": "1000", "color": "#ffffff", "type": "right" }, { "author": "bilibilieaee7ce9", "time": "14.211000442505", "text": "可爱，好没我", "color": "#ffffff", "type": "right" }, { "author": "bilibilieaee7ce9", "time": "41.956001281738", "text": "很没礼貌，", "color": "#ffffff", "type": "right" }, { "author": "bilibilieaee7ce9", "time": "75.109001159668", "text": "真可爱", "color": "#ffffff", "type": "right" }, { "author": "bilibilieaee7ce9", "time": "81.209999084473", "text": "太可爱，我是女生都心动了", "color": "#ffffff", "type": "right" }, { "author": "bilibili9acdb4d7", "time": "119.62000274658", "text": "放开他们冲我来", "color": "#e70012", "type": "right" }, { "author": "bilibili5f89cd10", "time": "224.2619934082", "text": "我微美如画", "color": "#fef102", "type": "right" }, { "author": "bilibilifbd90b4a", "time": "51.140998840332", "text": "我应该还没黄", "color": "#fef102", "type": "right" }, { "author": "bilibilid805e424", "time": "24.041000366211", "text": "舞草 这姿势我喜欢", "color": "#fef102", "type": "right" }, { "author": "bilibili4d913804", "time": "66.358001708984", "text": "我我我，。还是纯洁的白吗", "color": "#ffff00", "type": "top" }, { "author": "bilibiliee67d693", "time": "52.721000671387", "text": "每天不来看一遍感觉就不知道羞耻为何物了", "color": "#ffffff", "type": "right" }, { "author": "bilibili17e801bf", "time": "48.033000946045", "text": "好漂亮", "color": "#ffffff", "type": "right" }, { "author": "bilibiliebe938ad", "time": "116.7200012207", "text": "86", "color": "#ffffff", "type": "right" }, { "author": "bilibili472959ee", "time": "72.361999511719", "text": "让巨龙吞噬你们", "color": "#ffffff", "type": "right" }, { "author": "bilibili1e1d6823", "time": "153.98199462891", "text": "有事发底部，别挡老婆的脸", "color": "#e70012", "type": "bottom" }, { "author": "bilibilie28dabb9", "time": "105.1129989624", "text": "别跳了 孩子还在家等着吃饭呢 ", "color": "#fef102", "type": "top" }, { "author": "bilibilif6fc94cb", "time": "11.173000335693", "text": "顶上去", "color": "#ffffff", "type": "right" }, { "author": "bilibili22fa397b", "time": "59.129001617432", "text": "没有路人不开森o>_<o", "color": "#ffffff", "type": "right" }, { "author": "bilibili025d2570", "time": "147.98100280762", "text": "女神撩我", "color": "#ffffff", "type": "right" }, { "author": "bilibili003b2266", "time": "206.4409942627", "text": "小微其实不算特别漂亮，但是一笑起来就感觉她在发光，超级自信超级好看", "color": "#ffffff", "type": "right" }, { "author": "bilibili4a4bb897", "time": "23.860000610352", "text": "NO ", "color": "#cc9900", "type": "top" }, { "author": "bilibili4a4bb897", "time": "41.652000427246", "text": "底裤给满分~", "color": "#cc9900", "type": "top" }, { "author": "bilibili4a4bb897", "time": "134.29299926758", "text": "一堆苹果……", "color": "#cc9900", "type": "right" }, { "author": "bilibili4a4bb897", "time": "203.41799926758", "text": "你们拔剑吧~我向来只用枪！", "color": "#cc9900", "type": "right" }, { "author": "bilibili5232b3f1", "time": "118.08999633789", "text": "你们先聊我先舔会屏幕", "color": "#ffff00", "type": "right" }, { "author": "bilibilidb899aa1", "time": "149.16600036621", "text": "哈哈哈哈二〇一六年八月十六日 14:10:04 只有我一个人承包女神", "color": "#ffffff", "type": "right" }, { "author": "bilibilie5c10052", "time": "155.07000732422", "text": "这是网球裙", "color": "#ffffff", "type": "right" }, { "author": "bilibili6757723f", "time": "145.3159942627", "text": "我还是沌洁的", "color": "#ccff33", "type": "right" }, { "author": "bilibili12fffb5a", "time": "10.873999595642", "text": "又顶上来了", "color": "#ffffff", "type": "right" }, { "author": "bilibilid429538f", "time": "206.30200195312", "text": "啊啊啊 我好喜欢你", "color": "#ffffff", "type": "top" }, { "author": "bilibili1f20fb99", "time": "227.74499511719", "text": "这个笑容我来守护", "color": "#ffffff", "type": "right" }, { "author": "bilibilic4c9e644", "time": "95.88200378418", "text": "喂（微） 是怎么做到的ˊ_>ˋ", "color": "#ffffff", "type": "right" }, { "author": "bilibili3bd023db", "time": "59.298000335693", "text": "别挡住我看", "color": "#ffffff", "type": "right" }, { "author": "bilibilie0ae4b1f", "time": "44.821998596191", "text": "大家好，我是65号", "color": "#ffffff", "type": "right" }, { "author": "bilibili96d24dd8", "time": "10.696000099182", "text": "见封滚", "color": "#ffffff", "type": "right" }, { "author": "bilibili93d2d885", "time": "152.3630065918", "text": "我到要看看谁敢拔枪 竜人の剣を喰え", "color": "#ffffff", "type": "right" }, { "author": "bilibili2cce4218", "time": "43.956001281738", "text": "黑长直欲罢不能啊！美炸了", "color": "#ffffff", "type": "top" }, { "author": "bilibili179904f0", "time": "129.21499633789", "text": "羞耻感下线了，好羡慕", "color": "#ffffff", "type": "right" }, { "author": "bilibili179904f0", "time": "207.2559967041", "text": "拔剑吧", "color": "#ffffff", "type": "right" }, { "author": "bilibili752c7f28", "time": "156.66999816895", "text": "卡在，了，奇怪的地方", "color": "#ffffff", "type": "right" }, { "author": "bilibilic4171df6", "time": "93.986000061035", "text": "我当帽子就可以了", "color": "#ffffff", "type": "right" }, { "author": "bilibilie512449c", "time": "130.07899475098", "text": "口水直流三千丈", "color": "#ffffff", "type": "right" }, { "author": "bilibilie512449c", "time": "150.42599487305", "text": "还好我还是纯洁的白色", "color": "#ffffff", "type": "right" }, { "author": "bilibilie512449c", "time": "235.18699645996", "text": "笑容有感染力", "color": "#ffffff", "type": "right" }, { "author": "bilibili8a0d1495", "time": "70.180999755859", "text": "我打算全部看一遍，我现在尴尬症都好了很多", "color": "#ffffff", "type": "right" }, { "author": "bilibili356b60fd", "time": "39.997001647949", "text": "总觉得哪里怪怪的", "color": "#ffffff", "type": "right" }, { "author": "bilibili94bfeba9", "time": "156.69299316406", "text": "湿了？", "color": "#ffffff", "type": "right" }, { "author": "bilibilid96502f2", "time": "34.055000305176", "text": "就是 微微不信任我们", "color": "#ffffff", "type": "right" }, { "author": "bilibili50a30faa", "time": "71", "text": "好一池", "color": "#ffffff", "type": "right" }, { "author": "bilibilif0805181", "time": "156.62399291992", "text": "已截图", "color": "#ffffff", "type": "right" }, { "author": "bilibilidcaf2dea", "time": "11.621999740601", "text": "好漂亮啊啊啊衣服也是", "color": "#ffffff", "type": "right" }, { "author": "bilibilidcaf2dea", "time": "75.099998474121", "text": "好白哦~这个是裤裙吧，我们校服就是裤裙", "color": "#ffffff", "type": "right" }, { "author": "bilibilidcaf2dea", "time": "96.639999389648", "text": "默默问句，夏天这长发不热吗？", "color": "#ffffff", "type": "right" }, { "author": "bilibilib5753886", "time": "86.528999328613", "text": "别让我看见你，不然我一定犯罪", "color": "#ffffff", "type": "right" }, { "author": "bilibilia71bf192", "time": "151.11599731445", "text": "也许你们不信但是明天我要和小薇结婚了", "color": "#ffffff", "type": "right" }, { "author": "bilibilia787af6e", "time": "232.1009979248", "text": "这个笑容我来守护, 诸君 拔剑吧", "color": "#ffffff", "type": "right" }, { "author": "bilibili4af924f4", "time": "3.3900001049042", "text": "好吧，我就是看封面才进来的。。", "color": "#33cccc", "type": "top" }, { "author": "bilibili9cab8511", "time": "222.05400085449", "text": "舔屏中", "color": "#ffffff", "type": "right" }, { "author": "bilibili82e1babb", "time": "10.451999664307", "text": "看到封面就进来了", "color": "#ffffff", "type": "right" }, { "author": "bilibili83f9f617", "time": "145.28900146484", "text": "长得好耐看啊", "color": "#ffffff", "type": "right" }, { "author": "bilibilicf77ecda", "time": "140.94000244141", "text": "漂亮", "color": "#ffffff", "type": "right" }, { "author": "bilibili00f39f0b", "time": "78.551002502441", "text": "节奏感好差", "color": "#ffffff", "type": "right" }, { "author": "bilibili45d3e20d", "time": "37.314998626709", "text": "大家好我是底裤，来打我吧", "color": "#ff66ff", "type": "top" }, { "author": "bilibilid7be44fd", "time": "76.907997131348", "text": "尴尬症犯了", "color": "#99cc00", "type": "right" }, { "author": "bilibilid7be44fd", "time": "101.95999908447", "text": "我变黄了", "color": "#ccff00", "type": "right" }, { "author": "bilibili4802767d", "time": "14.869000434875", "text": "爱看啊，", "color": "#ffffff", "type": "right" }, { "author": "bilibili4802767d", "time": "99.097999572754", "text": "屏幕脏了，我擦擦", "color": "#ffffff", "type": "right" }, { "author": "bilibiliee8f4035", "time": "100.36000061035", "text": "前面开车经过的哈哈哈哈哈哈", "color": "#ffffff", "type": "right" }, { "author": "bilibili832a0bf9", "time": "22.188999176025", "text": "我讨厌这条裤子", "color": "#3300cc", "type": "top" }, { "author": "bilibili832a0bf9", "time": "192.95799255371", "text": "说自己是帽子的，这就是装逼下场", "color": "#3300cc", "type": "top" }, { "author": "bilibili832a0bf9", "time": "227.22900390625", "text": "我要用精灵球把你收了", "color": "#3300cc", "type": "top" }, { "author": "bilibili0a75dac8", "time": "41.601001739502", "text": "发个弹幕支持一下", "color": "#ffffff", "type": "right" }, { "author": "bilibili47deea4a", "time": "58.958000183105", "text": "嗯，这个篮球场环境真好！", "color": "#e70012", "type": "right" }, { "author": "bilibili2e27a9b9", "time": "63.78099822998", "text": "你们挡到我老婆了", "color": "#ffffff", "type": "top" }, { "author": "bilibili3928598c", "time": "67.910003662109", "text": "怎么办我爱上她了", "color": "#ffffff", "type": "right" }, { "author": "bilibilic7c97ba6", "time": "116.90000152588", "text": "只有我纯洁如雪", "color": "#ffff00", "type": "top" }, { "author": "bilibili1d237745", "time": "82.678001403809", "text": "这明明是外面穿了裙子里面穿了短裤，明明是两件 什么裙裤，智商不在线啊", "color": "#ffffff", "type": "right" }, { "author": "bilibili3bd023db", "time": "44.792999267578", "text": "又盯上来了", "color": "#ffffff", "type": "right" }, { "author": "bilibili71cf931d", "time": "110.43199920654", "text": "跳的有模有样", "color": "#ffffff", "type": "right" }, { "author": "bilibili10f5dda3", "time": "57.194999694824", "text": "超好看 ", "color": "#ffffff", "type": "right" }, { "author": "bilibilid7e3706b", "time": "53.119998931885", "text": "赶紧吃俩鸡蛋压压惊", "color": "#ffffff", "type": "right" }, { "author": "bilibili43b15212", "time": "185.84199523926", "text": "好羞耻啊啊啊", "color": "#ffffff", "type": "right" }, { "author": "bilibilica1c7ee7", "time": "208.87600708008", "text": "不冷么 看路人都是长袖大衣什么的", "color": "#ffffff", "type": "right" }, { "author": "bilibilia7679bca", "time": "1.8960000276566", "text": "一天不看就难受", "color": "#ffffff", "type": "right" }, { "author": "bilibili1afb8983", "time": "50.235000610352", "text": "这破站我就服你", "color": "#ffffff", "type": "right" }, { "author": "bilibili2c35e8f2", "time": "120.33200073242", "text": "还有30秒广场舞大妈出动 UP主小心啊", "color": "#ffffff", "type": "right" }, { "author": "bilibili7e4a3ecb", "time": "13.036999702454", "text": "一言不合就开跳。。。。", "color": "#ffffff", "type": "right" }, { "author": "bilibili7e4a3ecb", "time": "217.11399841309", "text": " 千万别管声音", "color": "#ffffff", "type": "right" }, { "author": "bilibili7e4a3ecb", "time": "6.7699999809265", "text": "。", "color": "#ffffff", "type": "right" }, { "author": "bilibilif47a8883", "time": "7.3210000991821", "text": "你们这群陋逼别看我老婆", "color": "#ffffff", "type": "right" }, { "author": "bilibili9de5be0c", "time": "85.061996459961", "text": "尬舞女王", "color": "#ffffff", "type": "right" }, { "author": "bilibili59087975", "time": "102.42199707031", "text": "有可能你们不信后面车就是我", "color": "#00a0ea", "type": "top" }, { "author": "bilibili3a7f8910", "time": "15.982999801636", "text": "羞耻女王", "color": "#cc0000", "type": "top" }, { "author": "bilibilica37adf8", "time": "15.180999755859", "text": "好想吃了她", "color": "#ffffff", "type": "right" }, { "author": "bilibilifccda8ce", "time": "75.192001342773", "text": "玛德又要买补品了", "color": "#fef102", "type": "top" }, { "author": "bilibili589b84b2", "time": "22.988000869751", "text": "整个B站我就服你", "color": "#ffffff", "type": "right" }, { "author": "bilibili1ed2b6a4", "time": "91.111999511719", "text": "什么都不说了，漂亮", "color": "#ffffff", "type": "right" }, { "author": "bilibilic8ddb384", "time": "108.44499969482", "text": "一开始以为是69，后来发现的6S", "color": "#ffffff", "type": "right" }, { "author": "bilibilifa5d97c7", "time": "106.83699798584", "text": "乒乓桌会变魔术", "color": "#ffffff", "type": "right" }, { "author": "bilibili152cd372", "time": "68.708000183105", "text": "B站第一仙女", "color": "#ffffff", "type": "right" }, { "author": "bilibili152cd372", "time": "107.172996521", "text": "我也想黄", "color": "#ffffff", "type": "right" }, { "author": "bilibilie3b6fe86", "time": "123.6429977417", "text": "拔剑的别走  我们拔刀！", "color": "#ffffff", "type": "right" }, { "author": "bilibili3abca4b1", "time": "105.327003479", "text": "麻麻她撩我，我要娶她", "color": "#ff0066", "type": "right" }, { "author": "bilibilic7c97ba6", "time": "180.26699829102", "text": "有毒", "color": "#ff0000", "type": "right" }, { "author": "bilibilice9b9aa4", "time": "156.54400634766", "text": "弹幕护体，女神不给看！", "color": "#e70012", "type": "top" }, { "author": "bilibiliea9f5745", "time": "93.059997558594", "text": "战斧导弹已经锁定诸君，小微是我的了", "color": "#cc0000", "type": "right" }, { "author": "bilibili4cfe78cb", "time": "78.305999755859", "text": "我怎样可以到2级？？？", "color": "#ffffff", "type": "right" }, { "author": "bilibilib4be9790", "time": "124.077003479", "text": "老婆又撩我", "color": "#ffffff", "type": "right" }, { "author": "bilibiliecba955e", "time": "41.596000671387", "text": "dia?dva?", "color": "#ffffff", "type": "right" }, { "author": "bilibili4d7caec9", "time": "96.129997253418", "text": "女神！！", "color": "#ffffff", "type": "top" }, { "author": "bilibili44394fdd", "time": "66.444999694824", "text": "这B站 我就服你一个  因为你 立场都变了", "color": "#ff99cc", "type": "right" }, { "author": "bilibili44394fdd", "time": "144.4880065918", "text": "是老夫错了 原来是65君", "color": "#ff99cc", "type": "right" }, { "author": "bilibili4c82f05e", "time": "3.9920001029968", "text": "恭喜你发现镇战之腿", "color": "#00a0ea", "type": "top" }, { "author": "bilibili4c82f05e", "time": "66.22200012207", "text": "说关掉音乐的，我自动脑补音乐怎么办", "color": "#e70012", "type": "top" }, { "author": "bilibilie9068306", "time": "105.0120010376", "text": "我还是纯洁的白色吧。", "color": "#ffff00", "type": "right" }, { "author": "bilibili6513a401", "time": "110.58999633789", "text": "我没黄", "color": "#ffff00", "type": "right" }, { "author": "bilibiliab0175d5", "time": "81.862998962402", "text": "你们这群弹幕真的是够啦！", "color": "#ff66cc", "type": "right" }, { "author": "bilibili3bb420dc", "time": "93.419998168945", "text": "二营长！", "color": "#ffffff", "type": "right" }, { "author": "bilibili8a03362c", "time": "111.95999908447", "text": "中秋节的留一个", "color": "#ffffff", "type": "right" }, { "author": "bilibilie2280efb", "time": "108.37300109863", "text": "说声音关掉的，，，干得漂亮", "color": "#ffffff", "type": "right" }, { "author": "bilibili33957df9", "time": "102.34700012207", "text": "86", "color": "#ffffff", "type": "right" }, { "author": "bilibilib2005c3a", "time": "233.54299926758", "text": "变黄吗", "color": "#ffffff", "type": "right" }, { "author": "bilibili06cc2733", "time": "8.5279998779297", "text": "1001", "color": "#ffffff", "type": "right" }, { "author": "bilibili2528df65", "time": "81.664001464844", "text": "微，中秋快乐！", "color": "#ffffff", "type": "right" }, { "author": "bilibili6ec58e58", "time": "183.08700561523", "text": "是时候亮剑了", "color": "#ffffff", "type": "right" }, { "author": "bilibili8aa23b52", "time": "113.82599639893", "text": "中秋考古", "color": "#ffffff", "type": "right" }, { "author": "bilibilifd5286ac", "time": "194.00399780273", "text": "哎 一大波痴汉啊", "color": "#ffffff", "type": "right" }, { "author": "bilibili83d151f8", "time": "107.05300140381", "text": "朕的麒麟臂把持不住了", "color": "#fef102", "type": "right" }, { "author": "bilibili46a7d641", "time": "71.904998779297", "text": "元气少女 活力满满 乐观疯狂自由啊 好像我大射手座", "color": "#ffffff", "type": "right" }, { "author": "bilibilic432ca45", "time": "50.332000732422", "text": "封面看上去有点厉害", "color": "#ffffff", "type": "right" }, { "author": "bilibili47e353f3", "time": "0.78899997472763", "text": "拔刀吧诸君", "color": "#00a0ea", "type": "right" }, { "author": "bilibili47e353f3", "time": "5.1199998855591", "text": "拔刀吧", "color": "#00a0ea", "type": "right" }, { "author": "bilibilic9c9527b", "time": "209.26300048828", "text": "诸君 拔剑吧！", "color": "#ffff00", "type": "right" }, { "author": "bilibili4ed17183", "time": "16.879999160767", "text": "帅宝宝一脸啊~\\(≧▽≦)/~", "color": "#ffffff", "type": "right" }, { "author": "bilibili33f84a7d", "time": "84.079002380371", "text": "我是纯洁的黄色", "color": "#ffff00", "type": "top" }, { "author": "bilibilic562a391", "time": "105.01599884033", "text": "老婆比个耶他们瞧瞧qwq~", "color": "#ffffff", "type": "bottom" }, { "author": "bilibili8d3215cb", "time": "30.090999603271", "text": "封面进来的加一", "color": "#ffffff", "type": "right" }, { "author": "bilibili23a9da0c", "time": "76.988998413086", "text": "摸摸大", "color": "#ffffff", "type": "right" }, { "author": "bilibilicff3b5ee", "time": "137.99000549316", "text": "拔刀就拔刀", "color": "#ffffff", "type": "right" }, { "author": "bilibilicff3b5ee", "time": "196.3090057373", "text": "双手打字", "color": "#ffffff", "type": "right" }, { "author": "bilibili17b3f250", "time": "1.1790000200272", "text": "高街品牌，一比一打版，货源就是自己。wechat：AOMG2Y ", "color": "#ffffff", "type": "right" }, { "author": "bilibili56d71cb9", "time": "170.09599304199", "text": "鞋子内增高", "color": "#ff0000", "type": "top" }, { "author": "bilibili9b86b7a9", "time": "71.355903625488", "text": "为什么大家都叫你羞耻女王。。", "color": "#ffffff", "type": "right" }, { "author": "bilibili2870c8a1", "time": "89.264999389648", "text": "B站只服羞耻女王一个", "color": "#ffffff", "type": "right" }, { "author": "bilibilia343bcfe", "time": "95.33699798584", "text": "颜高肤白腿长，我要弯了", "color": "#ffffff", "type": "right" }, { "author": "bilibili72d63ad5", "time": "11.329000473022", "text": "这个bgm有吗", "color": "#ffffff", "type": "right" }, { "author": "bilibili72d63ad5", "time": "16.701000213623", "text": "这个6666", "color": "#ffffff", "type": "right" }, { "author": "bilibili6cde887d", "time": "58.955001831055", "text": "羞耻", "color": "#ffffff", "type": "right" }, { "author": "bilibili4cbeb0f6", "time": "55.214000701904", "text": "破 底裤 差评 差评 差评", "color": "#ff3300", "type": "bottom" }, { "author": "bilibili765c64b0", "time": "58.319999694824", "text": "笑起来完全无法抵抗", "color": "#ffffff", "type": "right" }, { "author": "bilibili765c64b0", "time": "160.91200256348", "text": "好高", "color": "#ffffff", "type": "right" }, { "author": "bilibilic9d238cb", "time": "52.437000274658", "text": "哦，仙女为何这么美", "color": "#ffffff", "type": "right" }, { "author": "bilibili3ee00579", "time": "184.54400634766", "text": "我德天", "color": "#ffffff", "type": "right" }, { "author": "bilibili0773c652", "time": "180.14500427246", "text": "2016-9-26-19:36承包", "color": "#ffffff", "type": "right" }, { "author": "bilibili47e42d15", "time": "94.026000976562", "text": "因为这个舞 我去听了DIA的歌然后知道了淋逼七仙女 然后喜欢上了噜妹", "color": "#ffffff", "type": "right" }, { "author": "bilibili47e42d15", "time": "203.11999511719", "text": "原版比这还要羞耻 7个大姑娘站在香港大街上跳", "color": "#ffffff", "type": "right" }, { "author": "bilibili66f25f54", "time": "197.1309967041", "text": "我要好好宠信你", "color": "#ffffff", "type": "right" }, { "author": "bilibili5964ba3d", "time": "0", "text": "女神  爸爸爱你", "color": "#00ccff", "type": "top" }, { "author": "bilibili5964ba3d", "time": "24.434000015259", "text": "22323", "color": "#00ccff", "type": "top" }, { "author": "bilibili93d7a8d0", "time": "9.2449998855591", "text": "太美", "color": "#ffffff", "type": "right" }, { "author": "bilibiliaf3cd3ca", "time": "68.940002441406", "text": "淘宝卖家不上心，差评", "color": "#ffffff", "type": "right" }, { "author": "bilibilife869b8b", "time": "179.59100341797", "text": "我反正掏枪了", "color": "#ffffff", "type": "right" }, { "author": "bilibili32e0ef8b", "time": "78.38500213623", "text": "尬舞", "color": "#ffffff", "type": "right" }, { "author": "bilibili3c5a35e5", "time": "216.27699279785", "text": "宝强绿", "color": "#009843", "type": "right" }, { "author": "bilibilie007d285", "time": "224.93299865723", "text": "拔剑？二营长，意大利炮拉上来轰那小子两下！", "color": "#ffffff", "type": "right" }, { "author": "bilibilicd370cbe", "time": "199.47999572754", "text": "浑然不知羞耻为何物", "color": "#009843", "type": "right" }, { "author": "bilibilie9b9deed", "time": "94.18399810791", "text": "颜值好棒", "color": "#ffffff", "type": "right" }, { "author": "bilibili8b39d3cd", "time": "71.082000732422", "text": "嘻嘻", "color": "#fef102", "type": "right" }, { "author": "bilibilic39a31c4", "time": "20.778999328613", "text": "羞耻", "color": "#fef102", "type": "right" }, { "author": "bilibilic39a31c4", "time": "156.56900024414", "text": "卡在了奇怪的地方", "color": "#fef102", "type": "right" }, { "author": "bilibili1bd5ef90", "time": "157.09800720215", "text": "啊啊 啊啊 啊啊", "color": "#ffffff", "type": "right" }, { "author": "bilibili823a88cf", "time": "18.704000473022", "text": "仙女0.0", "color": "#ffffff", "type": "right" }, { "author": "bilibilibbe9b798", "time": "47.111999511719", "text": "少年 出刀把", "color": "#ffffff", "type": "right" }, { "author": "bilibilifc49031f", "time": "89.429000854492", "text": "我是中圈，美好生活尽收眼底", "color": "#e70012", "type": "bottom" }, { "author": "bilibili79964d2d", "time": "2.9849998950958", "text": "这歌好听", "color": "#ffffff", "type": "right" }, { "author": "bilibili8f8dff90", "time": "181.15899658203", "text": "表白DIA 感觉弹幕都不是韩饭圈的 有点孤单哈哈哈", "color": "#ffffff", "type": "right" }, { "author": "bilibili8f8dff90", "time": "207.98100280762", "text": "说尴尬的请看看原版好么", "color": "#ffffff", "type": "right" }, { "author": "bilibili8080c44a", "time": "213.56500244141", "text": "发光的女孩你好", "color": "#ffff00", "type": "bottom" }, { "author": "bilibili26035191", "time": "100.37599945068", "text": "AV4235147小微声控福利", "color": "#84c0cb", "type": "top" }, { "author": "bilibili26035191", "time": "119.76000213623", "text": "AV4235147", "color": "#00a0ea", "type": "top" }, { "author": "bilibili6c075d96", "time": "94.205001831055", "text": "我叫黄鹤。", "color": "#e2027f", "type": "top" }, { "author": "bilibilib9677657", "time": "98.694000244141", "text": "我刚做完包皮手术就让我看这个？！", "color": "#ffffff", "type": "right" }, { "author": "bilibili111e5eca", "time": "19.718000411987", "text": "女神的笑容由我来守护", "color": "#ffffff", "type": "right" }, { "author": "bilibili111e5eca", "time": "61.048000335693", "text": "诸君拔剑吧", "color": "#ffffff", "type": "right" }, { "author": "bilibili111e5eca", "time": "128.55799865723", "text": "诸君拔剑吧", "color": "#ffffff", "type": "right" }, { "author": "bilibili45c591fc", "time": "211.96800231934", "text": "看后面的路人 妹子不冷吗。。。。", "color": "#00a0ea", "type": "top" }, { "author": "bilibili7e7b8f87", "time": "54.15599822998", "text": "ETF", "color": "#002e72", "type": "right" }, { "author": "bilibili0d864208", "time": "18.063999176025", "text": "欧美style口味太重，接受不能，我闪了。。。", "color": "#ffffff", "type": "right" }, { "author": "bilibilib1ba4e3c", "time": "207.22300720215", "text": "好看", "color": "#ffffff", "type": "right" }, { "author": "bilibilif894cd97", "time": "0", "text": "看到封面进来的", "color": "#ffffff", "type": "right" }, { "author": "bilibilif894cd97", "time": "43.124000549316", "text": "霸刀！！", "color": "#ffffff", "type": "right" }, { "author": "bilibili23ae60e8", "time": "5.9679999351501", "text": "1001是我的", "color": "#ffffff", "type": "right" }, { "author": "bilibilife223953", "time": "32.768001556396", "text": "诸君亮剑吧!", "color": "#009843", "type": "top" }, { "author": "bilibilifb40fd59", "time": "1.4609999656677", "text": "真的是幼儿园的老师吗，好像上你们的幼儿园啊", "color": "#ffffff", "type": "right" }, { "author": "bilibili8e50f761", "time": "109.33999633789", "text": "意念打字", "color": "#ffffff", "type": "right" }, { "author": "bilibilifd447067", "time": "9.5", "text": "白色", "color": "#ffffff", "type": "right" }, { "author": "bilibilifd447067", "time": "214.10000610352", "text": "好性感", "color": "#ffffff", "type": "right" }, { "author": "bilibilia0c4cbf7", "time": "201.78100585938", "text": "可以的", "color": "#ffffff", "type": "right" }, { "author": "bilibili14a36a2d", "time": "127.2440032959", "text": "我还是纯洁的白色", "color": "#fef102", "type": "right" }, { "author": "bilibili7bd05a2a", "time": "55.436000823975", "text": "一天不看浑身难受系列", "color": "#ffffff", "type": "right" }, { "author": "bilibilic39a31c4", "time": "89.858001708984", "text": "好美啊啊啊啊吧吧", "color": "#ffffff", "type": "right" }, { "author": "bilibili692a75ed", "time": "5.0739998817444", "text": "开车开车开车开车开车开车", "color": "#ffffff", "type": "right" }, { "author": "bilibili48a6dc51", "time": "87.158996582031", "text": "好看(＾－＾)V(＾－＾)VO(∩_∩)O~~", "color": "#cc0033", "type": "right" }, { "author": "bilibili14313728", "time": "74.285003662109", "text": "老婆我来看你了 ~", "color": "#ffffff", "type": "right" }, { "author": "bilibili14313728", "time": "88.793998718262", "text": "哈哈", "color": "#ffffff", "type": "right" }, { "author": "bilibili37c3700c", "time": "156.7799987793", "text": "富强、民主、文明、和谐、自由 、平等、公正、法治", "color": "#ff0000", "type": "top" }, { "author": "bilibili6e990b46", "time": "99.16300201416", "text": "关", "color": "#ffffff", "type": "right" }, { "author": "bilibili6764444f", "time": "41.104000091553", "text": "女生", "color": "#ffffff", "type": "right" }, { "author": "bilibili6764444f", "time": "54.071998596191", "text": "女生我我爱你", "color": "#ffffff", "type": "right" }, { "author": "bilibili6764444f", "time": "69.393997192383", "text": "我是来测弹幕的", "color": "#ffffff", "type": "right" }, { "author": "bilibili6764444f", "time": "83.025001525879", "text": "啊啊啊啊啊", "color": "#ffffff", "type": "right" }, { "author": "bilibili6764444f", "time": "166.24800109863", "text": "女生好美", "color": "#ffffff", "type": "right" }, { "author": "bilibili6764444f", "time": "185.7619934082", "text": "杀爽", "color": "#ffffff", "type": "right" }, { "author": "bilibili6764444f", "time": "207.08399963379", "text": "我红了】、", "color": "#ffffff", "type": "right" }, { "author": "bilibili6764444f", "time": "228.93099975586", "text": "我更喜欢她的笑容", "color": "#ffffff", "type": "right" }, { "author": "bilibili4132272c", "time": "132.40800476074", "text": "有毒", "color": "#ffffff", "type": "right" }, { "author": "bilibili4132272c", "time": "155.92700195312", "text": "我变黄了", "color": "#ffff00", "type": "right" }, { "author": "bilibili41b76a66", "time": "48.951999664307", "text": "脸变红了！为什么字也红了！", "color": "#ff0000", "type": "right" }, { "author": "bilibilif9c3dc36", "time": "43.457000732422", "text": "后面的电动车要撞电线杆了～", "color": "#ffffff", "type": "right" }, { "author": "bilibilif453f8d5", "time": "45.900001525879", "text": "没人，不科学啊！", "color": "#ffffff", "type": "right" }, { "author": "bilibilif453f8d5", "time": "161.40400695801", "text": "你们太过分了，不能和我抢", "color": "#ffffff", "type": "right" }, { "author": "bilibilif453f8d5", "time": "208.92399597168", "text": "说长的不漂亮那个，你给我过来，我媳妇是你能评价的吗！", "color": "#ffffff", "type": "right" }, { "author": "bilibili848cfbf9", "time": "158.18899536133", "text": "来成都跳", "color": "#ffffff", "type": "right" }, { "author": "bilibili6ae8075b", "time": "0", "text": "看封面进来的", "color": "#ffffff", "type": "right" }, { "author": "bilibili6ae8075b", "time": "139.43099975586", "text": "忍不住发弹幕", "color": "#ffffff", "type": "right" }, { "author": "bilibili6ae8075b", "time": "155.11599731445", "text": "说是地上的树叶别走", "color": "#ffffff", "type": "right" }, { "author": "bilibilie3be8046", "time": "13.506999969482", "text": ".", "color": "#ffffff", "type": "right" }, { "author": "bilibilie2e97d6c", "time": "142.30400085449", "text": "笑容好美", "color": "#ffffff", "type": "right" }, { "author": "bilibili9476f425", "time": "89.86799621582", "text": "表情满分 自然的不行 ", "color": "#ffffff", "type": "right" }, { "author": "bilibilic6d9eeb9", "time": "71.91300201416", "text": "还是很棒  这女娃儿  偶喜欢", "color": "#ffff00", "type": "right" }, { "author": "bilibili5c459d56", "time": "232.42500305176", "text": "说我老婆一般，随你们了，我不在乎别人的眼光！！", "color": "#ffffff", "type": "right" }, { "author": "bilibili41e6a0a5", "time": "99.930999755859", "text": "hhh", "color": "#ff9999", "type": "right" }, { "author": "bilibili19c5d18d", "time": "10.0609998703", "text": "尴舞", "color": "#ffffff", "type": "right" }, { "author": "bilibili3573fa45", "time": "208.61199951172", "text": "我是裙子", "color": "#ffffff", "type": "right" }, { "author": "bilibilib679cf6d", "time": "165.73199462891", "text": "我是纯洁的小绿", "color": "#00ff00", "type": "right" }, { "author": "bilibili8f397f26", "time": "62.86600112915", "text": "牛逼", "color": "#ffffff", "type": "right" }, { "author": "bilibili37e28d28", "time": "90.549003601074", "text": "诸君，拔刀吧 ", "color": "#ffffff", "type": "right" }, { "author": "bilibilia0e4fe4f", "time": "73.416000366211", "text": "差评", "color": "#ffcc99", "type": "top" }, { "author": "bilibili279f1ba2", "time": "180.93099975586", "text": "参拜女神", "color": "#0000cc", "type": "bottom" }, { "author": "bilibilib029e3bd", "time": "110.98899841309", "text": "你们这群人发什么弹幕，挡着我看我老婆了！！！", "color": "#ff3366", "type": "right" }, { "author": "bilibili87d27b6f", "time": "88.75700378418", "text": "怎么变黄啊？", "color": "#ffffff", "type": "right" }, { "author": "bilibili8e891f8c", "time": "79.416000366211", "text": "嗯哼？", "color": "#ff99cc", "type": "right" }, { "author": "bilibilibf63aba1", "time": "40.812999725342", "text": "笑容有毒。。。", "color": "#ffffff", "type": "right" }, { "author": "bilibiliccf29c07", "time": "201.54100036621", "text": "这是裙裤吧", "color": "#ffffff", "type": "right" }, { "author": "bilibili40e8c6b4", "time": "208.94999694824", "text": "双手打字证明清白", "color": "#ffffff", "type": "right" }, { "author": "bilibili1cb69d4d", "time": "13.013999938965", "text": "啊啊啊啊", "color": "#000000", "type": "right" }, { "author": "bilibili1cb69d4d", "time": "134.64300537109", "text": "啊啊啊啊", "color": "#000000", "type": "right" }, { "author": "bilibili1cb69d4d", "time": "147.85400390625", "text": "厉害厉害", "color": "#000000", "type": "right" }, { "author": "bilibilib6aad92f", "time": "18.558000564575", "text": "老子的意大利炮呢？", "color": "#ffffff", "type": "right" }, { "author": "bilibilib6aad92f", "time": "164.09100341797", "text": "信任呢", "color": "#ffffff", "type": "right" }, { "author": "bilibili5092a2a7", "time": "100.34799957275", "text": "双手打字以示清白", "color": "#ffff00", "type": "right" }, { "author": "bilibilic9815647", "time": "126.54900360107", "text": "这回奇迹变粉色给我！", "color": "#e2027f", "type": "bottom" }, { "author": "bilibili5ae22415", "time": "233.81300354004", "text": "太棒", "color": "#ffffff", "type": "right" }, { "author": "bilibili367e0454", "time": "63.220001220703", "text": "好可爱", "color": "#ffffff", "type": "right" }, { "author": "bilibilia04ab071", "time": "9.7580003738403", "text": "？", "color": "#ffffff", "type": "right" }, { "author": "bilibili9fc10d65", "time": "36.35599899292", "text": "后方烟民汽车抢镜", "color": "#ffffff", "type": "right" }, { "author": "bilibili19c579d7", "time": "155.11999511719", "text": "平时我都是黑色！今天粉了！！！", "color": "#ffffff", "type": "right" }, { "author": "bilibilied201237", "time": "15.017999649048", "text": "我恋爱了", "color": "#ffffff", "type": "right" }, { "author": "bilibili34a5b2bd", "time": "226.36199951172", "text": "女神呀", "color": "#ffffff", "type": "right" }, { "author": "bilibilicb6f08f2", "time": "200.78799438477", "text": "来啊，不死不休 女神是我的！", "color": "#fef102", "type": "top" }, { "author": "bilibili5a91a21b", "time": "94.473999023438", "text": "跳的还行吧，也就比原版好一些", "color": "#ffffff", "type": "right" }, { "author": "bilibilifd1b540a", "time": "157.89500427246", "text": "65", "color": "#e2027f", "type": "right" }, { "author": "bilibilicc073157", "time": "158.89199829102", "text": "截图成功", "color": "#ffffff", "type": "right" }, { "author": "bilibilicc073157", "time": "212.63600158691", "text": "无需多言！拔剑吧！", "color": "#e70012", "type": "right" }, { "author": "bilibilicc073157", "time": "230.94700622559", "text": "这个笑容由我来守护", "color": "#00a0ea", "type": "right" }, { "author": "bilibili2fb64673", "time": "42.82080078125", "text": "后面骑车的小哥会翻车的啊@_@", "color": "#ffffff", "type": "right" }, { "author": "bilibilid311a706", "time": "30.698999404907", "text": "卡在奇怪的地方了", "color": "#ffffff", "type": "right" }, { "author": "bilibili90a867e9", "time": "15.956999778748", "text": "教练，我想打篮球啊！！（可是有个女孩子在跳舞怎么哄走？）", "color": "#ffffff", "type": "top" }, { "author": "bilibili560af053", "time": "156.54800415039", "text": "完美截图 合影留念", "color": "#ffffff", "type": "right" }, { "author": "bilibilie7134025", "time": "122.95899963379", "text": "咬着硬币有何用", "color": "#ffffff", "type": "right" }, { "author": "bilibilie7134025", "time": "145.32600402832", "text": "诸君拔炮吧", "color": "#ffffff", "type": "right" }, { "author": "bilibilie7134025", "time": "203.13499450684", "text": "自己动—+1", "color": "#ffffff", "type": "right" }, { "author": "bilibilie7134025", "time": "223.72999572754", "text": "拔剑吧，我的意大得炮准备好了", "color": "#ffffff", "type": "right" }, { "author": "bilibili83231519", "time": "14.276000022888", "text": "没有人呢怎么", "color": "#ffffff", "type": "right" }, { "author": "bilibili68fea8a3", "time": "85.74299621582", "text": "背后路过的都看傻了", "color": "#ffffff", "type": "right" }, { "author": "bilibilid936b9ad", "time": "59.520999908447", "text": "稳稳的", "color": "#ffffff", "type": "right" }, { "author": "bilibili3dc1de18", "time": "68.513999938965", "text": "羞耻女王", "color": "#ffffff", "type": "right" }, { "author": "bilibili3dc1de18", "time": "146.50500488281", "text": "说69的你出来", "color": "#ffffff", "type": "right" }, { "author": "bilibilib8e92477", "time": "205.38900756836", "text": "同学你奏凯我们要打篮球了", "color": "#ffffff", "type": "right" }, { "author": "bilibilic77bc355", "time": "190.34700012207", "text": "好动作", "color": "#fef102", "type": "right" }, { "author": "bilibilib581a422", "time": "52.409999847412", "text": "好好看啊", "color": "#ffffff", "type": "right" }, { "author": "bilibili4bc6dcab", "time": "70.082000732422", "text": "llllll", "color": "#66ccff", "type": "top" }, { "author": "bilibili3f99c598", "time": "156.65899658203", "text": "截图成功", "color": "#fef102", "type": "bottom" }, { "author": "bilibili3f99c598", "time": "160.90699768066", "text": "截图成功", "color": "#fef102", "type": "bottom" }, { "author": "bilibili6dd01752", "time": "82.81600189209", "text": "德玛西亚！人在她在", "color": "#ffffff", "type": "right" }, { "author": "bilibili9b34f869", "time": "116.56999969482", "text": "哈哈哈", "color": "#ffff00", "type": "right" }, { "author": "bilibili339e5ea1", "time": "51.203998565674", "text": "自动脑补what is dancing", "color": "#ffffff", "type": "right" }, { "author": "bilibili0c8a2242", "time": "156.68299865723", "text": "截图成功", "color": "#fef102", "type": "top" }, { "author": "bilibilic84ecd96", "time": "94.824996948242", "text": "我是舌苔", "color": "#90c320", "type": "top" }, { "author": "bilibili73db7f3f", "time": "81.699996948242", "text": "弹幕排队好吗？看不见了", "color": "#ffffff", "type": "right" }, { "author": "bilibilia7a464f2", "time": "1.817999958992", "text": "BGM:some how   切入时间01:15", "color": "#ffffff", "type": "right" }, { "author": "bilibilia7a464f2", "time": "16.658000946045", "text": "BGM:some how 韩国女团DIA，切入时间01:15", "color": "#ffffff", "type": "right" }, { "author": "bilibili6489f2b3", "time": "57.676998138428", "text": "在我怀里的妹子怎么能让你们抢走，拔刀吧", "color": "#ffffff", "type": "right" }, { "author": "bilibilif2ae03ea", "time": "178.20899963379", "text": "百合大法", "color": "#ffffff", "type": "right" }, { "author": "bilibili9cb38d7e", "time": "103.76499938965", "text": "坐上来自己动", "color": "#ffffff", "type": "right" }, { "author": "bilibilie9b9deed", "time": "156.96899414062", "text": "开启弹幕守护", "color": "#ffffff", "type": "right" }, { "author": "bilibilibb62c57b", "time": "58.620998382568", "text": "哇塞", "color": "#ff3399", "type": "right" }, { "author": "bilibili7f50b78f", "time": "61.071998596191", "text": "不废话了 大家亮兵器吧", "color": "#ffffff", "type": "right" }, { "author": "bilibili77b6d31a", "time": "226.38000488281", "text": "直接路转粉了", "color": "#ffffff", "type": "right" }, { "author": "bilibili58ecc2ce", "time": "154.24299621582", "text": "别人都穿的长袖长裤，小微穿短的，好了好心疼", "color": "#ffffff", "type": "right" }, { "author": "bilibilic99ae33d", "time": "11.8109998703", "text": "好漂亮", "color": "#ffffff", "type": "right" }, { "author": "bilibili14770f3e", "time": "12.548000335693", "text": "冲封面来的+1", "color": "#ffffff", "type": "right" }, { "author": "bilibili14770f3e", "time": "156.56900024414", "text": "截图成功", "color": "#ffffff", "type": "right" }, { "author": "bilibili268f4e6d", "time": "160.05400085449", "text": "倒过来看怎么样", "color": "#ffffff", "type": "right" }, { "author": "bilibili8067d07f", "time": "215.72200012207", "text": "好漂亮啊", "color": "#ffffff", "type": "right" }, { "author": "bilibili821fb3ce", "time": "111.12300109863", "text": "底裤君：一群渣渣..", "color": "#ff66cc", "type": "right" }, { "author": "bilibilif06c5a9d", "time": "20.540000915527", "text": "我是1001", "color": "#ffffff", "type": "right" }, { "author": "bilibilia0c75b11", "time": "2.2530000209808", "text": "看到封面我就进来了", "color": "#ffff00", "type": "top" }, { "author": "bilibili63245471", "time": "24.865999221802", "text": "还是这里最有感觉", "color": "#ffffff", "type": "right" }, { "author": "bilibili63245471", "time": "73.708000183105", "text": "拔刀ba", "color": "#ffffff", "type": "right" }, { "author": "bilibili63245471", "time": "129.54800415039", "text": "我是球场", "color": "#ffffff", "type": "right" }, { "author": "bilibili236b5357", "time": "10.515999794006", "text": "从此b站只看你", "color": "#ffffff", "type": "right" }, { "author": "bilibilif172d6db", "time": "89.321701049805", "text": "用嘴打字以示清白", "color": "#ffff00", "type": "top" }, { "author": "bilibili57c8d9c0", "time": "180.35899353027", "text": "同款颜色弹幕", "color": "#ff9999", "type": "top" }, { "author": "bilibilid9c6a9d1", "time": "82.168998718262", "text": "多说无益，拔剑吧", "color": "#ff0000", "type": "right" }, { "author": "bilibili8629464c", "time": "59.333000183105", "text": "还好没有打球的", "color": "#ffffff", "type": "right" }, { "author": "bilibili8629464c", "time": "99.333000183105", "text": "震站女王已回归", "color": "#ffffff", "type": "right" }, { "author": "bilibili683de4ce", "time": "151.8509979248", "text": "女神٩(๑òωó๑)۶", "color": "#000000", "type": "right" }, { "author": "bilibilic1a7c58a", "time": "1.9518799781799", "text": "交封不杀", "color": "#ffffff", "type": "right" }, { "author": "bilibili49edfc7d", "time": "20.40299987793", "text": "听了这段BGM 我就想起了在实验室里做实验....", "color": "#ffffff", "type": "right" }, { "author": "bilibili2feb47d3", "time": "216.5", "text": "跳到世界充满爱", "color": "#e70012", "type": "right" }, { "author": "bilibilif327b3c9", "time": "26.45599937439", "text": "萝卜❤小仙女", "color": "#ff0000", "type": "bottom" }, { "author": "bilibili1a328814", "time": "104.36199951172", "text": "做完包皮手术的别走，我也是！！", "color": "#ffffff", "type": "right" }, { "author": "bilibili0b2b3203", "time": "63.889099121094", "text": "愿意喝你的洗澡水", "color": "#ffffff", "type": "right" }, { "author": "bilibili0b2b3203", "time": "108.60600280762", "text": "实话实说，我录像时就忍不住了", "color": "#ffffff", "type": "right" }, { "author": "bilibilid5de5402", "time": "13.369000434875", "text": "有点像王丽坤", "color": "#000000", "type": "right" }, { "author": "bilibilic9f47e9a", "time": "121.2799987793", "text": "笑容由我来守护", "color": "#ffffff", "type": "right" }, { "author": "bilibilif80f2767", "time": "220.07499694824", "text": "诸君，拔剑吧", "color": "#ffffff", "type": "right" }, { "author": "bilibili6de05bfd", "time": "103.22200012207", "text": "啦", "color": "#683a7b", "type": "right" }, { "author": "bilibili06c784ba", "time": "0.41600000858307", "text": "我老婆由我来守护！", "color": "#ff66ff", "type": "bottom" }, { "author": "bilibili06c784ba", "time": "0.41600000858307", "text": "我老婆由我来守护！", "color": "#ff66ff", "type": "top" }, { "author": "bilibili06c784ba", "time": "88.902000427246", "text": "小薇会有音乐伴奏？你仿佛是在逗我笑", "color": "#ff66ff", "type": "bottom" }, { "author": "bilibili06c784ba", "time": "228.72799682617", "text": " 我要好好宠幸你", "color": "#ff66ff", "type": "bottom" }, { "author": "bilibilia6dee11f", "time": "9.71399974823", "text": "好可爱啊。好喜欢。", "color": "#ffffff", "type": "right" }, { "author": "bilibilia6dee11f", "time": "154.01899719238", "text": "不许看我老婆。草。都滚", "color": "#ff0000", "type": "right" }, { "author": "bilibili254ae91f", "time": "0", "text": "一定很冷，辛苦了", "color": "#ffffff", "type": "right" }, { "author": "bilibili9e2f7a7e", "time": "71.518997192383", "text": "不冷系列", "color": "#ffffff", "type": "right" }, { "author": "bilibilidba898cd", "time": "89.063003540039", "text": "迷  可爱", "color": "#ffffff", "type": "right" }, { "author": "bilibilic2384980", "time": "21.44700050354", "text": "粉色的", "color": "#000000", "type": "right" }, { "author": "bilibili247ec03d", "time": "208.41299438477", "text": "拔剑吧", "color": "#e70012", "type": "top" }, { "author": "bilibilicf9fea78", "time": "220.79400634766", "text": "我", "color": "#ffffff", "type": "right" }, { "author": "bilibilid026e41e", "time": "225.18200683594", "text": "粉色小短裙迎风飘扬", "color": "#ffccff", "type": "right" }, { "author": "bilibilicb136ad0", "time": "156.5240020752", "text": "截图成功", "color": "#00a0ea", "type": "right" }, { "author": "bilibilie163aa39", "time": "78.146003723145", "text": "决定了，以后好好找工作，然后娶个像妹纸一样的", "color": "#00ff00", "type": "right" }, { "author": "bilibilie163aa39", "time": "212.71600341797", "text": "砰砰砰，朱军看枪", "color": "#00ff00", "type": "right" }, { "author": "bilibilic2384980", "time": "7.3610000610352", "text": "老婆别炫了", "color": "#ffffff", "type": "right" }, { "author": "bilibili769d849d", "time": "46.054000854492", "text": "老婆，饭做好了。快回来，你再跳，我都吃醋了", "color": "#ff0000", "type": "top" }, { "author": "bilibili769d849d", "time": "47.787998199463", "text": "老婆，快回来，我饭做好了，你再跳我都吃醋了", "color": "#ff0000", "type": "top" }, { "author": "bilibili9c74cae5", "time": "17.461000442505", "text": "舔了一天封面", "color": "#ffffff", "type": "right" }, { "author": "bilibilie5c70751", "time": "27.388000488281", "text": "为毛我不能变黄", "color": "#000000", "type": "right" }, { "author": "bilibili6e51277a", "time": "66.397003173828", "text": "越看越像詹瑞文啊！", "color": "#ffffff", "type": "right" }, { "author": "bilibilif8ed41d3", "time": "0", "text": "看仙女", "color": "#ffff00", "type": "right" }, { "author": "bilibiliba46861a", "time": "10.826000213623", "text": "2016·12·15重温", "color": "#ff6600", "type": "top" }, { "author": "bilibili7acd6185", "time": "28.045999526978", "text": "弹幕爆炸啊", "color": "#ffffff", "type": "right" }, { "author": "bilibilia5943ac3", "time": "71.819999694824", "text": "跳的超好", "color": "#ffffff", "type": "right" }, { "author": "bilibili6afb13a2", "time": "40.085998535156", "text": "咦，这次人不多诶？？", "color": "#ff0000", "type": "bottom" }, { "author": "bilibili562c9e6a", "time": "147.45799255371", "text": "我是打底色，舌头打字以示清白", "color": "#ff99cc", "type": "right" }, { "author": "bilibilid1471fd1", "time": "123.05300140381", "text": "好想打乒乓球的啊", "color": "#000000", "type": "right" }, { "author": "bilibilid83947bd", "time": "40.113998413086", "text": "恩兔   带队前来观赏  哈哈哈", "color": "#9933ff", "type": "right" }, { "author": "bilibilicfde43f4", "time": "42.507999420166", "text": "坐上来自己动", "color": "#ff0000", "type": "bottom" }, { "author": "bilibili8c1c5f2e", "time": "100.52300262451", "text": "好喜欢仙女这样的笑容，不开心看看仙女，就会被治愈了", "color": "#ffffff", "type": "right" }, { "author": "bilibilic9f37faa", "time": "106.08999633789", "text": "破普桑", "color": "#ffffff", "type": "right" }, { "author": "bilibili5e392e17", "time": "46.755001068115", "text": "不多说了  拔剑吧各位", "color": "#ffffff", "type": "right" }, { "author": "bilibili2c1d51d9", "time": "8.4180002212524", "text": "他是我的", "color": "#000000", "type": "right" }, { "author": "bilibili0d7d5d72", "time": "7.9860000610352", "text": "吓得我关掉了声音", "color": "#ffffff", "type": "right" }, { "author": "bilibilic2384980", "time": "9.8210000991821", "text": "我是小白鞋", "color": "#009843", "type": "right" }, { "author": "bilibilic2384980", "time": "79.560997009277", "text": "卖营养快线啦，需要的举手", "color": "#009843", "type": "right" }, { "author": "bilibilic2384980", "time": "117.50099945068", "text": "我控几不住我记几", "color": "#009843", "type": "right" }, { "author": "bilibili8c792ef0", "time": "34.747001647949", "text": "我来成就1001", "color": "#ffffff", "type": "right" }, { "author": "bilibilibbddfa49", "time": "60.147998809814", "text": "为啥是运动短裤哦", "color": "#ffffff", "type": "right" }, { "author": "bilibili49b5f095", "time": "106.36399841309", "text": "AE86", "color": "#00cc00", "type": "right" }, { "author": "bilibili33302eb6", "time": "40.853000640869", "text": "爱微", "color": "#000000", "type": "right" }, { "author": "bilibili33302eb6", "time": "73.927001953125", "text": "回忆一下的举手", "color": "#000000", "type": "right" }, { "author": "bilibili6b8526c5", "time": "106.32099914551", "text": "前面卖营养快线的 这里来两瓶", "color": "#ffffff", "type": "right" }, { "author": "bilibili2903fd82", "time": "210.29400634766", "text": "单手打字。。。", "color": "#ffffff", "type": "right" }, { "author": "bilibilibfe8d7ad", "time": "72.045997619629", "text": "拔剑吧，诸君", "color": "#000000", "type": "right" }, { "author": "bilibilie78d4b08", "time": "90.398597717285", "text": "我要这硬币有何用", "color": "#ffffff", "type": "right" }, { "author": "bilibili03feebf7", "time": "159.41900634766", "text": "笑容由我守护！！！", "color": "#ffffff", "type": "right" }, { "author": "bilibili615990c2", "time": "209.7259979248", "text": "别抢了 我老婆", "color": "#ffffff", "type": "right" }, { "author": "bilibiliedf8853b", "time": "73.346397399902", "text": "封面有毒", "color": "#ffffff", "type": "right" }, { "author": "bilibili087293dd", "time": "76.968002319336", "text": "啊", "color": "#000000", "type": "right" }, { "author": "bilibilic2384980", "time": "23.958000183105", "text": "我微最性感", "color": "#000000", "type": "right" }, { "author": "bilibili6a3b2f9f", "time": "131.56100463867", "text": "我很正经，一点都不黄！", "color": "#ffff00", "type": "right" }, { "author": "bilibili609a40ee", "time": "117.25900268555", "text": "穿丝袜了", "color": "#ffffff", "type": "right" }, { "author": "bilibilifa4855c4", "time": "79.060997009277", "text": "麻麻，我有女朋友吗？", "color": "#fef102", "type": "bottom" }, { "author": "bilibilid4ced760", "time": "185.96699523926", "text": "前面的韩饭圈的在此！但是不是DIA的粉", "color": "#ffffff", "type": "right" }, { "author": "bilibili8e043a11", "time": "65.157997131348", "text": "这笑容可爱", "color": "#ffffff", "type": "right" }, { "author": "bilibilic6025ebc", "time": "8.451000213623", "text": "拔刀吧少年", "color": "#ffffff", "type": "right" }, { "author": "bilibilic2384980", "time": "13.961000442505", "text": "里边是粉色的", "color": "#fef102", "type": "right" }, { "author": "bilibilic2384980", "time": "153.54100036621", "text": "准备好截屏'我是雷锋", "color": "#fef102", "type": "right" }, { "author": "bilibili80577aa2", "time": "42.319999694824", "text": "我是什么颜色", "color": "#fef102", "type": "right" }, { "author": "bilibilic81d6242", "time": "134.4940032959", "text": "硬币我要你何用走你 大爱我微", "color": "#ffffff", "type": "right" }, { "author": "bilibili9a5d1c01", "time": "154.33799743652", "text": "人与人之间基本的信任呢", "color": "#ffff00", "type": "bottom" }, { "author": "bilibili7acfdaa7", "time": "141.28500366211", "text": "敲阔爱⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄", "color": "#ffffff", "type": "right" }, { "author": "bilibili6e75d288", "time": "39.076999664307", "text": "女神好", "color": "#ffffff", "type": "right" }, { "author": "bilibili6e75d288", "time": "42.895999908447", "text": "女神090 ", "color": "#fef102", "type": "right" }, { "author": "bilibilif54f1876", "time": "203.51699829102", "text": "底裤好评", "color": "#ff99cc", "type": "right" }, { "author": "bilibilif54f1876", "time": "224.12300109863", "text": "必须粉", "color": "#ff99ff", "type": "right" }, { "author": "bilibilif54f1876", "time": "222.47900390625", "text": "PL", "color": "#ffccff", "type": "right" }, { "author": "bilibilief7d3e70", "time": "156.18200683594", "text": "后面有保安？", "color": "#002e72", "type": "right" }, { "author": "bilibili856cb404", "time": "0", "text": "凯伦♥小仙女", "color": "#993366", "type": "right" }, { "author": "bilibilie3be8046", "time": "3.3989999294281", "text": ".", "color": "#ffffff", "type": "right" }, { "author": "bilibilic1efd10d", "time": "164.43899536133", "text": "靠", "color": "#ffffff", "type": "right" }, { "author": "bilibili35f2923b", "time": "165.36700439453", "text": "清新护眼天然绿", "color": "#66ff00", "type": "right" }, { "author": "bilibilif327b3c9", "time": "16.440000534058", "text": "萝卜❤小仙女", "color": "#ff0000", "type": "bottom" }, { "author": "bilibilif327b3c9", "time": "89.505996704102", "text": "萝卜拿走仙女时尚小帽子", "color": "#ff0000", "type": "bottom" }, { "author": "bilibilicfcfe53c", "time": "70.147003173828", "text": "裤裙差评……", "color": "#000000", "type": "right" }, { "author": "bilibilic98a220b", "time": "222.26300048828", "text": "好美", "color": "#99ff33", "type": "bottom" }, { "author": "bilibilif328410c", "time": "68.583000183105", "text": "尬舞女神，以前的视频？", "color": "#000000", "type": "right" }, { "author": "bilibili9121cd39", "time": "148.44200134277", "text": "尼古拉斯、微小微", "color": "#ffffff", "type": "right" }, { "author": "bilibilib16189ac", "time": "8.2679996490479", "text": "百万助攻", "color": "#ffffff", "type": "right" }, { "author": "bilibilidd03ef54", "time": "156.61500549316", "text": "白色！！！！！！！", "color": "#ffffff", "type": "right" }, { "author": "bilibilif809a384", "time": "20.091999053955", "text": "233333333333", "color": "#ffffff", "type": "right" }, { "author": "bilibili1447bcfd", "time": "101.54100036621", "text": "最酷的我", "color": "#84c0cb", "type": "right" }, { "author": "bilibilid434bf9a", "time": "36.418998718262", "text": "拍照解锁新姿势，你值得拥有←_←", "color": "#e70012", "type": "right" }, { "author": "bilibilid434bf9a", "time": "177.62199401855", "text": "把手机倒过来看的，我佩服你们，，老司机你们厉害", "color": "#90c320", "type": "right" }, { "author": "bilibili6d03ee89", "time": "52.402000427246", "text": "我老婆", "color": "#ffffff", "type": "right" }, { "author": "bilibilie9b9deed", "time": "156.87600708008", "text": "此处弹幕守护女神", "color": "#ffffff", "type": "right" }, { "author": "bilibili5980baa3", "time": "118.91100311279", "text": "我要投诉，我在这后面走，女神太美，我撞柱子了。。", "color": "#33ccff", "type": "right" }, { "author": "bilibili51e97fa7", "time": "31.156700134277", "text": "我是看了封面进来的，肉丝吗?", "color": "#0099ff", "type": "right" }, { "author": "bilibilia89cac47", "time": "22.83099937439", "text": "裤子woc", "color": "#ffffff", "type": "right" }, { "author": "bilibili96ec59f3", "time": "112.86799621582", "text": "丘比特的箭射中了我", "color": "#000000", "type": "right" }, { "author": "bilibilid7ba1061", "time": "121.86000061035", "text": "正经起来真女神，不正经的时候女神经", "color": "#ffffff", "type": "right" }, { "author": "bilibilid39ea828", "time": "62.581001281738", "text": "摄像不会是她男友吧@_@", "color": "#ffffff", "type": "right" }, { "author": "bilibili013ae7ca", "time": "45.361000061035", "text": "晃得我眼都花了", "color": "#fef102", "type": "right" }, { "author": "bilibili96ec59f3", "time": "130.83700561523", "text": "万恶的底裤", "color": "#000000", "type": "right" }, { "author": "bilibili96ec59f3", "time": "237.59399414062", "text": "电动小马臀", "color": "#000000", "type": "right" }, { "author": "bilibili7d96d45d", "time": "156.54100036621", "text": "人与人之间最基本的信任何在？", "color": "#ffcc00", "type": "right" }, { "author": "bilibili7d96d45d", "time": "214.7799987793", "text": "来打把设计", "color": "#ffcc00", "type": "right" }, { "author": "bilibili9bc13ff0", "time": "46.015300750732", "text": "裙子应该往下拽一些，更好看", "color": "#ffffff", "type": "right" }, { "author": "bilibili39bb13ac", "time": "2.3110001087189", "text": "交封还友~！！！！！！！！！！！", "color": "#ffffff", "type": "right" }, { "author": "bilibili7f13cb6b", "time": "135", "text": "硬硬表示尊敬", "color": "#ffffff", "type": "right" }, { "author": "bilibili356bb30a", "time": "104.8690032959", "text": "刚看这段老爸进来了。。那眼神无法描述", "color": "#000000", "type": "right" }, { "author": "bilibili9e9271e6", "time": "192.2740020752", "text": "我也是韩犯圈的啊啊啊喜欢bigbang和防弹！", "color": "#ffffff", "type": "right" }, { "author": "bilibiliebf60374", "time": "206.21299743652", "text": "拔尖吧，我向来用枪", "color": "#ffffff", "type": "bottom" }, { "author": "bilibili31eed1c7", "time": "37.459999084473", "text": "表白DIA", "color": "#ffffff", "type": "right" }, { "author": "bilibilia09ee57b", "time": "44.646999359131", "text": "可恶的底裤", "color": "#000000", "type": "right" }, { "author": "bilibili78d7bae6", "time": "67.274002075195", "text": "好美", "color": "#ffffff", "type": "right" }, { "author": "bilibili78d7bae6", "time": "142.51699829102", "text": "竟然穿底裤，人与人的信任哪去了", "color": "#ffffff", "type": "right" }, { "author": "bilibilifa305935", "time": "148.52799987793", "text": "前方高能！", "color": "#e70012", "type": "top" }, { "author": "bilibilicf5dda76", "time": "35.904998779297", "text": "黄了。。。", "color": "#fef102", "type": "top" }, { "author": "bilibili66a11400", "time": "86.509002685547", "text": "作为一个女生，看的我快弯了", "color": "#000000", "type": "right" }, { "author": "bilibili7ccb19ab", "time": "17.139999389648", "text": "喜欢这个颜色", "color": "#e2027f", "type": "right" }, { "author": "bilibili51432525", "time": "110.75", "text": "喜欢这段", "color": "#000000", "type": "right" }, { "author": "bilibili60f68e5a", "time": "68.738998413086", "text": "流鼻血怎么治疗？", "color": "#000000", "type": "right" }, { "author": "bilibili60f68e5a", "time": "82.446998596191", "text": "前面流鼻血的去死吧", "color": "#000000", "type": "right" }, { "author": "bilibili60f68e5a", "time": "156.77699279785", "text": "手机倒过来没用呀。", "color": "#000000", "type": "right" }, { "author": "bilibili074d01b7", "time": "16.774000167847", "text": "嘲风日常告白小仙女", "color": "#66ff66", "type": "bottom" }, { "author": "bilibili074d01b7", "time": "108.03500366211", "text": "右下角小音响~", "color": "#00ff00", "type": "bottom" }, { "author": "bilibili074d01b7", "time": "155.26899719238", "text": "跳舞是热爱，跳到世界充满爱", "color": "#66ff66", "type": "bottom" }, { "author": "bilibili074d01b7", "time": "152.13999938965", "text": "高能预警", "color": "#66ff66", "type": "bottom" }, { "author": "bilibili074d01b7", "time": "191.38900756836", "text": "帽子是我的 我拿走跑了 别追我了", "color": "#66ff66", "type": "bottom" }, { "author": "bilibili19607e84", "time": "122.3509979248", "text": "麻麻她撩我", "color": "#ffffff", "type": "right" }, { "author": "bilibili19607e84", "time": "150.02699279785", "text": "看的我快直了！！！！！！！！！！！", "color": "#ffffff", "type": "right" }, { "author": "bilibili3bcc8781", "time": "132.21000671387", "text": "笑得好好看啊", "color": "#ffffff", "type": "right" }, { "author": "bilibili3bcc8781", "time": "208.91499328613", "text": "好粉", "color": "#ff99ff", "type": "right" }, { "author": "bilibili3bcc8781", "time": "223.81900024414", "text": "喜欢这套衣服！！", "color": "#ffccff", "type": "right" }, { "author": "bilibili8fc83156", "time": "198.46200561523", "text": "前面我也喜欢防弹啊啊", "color": "#ffffff", "type": "right" }, { "author": "bilibilif1376894", "time": "23.714000701904", "text": "求衣服链接", "color": "#000000", "type": "right" }, { "author": "bilibili7a0baa20", "time": "156.57200622559", "text": "截图成功", "color": "#ffffff", "type": "right" }, { "author": "bilibilie93fcc78", "time": "119.19799804688", "text": "活生生被掰弯", "color": "#000000", "type": "right" }, { "author": "bilibiliff20cfa6", "time": "11.244000434875", "text": "表白小仙女", "color": "#ffffff", "type": "right" }, { "author": "bilibiliff20cfa6", "time": "77.174003601074", "text": "跳尬舞只服仙女", "color": "#ffffff", "type": "right" }, { "author": "bilibilie9b9deed", "time": "129.83599853516", "text": "女神的这个表情美到不行", "color": "#ffffff", "type": "right" }, { "author": "bilibili7039b352", "time": "67.819999694824", "text": "我肯定是白射", "color": "#fef102", "type": "right" }, { "author": "bilibili34eddcaf", "time": "21.320999145508", "text": "微小微最爱的上衣", "color": "#ffffff", "type": "right" }, { "author": "bilibili34eddcaf", "time": "115.48100280762", "text": "大家好我是地板视角", "color": "#ffffff", "type": "right" }, { "author": "bilibili34eddcaf", "time": "134.08099365234", "text": "这腿我可以玩一辈子", "color": "#ffffff", "type": "right" }, { "author": "bilibili34eddcaf", "time": "181.9409942627", "text": "都怪该死的弹幕挡我视线", "color": "#ffffff", "type": "right" }, { "author": "bilibili34eddcaf", "time": "213.28100585938", "text": "我是女生自报性别以示清白", "color": "#ffffff", "type": "right" }, { "author": "bilibilic2384980", "time": "4.7880001068115", "text": "人家小拳拳捶你胸口", "color": "#000000", "type": "right" }, { "author": "bilibili3f947bb4", "time": "0.79799997806549", "text": "网球裙？", "color": "#ffffff", "type": "right" }, { "author": "bilibili3f947bb4", "time": "19.298000335693", "text": "网球裙？", "color": "#ffffff", "type": "right" }, { "author": "bilibilic2384980", "time": "1.5390000343323", "text": "不管不管！就是要用小拳拳捶你小胸胸！", "color": "#fef102", "type": "right" }, { "author": "bilibili05a44743", "time": "76.057998657227", "text": "我已拔刀！", "color": "#ffffff", "type": "right" }, { "author": "bilibilic371b52d", "time": "58.331001281738", "text": "这都落叶了啊", "color": "#ffffff", "type": "right" }, { "author": "bilibilibf44bf69", "time": "173.04100036621", "text": "封面呢？？", "color": "#ffffff", "type": "right" }, { "author": "bilibilie0607ffd", "time": "68", "text": "我微美如画", "color": "#ffffff", "type": "right" }, { "author": "bilibilie0607ffd", "time": "110", "text": "好好看", "color": "#ff00ff", "type": "right" }, { "author": "bilibilie0607ffd", "time": "112", "text": "我变黄了？", "color": "#ffc712", "type": "right" }, { "author": "bilibilie0607ffd", "time": "149", "text": "微微一硬，略表尊敬", "color": "#ffc712", "type": "right" }, { "author": "bilibilie0607ffd", "time": "184", "text": "我关了。。。。。尴尬三级预警", "color": "#ffc712", "type": "right" }, { "author": "bilibilif615f084", "time": "89.044998168945", "text": "要是我们的啦啦队能像你这样，我保证场场3双，哈哈", "color": "#ffffff", "type": "right" }, { "author": "bilibiliecf40f05", "time": "3.345999956131", "text": "我没看到最基本的信任......", "color": "#ffffff", "type": "right" }, { "author": "bilibilif8cf76db", "time": "221.70599365234", "text": "截图做桌背", "color": "#ffffff", "type": "right" }, { "author": "bilibilie8d21e69", "time": "42.791000366211", "text": "前面   恩兔的带我一个", "color": "#683a7b", "type": "right" }, { "author": "bilibili96ec59f3", "time": "20.819999694824", "text": "该死的裙裤", "color": "#000000", "type": "right" }, { "author": "bilibili96ec59f3", "time": "119.3629989624", "text": "情人节", "color": "#000000", "type": "right" }, { "author": "bilibilida20612a", "time": "73.195999145508", "text": "黄了   吗", "color": "#ffff00", "type": "right" }, { "author": "bilibili5b36c879", "time": "156.82499694824", "text": "截屏成功", "color": "#fef102", "type": "right" }, { "author": "bilibili5e0a5ebc", "time": "132", "text": "哈哈哈哈", "color": "#ffffff", "type": "right" }, { "author": "bilibili5e0a5ebc", "time": "153", "text": "很好很棒", "color": "#ffffff", "type": "right" }, { "author": "bilibili5e0a5ebc", "time": "190", "text": "自然美好", "color": "#56f78b", "type": "right" }, { "author": "bilibili8aa68be5", "time": "62.976001739502", "text": "媳妇你这是又去哪跳了啊", "color": "#ffffff", "type": "right" }, { "author": "bilibili6117deae", "time": "107.90000152588", "text": "经我仔细观察，这篮球筐是歪的！！！", "color": "#ffffff", "type": "right" }, { "author": "bilibilid5b61464", "time": "231.77799987793", "text": "笑起来真好看", "color": "#ffffff", "type": "right" }, { "author": "bilibili03ce5b04", "time": "109.10500335693", "text": "hahah ", "color": "#ffffff", "type": "right" }, { "author": "bilibili1a49b51a", "time": "115.94300079346", "text": "是国产的？？", "color": "#ffffff", "type": "right" }, { "author": "bilibili7f95d4e0", "time": "7.8619999885559", "text": "表白我DIA", "color": "#ffffff", "type": "right" }, { "author": "bilibili7f95d4e0", "time": "7.8619999885559", "text": "最新DIA的歌就是出道曲", "color": "#ffffff", "type": "right" }, { "author": "bilibilif6babbf4", "time": "119.62599945068", "text": "尬舞女王。。哈哈", "color": "#ffffff", "type": "right" }, { "author": "bilibili7db3063f", "time": "86.121002197266", "color": "#ffffff", "type": "right" }, { "author": "bilibiliaa58b4e8", "time": "93.238998413086", "text": "我怎么黄了", "color": "#ffff00", "type": "bottom" }, { "author": "bilibilib5dacceb", "time": "156.61599731445", "text": "挡住挡住", "color": "#ffffff", "type": "right" }, { "author": "bilibilia2291b0e", "time": "204.79899597168", "text": "这个笑容由我守护", "color": "#ffffff", "type": "right" }, { "author": "bilibilib91bed6d", "time": "161.45700073242", "text": "截图成功~", "color": "#ffffff", "type": "right" }, { "author": "bilibili6f8be15d", "time": "18.754999160767", "text": " ······全场最佳······", "color": "#ffffff", "type": "right" }, { "author": "bilibilie9b89473", "time": "147.11000061035", "text": "吼可爱可爱", "color": "#ffffff", "type": "right" }, { "author": "bilibilid36b3620", "time": "63.666999816895", "text": "拔什么剑，二营长架炮轰他娘的", "color": "#ffffff", "type": "right" }, { "author": "bilibili59bd83f1", "time": "66.314002990723", "text": "我一直在想，微小微没有这张脸是不是死好几回了", "color": "#e70012", "type": "right" }, { "author": "bilibili16072f53", "time": "6.893000125885", "text": "wc", "color": "#ffffff", "type": "right" }, { "author": "bilibili16072f53", "time": "4.8319997787476", "text": "hhhhhhhhhhhhhh", "color": "#ffffff", "type": "right" }, { "author": "bilibilid138765a", "time": "228.14599609375", "text": "小伟 我喜欢你", "color": "#ffffff", "type": "right" }, { "author": "bilibili7d84053b", "time": "8.701000213623", "text": "2333333", "color": "#ffffff", "type": "right" }, { "author": "bilibilieb157fe7", "time": "153.71600341797", "text": "活力满满", "color": "#ffffff", "type": "right" }, { "author": "bilibilieb7a6cc3", "time": "66.753997802734", "text": "吼吼吼", "color": "#000000", "type": "right" }, { "author": "bilibili28c0ccfd", "time": "91.364196777344", "text": "是粉色的嘛？", "color": "#ff0099", "type": "right" }, { "author": "bilibilie9b89473", "time": "92.603996276855", "text": "你们他么的别挡我微美颜", "color": "#ffffff", "type": "right" }, { "author": "bilibilib163a4fa", "time": "59.477001190186", "text": "哈哈哈", "color": "#ffffff", "type": "right" }, { "author": "bilibilia448c9f3", "time": "157.43499755859", "text": "我的意大利炮呢", "color": "#ffffff", "type": "right" }, { "author": "bilibili5bb735d4", "time": "26.541000366211", "text": "拔剑吧！ 少年们", "color": "#ffffff", "type": "right" }, { "author": "bilibili27832fdb", "time": "68.389999389648", "text": "我竟然黄了", "color": "#ffff00", "type": "right" }, { "author": "bilibili27832fdb", "time": "129.08799743652", "text": "诸位拔剑吧！", "color": "#ffff00", "type": "right" }, { "author": "bilibili27832fdb", "time": "144.9640045166", "text": "让我看看仙女是谁的", "color": "#ffff00", "type": "right" }, { "author": "bilibili1a6de185", "time": "83.852996826172", "text": "控制不聊鸡己了", "color": "#ffff00", "type": "right" }, { "author": "bilibiliea160ab2", "time": "75.220001220703", "text": "拔剑吧，诸位少侠", "color": "#ff0000", "type": "right" }, { "author": "bilibiliea160ab2", "time": "149.75", "text": "情敌们，不要多说了，拔剑吧", "color": "#ff0000", "type": "right" }, { "author": "bilibilib4b98811", "time": "58.138999938965", "text": "跟", "color": "#009843", "type": "right" }, { "author": "bilibili56fa46bc", "time": "38", "text": "这个真不如原版羞耻", "color": "#ffffff", "type": "right" }, { "author": "bilibili32de9d6b", "time": "60.259998321533", "text": "告诉我我还是纯洁的白色吗", "color": "#ffff00", "type": "bottom" }, { "author": "bilibili32de9d6b", "time": "144.86599731445", "text": "我仔细观察  摄像机可能放歪了", "color": "#ffff00", "type": "bottom" }, { "author": "bilibilib56f5b58", "time": "213.19200134277", "text": "好羞耻", "color": "#ffffff", "type": "right" }, { "author": "bilibili4dc422ef", "time": "60.659000396729", "text": "入坑曲", "color": "#ffffff", "type": "right" }, { "author": "bilibili4187b661", "time": "155.95399475098", "text": "我觉得还是关掉弹幕食用比较好", "color": "#ffffff", "type": "right" }, { "author": "bilibili4187b661", "time": "192.62300109863", "text": "女神的笑容我来守护", "color": "#ffffff", "type": "right" }, { "author": "bilibili4187b661", "time": "12.053999900818", "text": "这个笑容由我来守护", "color": "#ffffff", "type": "right" }, { "author": "bilibili632c1a02", "time": "85.069999694824", "text": "百万助攻~\\(≧▽≦)/~蓝色守护！", "color": "#ffffff", "type": "bottom" }, { "author": "bilibili632c1a02", "time": "99.98999786377", "text": "百万助攻~\\(≧▽≦)/~蓝色守护！", "color": "#00a0ea", "type": "right" }, { "author": "bilibilib0b2c860", "time": "1.1920000314713", "text": "九十万助攻", "color": "#ffffff", "type": "right" }, { "author": "bilibilib1f271ac", "time": "165.59399414062", "text": "截图非常成功，一次过。", "color": "#ffffff", "type": "right" }, { "author": "bilibili8b40cae8", "time": "101.47399902344", "text": "会跳舞的厉害了哦   我就说她自己", "color": "#ffffff", "type": "right" }, { "author": "bilibili8b40cae8", "time": "125.00299835205", "text": "教练。。。我。。。。。", "color": "#ccff33", "type": "top" }, { "author": "bilibili8b40cae8", "time": "154.47200012207", "text": "waileyehaol", "color": "#ccff33", "type": "top" }, { "author": "bilibili4470ae4a", "time": "23.767999649048", "text": "成功解锁新体位", "color": "#ffffff", "type": "right" }, { "author": "bilibili23103a09", "time": "69.623001098633", "text": "喜欢这个笑容！！！这个笑容由我守护！", "color": "#ffffff", "type": "right" }, { "author": "bilibili23103a09", "time": "149.71499633789", "text": "喜欢笑容", "color": "#ffffff", "type": "right" }, { "author": "bilibilid24697c3", "time": "192.89999389648", "text": "大姨妈？", "color": "#ffffff", "type": "right" }, { "author": "bilibilid82001bc", "time": "202.62199401855", "text": "UP跳舞就像宝儿一样强，你快点出道当实力偶像", "color": "#ffffff", "type": "right" }, { "author": "bilibilia2291b0e", "time": "142.17900085449", "text": "每天刷一遍的路过", "color": "#ffffff", "type": "right" }, { "author": "bilibili6ff58b34", "time": "12.298999786377", "text": "奶", "color": "#ffffff", "type": "right" }, { "author": "bilibiliecba955e", "time": "37.305000305176", "text": "仙女粉~", "color": "#e2027f", "type": "right" }, { "author": "bilibili2f1e4bee", "time": "125.34799957275", "text": "好可爱的", "color": "#ffffff", "type": "bottom" }, { "author": "bilibilibb5650bd", "time": "117.33899688721", "text": "双手打字啊", "color": "#ffffff", "type": "right" }, { "author": "bilibilibb5650bd", "time": "185.75", "text": " 弹幕护体", "color": "#ffffff", "type": "right" }, { "author": "bilibili0efbe0ef", "time": "35.291599273682", "text": "好性感的小仙女", "color": "#ffffff", "type": "right" }, { "author": "bilibili5cdf01c6", "time": "138.8990020752", "text": "黄什么黄？我会黄吗？我是正经人好伐", "color": "#fef102", "type": "right" }, { "author": "bilibili5d48c277", "time": "3.0550000667572", "text": "30666", "color": "#ffffff", "type": "right" }, { "author": "bilibili5d48c277", "time": "16.799999237061", "text": "wwwwwhhh", "color": "#ffffff", "type": "right" }, { "author": "bilibili53ce95ec", "time": "81.427001953125", "text": "尴尬。。。", "color": "#ffffff", "type": "right" }, { "author": "bilibili85433528", "time": "11.031000137329", "text": "为了百万", "color": "#000000", "type": "right" }, { "author": "bilibili56275e48", "time": "31.829000473022", "text": "我", "color": "#ffffff", "type": "right" }, { "author": "bilibili56275e48", "time": "112.46900177002", "text": "跳跳糖", "color": "#ffffff", "type": "right" }, { "author": "bilibili439b3407", "time": "35.689998626709", "text": "2016.3.21发布", "color": "#000000", "type": "right" }, { "author": "bilibili81b12277", "time": "26.780000686646", "text": "羞耻女王", "color": "#000000", "type": "right" }, { "author": "bilibilid074d04e", "time": "39.018001556396", "text": "(⊙o⊙)…", "color": "#683a7b", "type": "right" }, { "author": "bilibili102fa8e5", "time": "48.272998809814", "text": "有小肚子了 ", "color": "#ffffff", "type": "right" }, { "author": "bilibili102fa8e5", "time": "50.525001525879", "text": "有小肚子了", "color": "#ffffff", "type": "bottom" }, { "author": "bilibilie26ba7f2", "time": "16.138999938965", "text": "百万冲刺", "color": "#000000", "type": "right" }, { "author": "bilibili23b5ff17", "time": "97.699996948242", "text": "棒", "color": "#ffffff", "type": "right" }, { "author": "bilibilid77178b5", "time": "63.939998626709", "text": "你个女神经啊 让我说你什么好", "color": "#ffffff", "type": "right" }, { "author": "bilibili1acc42cf", "time": "136.36099243164", "text": "这是接的", "color": "#ffffff", "type": "right" }, { "author": "bilibiliae75c769", "time": "203.30200195312", "text": "羡慕头发", "color": "#ffffff", "type": "right" }, { "author": "bilibili98b1f594", "time": "209.00500488281", "text": "前面的我喜欢bigbang", "color": "#ffffff", "type": "right" }, { "author": "bilibili036f54df", "time": "107.15599822998", "text": "喔喔我我我不知道说什么了", "color": "#009843", "type": "right" }, { "author": "bilibili036f54df", "time": "193.19299316406", "text": "拔剑吧", "color": "#e70012", "type": "right" }, { "author": "bilibili036f54df", "time": "231.33700561523", "text": "好自信", "color": "#002e72", "type": "right" }, { "author": "bilibili6cde887d", "time": "226.95500183105", "text": "我的大刀早已饥渴难耐", "color": "#ffffff", "type": "right" }, { "author": "bilibili6f66179b", "time": "204.66000366211", "text": "营养跟不上了", "color": "#ffffff", "type": "right" }, { "author": "bilibili58c0547f", "time": "2.529000043869", "text": "啊，这段戴帽子我看了几十遍，好魔性啊", "color": "#ffffff", "type": "right" }, { "author": "bilibilia574dd51", "time": "99.236000061035", "text": "这该死的裙裤，挡住我仙女了", "color": "#ffffff", "type": "right" }, { "author": "bilibili7ad04fe2", "time": "156.09800720215", "text": "真·一字马！！！", "color": "#fef102", "type": "top" }, { "author": "bilibili734f38ee", "time": "4.1799998283386", "text": "外面不冷吗？心疼", "color": "#ffffff", "type": "right" }, { "author": "bilibili1963633c", "time": "151.89300537109", "text": "刚才有一瞬间像郑恩地", "color": "#ffffff", "type": "right" }, { "author": "bilibili484e8cfa", "time": "58.854000091553", "text": "笑容好治愈", "color": "#cc66cc", "type": "right" }, { "author": "bilibili9828a35d", "time": "10.286999702454", "text": "233333", "color": "#ffffff", "type": "right" }, { "author": "bilibilie1bf1e1d", "time": "156.58399963379", "text": "截图成功", "color": "#ffffff", "type": "bottom" }, { "author": "bilibili190e1156", "time": "156.69299316406", "text": "前面说人家穿裙子里面再穿裤子打脸不，这就是裤裙", "color": "#009843", "type": "right" }, { "author": "bilibili332b2a72", "time": "59.726001739502", "text": "不再是尬舞女王了", "color": "#ffffff", "type": "right" }, { "author": "bilibili332b2a72", "time": "104.69200134277", "text": "怎么回事", "color": "#ffff00", "type": "right" }, { "author": "bilibili2b0494ec", "time": "43.069999694824", "text": "好帅", "color": "#ffffff", "type": "right" }, { "author": "bilibili2b0494ec", "time": "105.76300048828", "text": "最喜欢这段啊啊啊啊", "color": "#fef102", "type": "right" }, { "author": "bilibili5e0f5f81", "time": "122.00499725342", "text": "安全裤是阻挡人类文明向前发展的罪魁祸首", "color": "#000000", "type": "right" }, { "author": "bilibili0e2677aa", "time": "91.952003479004", "text": "我是安全裤", "color": "#000000", "type": "right" }, { "author": "bilibilib4adf5b7", "time": "185.04299926758", "text": "好可爱的笑容", "color": "#ffffff", "type": "right" }, { "author": "bilibilidfaa4c20", "time": "204.99200439453", "text": "同韩圈爱看仙女的路过", "color": "#ffffff", "type": "top" }, { "author": "bilibilid4c4d888", "time": "116.25900268555", "text": "这丝袜美腿真棒～", "color": "#ffffff", "type": "right" }, { "author": "bilibilid3945495", "time": "10.664999961853", "text": "安全裤，差评", "color": "#ffffff", "type": "right" }, { "author": "bilibilia2edee18", "time": "3.9179999828339", "text": "诸君拔剑吧", "color": "#e70012", "type": "right" }, { "author": "bilibiliaa8e47a7", "time": "93.45369720459", "text": "b站就服你", "color": "#ff6600", "type": "right" }, { "author": "bilibili5e0f5f81", "time": "156.07099914551", "text": "吼吼吼", "color": "#000000", "type": "right" }, { "author": "bilibilid4513e76", "time": "125.43699645996", "text": "完了完了   陷得太深   出不去了", "color": "#ff0000", "type": "right" }, { "author": "bilibilid4513e76", "time": "163.54800415039", "text": "自从看了微微跳舞  营养跟不上了", "color": "#ff0000", "type": "right" }, { "author": "bilibili56fbc1d2", "time": "34.125999450684", "text": "变暗了？", "color": "#ffffff", "type": "right" }, { "author": "bilibilib81284d2", "time": "172.25799560547", "text": "自信最美就服你", "color": "#ffffff", "type": "right" }, { "author": "bilibilie6921b9d", "time": "82.678001403809", "text": "百万助攻！", "color": "#ffffff", "type": "right" }, { "author": "bilibilie669a634", "time": "231.26400756836", "text": "这笑容太迷人了！！！", "color": "#ffffff", "type": "right" }, { "author": "bilibili5e0f5f81", "time": "219.56100463867", "text": "独宠小仙女", "color": "#ffffffff", "type": "right" }, { "author": "bilibili3d238489", "time": "40.973999023438", "text": "一不小心就黄了", "color": "#fef102", "type": "right" }, { "author": "bilibili3d238489", "time": "84.734001159668", "text": "诸君拔剑吧！谁赢谁抱走", "color": "#e70012", "type": "right" }] }
+    "danmakuPost": {
+        "code": 1,
+        "data": {
+            "__v": 0,
+            "author": "DIYgod的女粉",
+            "time": 0,
+            "text": "而发热11111",
+            "color": "#fff",
+            "type": "right",
+            "ip": "221.12.10.218",
+            "referer": "http://localhost:8080/module/player.html",
+            "_id": "5959ffbb2dd2bf5256872a34",
+            "player": [
+                "9E2E3368B56CDBB4cd"
+            ]
+        }
+    },
+    "danmakuData": {
+        "code": 1,
+        "danmaku": [{
+            "author": "bilibili38b92bbd",
+            "time": 0,
+            "text": "蔡雪丹",
+            "color": "#ff0000",
+            "type": "right"
+        }]
+    },
+    "lessonDetail": {
+        "failure": [
+            "P3ijUR3nSn",
+            "SwC9ybV9Zx",
+            "hoOmu3jISF"
+        ],
+        "success": {
+            "url": "http://txy.aharsfuczdybla.xglla",
+            "type": 1,
+            "subtitle": "AQZwyIYlNW",
+            "lenth": 66497,
+            "page": 30349
+        }
+    },
+    "discusionDetail": {
+        "failure": [
+            "sBriJWrv46",
+            "EZV6l9nzJq",
+            "meO0iAb6ka"
+        ],
+        "success": [{
+            "id": 56741,
+            "content": "89kHZouyNr",
+            "grate": 44628,
+            "view": 91140,
+            "employee": {
+                "id": 57727,
+                "name": "iMbzp2OOsx",
+                "port": "8PZFtHMpDm"
+            },
+            "point_time": "1499479437309"
+        }, {
+            "id": 58446,
+            "content": "BOgV8VbkMa",
+            "grate": 72950,
+            "view": 94471,
+            "employee": {
+                "id": 58744,
+                "name": "gJUFWBFRcE",
+                "port": "jDZWvLzU2K"
+            },
+            "point_time": "1499478591043"
+        }, {
+            "id": 59184,
+            "content": "e4n6a7IghO",
+            "grate": 15768,
+            "view": 8326,
+            "employee": {
+                "id": 59786,
+                "name": "TSBHrTYh37",
+                "port": "N5UW9tput1"
+            },
+            "point_time": "1499480050736"
+        }]
+    },
+    "msg": {
+        "failure": [
+            "OAjmenPnV0",
+            "4pl59OpGIU",
+            "s86HKiIwFe"
+        ],
+        "success": [{
+            "content": "otwmbGAur5",
+            "time": "1499526200150",
+            "isRead": true,
+            "from": {
+                "id": 3,
+                "name": "chen"
+            }
+        }, {
+            "content": "DHcgSovclG",
+            "time": "1499525374368",
+            "isRead": false,
+            "from": {
+                "id": 3,
+                "name": "chen"
+            }
+        }, {
+            "content": "TZWgxNaglc",
+            "time": "1499523868742",
+            "isRead": false,
+            "from": {
+                "id": 3,
+                "name": "chen"
+            }
+        }]
+    }
 }

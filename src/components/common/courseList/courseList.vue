@@ -3,11 +3,11 @@
         <div class="course-list-header">
             <mu-row gutter>
                 <mu-col width="100" tablet="50" desktop="33">
-                    <div class="tab" v-show="tabShow">
+                    <div class="tab" v-if="tabShow">
                         <mu-tabs :value="activeTab" @change="handleTabChange">
-                            <mu-tab value="newest" title="最新" />
-                            <mu-tab value="hotest" title="最热" />
-                            <mu-tab value="suitest" @active="handleActive" title="最适合我" />
+                            <mu-tab value="/course/new" title="最新" />
+                            <mu-tab value="/course/hot" title="最热" />
+                            <mu-tab value="/course/commendations" title="最适合我" />
                         </mu-tabs>
                     </div>
                 </mu-col>
@@ -32,7 +32,7 @@
                 </mu-col>
             </mu-row>
         </div>
-        <mu-pagination :total="pagination.pageTotal*10" :current="pagination.pageNum" @pageChange="pageClick">
+        <mu-pagination :total="pagination.pageTotal*10" :current="pagination.pageNum" @pageChange="pageClick" v-if="pageShow">
         </mu-pagination>
     </div>
 </template>
@@ -87,22 +87,27 @@ export default {
         },
         bus: {
             type: Object
+        },
+        pageShow: {
+            type: Boolean
         }
     },
     data() {
         return {
-            activeTab: 'newest',
+            activeTab: '/course/new',
             courses: [],
             search_text: '',
             search_link: '',
             d_id: 0,
             g_id: 0,
-            s_id: 0
+            s_id: 0,
+            url:this.coursesUrl
         }
     },
     created() {
-        this.viewCourse(this.pagination.pageNum);
-        var that = this;
+        const that = this;
+        this.viewCourse(that.pagination.pageNum);
+
         // console.log(bus)
         if (this.bus) {
             this.bus.$on("receiveIds", function(msg) { //通过$on("事件名称",function(参数列表){})来监听一个事件是否进行处理
@@ -123,17 +128,22 @@ export default {
     methods: {
         handleTabChange(val) {
             this.activeTab = val
+            this.url = val
+            this.viewCourse(1)
         },
         handleActive() {
             window.alert('tab active')
         },
         pageClick(newIndex) {
+            const _self = this;
             this.viewCourse(newIndex)
         },
         viewCourse(current) {
             const _self = this
             console.log(this.pagination.pageTotal)
-            this.$http.get(this.coursesUrl, {
+            console.log('------')
+            console.log(this.url)
+            this.$http.get(_self.url, {
                 params: {
                     s_id: this.s_id,
                     g_id: this.g_id,
@@ -144,7 +154,8 @@ export default {
                 }
             }).then((response) => {
                 response = response.body
-                    // console.log(response)
+                console.log('------')
+                console.log(response)
                 if (response.failure.length === 0) {
                     console.log('success')
                     this.courses = response.success
@@ -155,21 +166,20 @@ export default {
             })
         },
         search() {
+            const _self = this;
             console.log(this.search_text)
             if (window.location.pathname == '/module/courseSearch.html') {
-                this.viewCourse(this.pagination.pageNum)
+                this.viewCourse(_self.pagination.pageNum)
 
             } else {
                 window.location.href = '/module/courseSearch.html?title=' + encodeURI(this.search_text)
             }
         },
         toDetail(id) {
-            alert(111)
             window.location.href = '/module/courseDetail.html?cid=' + id
         }
     },
     computed: {
-
     }
 
 }

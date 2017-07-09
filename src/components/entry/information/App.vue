@@ -112,7 +112,7 @@ export default {
             color: #666;
         }
     }
-    .right-content{
+    .right-content {
         padding: 20px 100px 20px 0;
     }
 }
@@ -136,5 +136,9 @@ export default {
 .slide-fade-leave-active {
     transform: translateX(10px);
     opacity: 0;
+}
+
+.mu-grid-tile {
+    cursor: pointer;
 }
 </style>

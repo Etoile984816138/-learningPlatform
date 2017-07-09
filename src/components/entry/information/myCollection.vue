@@ -7,7 +7,7 @@
         <div class="course-list-content">
             <mu-grid-list class="gridlist-demo" :cols="gridrow">
                 <mu-grid-tile v-for="courseItem in courses" :key="courseItem.course.id">
-                    <img :src="courseItem.course.cover" class="cover" />
+                    <img :src="courseItem.course.cover" class="cover"  @click="toDetail(courseItem.course.id)"/>
                     <img src="./banner1.jpg" class="cover" />
                     <span slot="title">{{courseItem.course.title}}</span>
                     <span slot="subTitle">{{courseItem.course.number}}人收藏</span>
@@ -44,6 +44,9 @@ export default {
             width: 100%;
             height: 100%;
         }
+    }
+    .mu-grid-tile{
+        cursor: pointer;
     }
     .mu-pagination {
         margin-top: 30px;
@@ -91,6 +94,9 @@ export default {
                     }
 
                 })
+            },
+            toDetail(id) {
+                window.location.href = '/module/courseDetail.html?cid=' + id
             }
         }
 }

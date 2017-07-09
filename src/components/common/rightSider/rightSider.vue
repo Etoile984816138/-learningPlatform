@@ -4,7 +4,7 @@
       在线客服
     </div>
     <div class="right-sider-box">
-      意见反馈
+      <a href="/module/advice.html">意见反馈</a>
     </div>
     <div class="right-sider-box" @mouseenter="showDetail" @mouseout="hideDetail">
       手机课堂
@@ -36,6 +36,7 @@ export default {
   @main-color: #009688;
   .right-sider{
     position: fixed;
+    z-index: 999;
     right: 10px;
     top: 102px;
     background: #fff;
@@ -48,6 +49,12 @@ export default {
     padding: 10px;
     border-top: 1px solid #ccc;
     text-align: center;
+    a{
+      color: #000;
+      &:hover{
+        color: #fff;
+      }
+    }
     &:last-child{
       border-bottom: 1px solid #ccc;
     }

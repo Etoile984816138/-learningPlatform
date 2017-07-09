@@ -1,13 +1,13 @@
 <template>
     <div>
         <mu-appbar title="企业在线学习平台" class="header" >
-            <p @click="toggleDetail">企业在线学习平台</p>
+            <p><a href="/module/index.html">企业在线学习平台</a></p>
             <!-- <mu-icon-button icon="menu" slot="left"/>
     <mu-flat-button label="expand_more" slot="right"/>
     <mu-flat-button href="333" label="expand_more" slot="right"/> -->
             <mu-text-field icon="search" class="appbar-search-field" slot="right" hintText="请输入搜索内容" />
-            <mu-flat-button color="white" label="我的学习" slot="right" />
-            <mu-flat-button color="white" label="我的消息" slot="right" />
+            <mu-flat-button color="white" label="我的学习" slot="right" href="/module/information.html#/study"/>
+            <mu-flat-button color="white" label="我的消息" slot="right" href="/module/information.html#/msg"/>
             <mu-badge :content="''+user.new_info" class="icon-badge" circle secondary slot="right"> </mu-badge>
             <mu-flat-button color="white" :label="user.name" slot="right" />
             <mu-avatar slot="right" :src="user.portrait" />
@@ -30,6 +30,9 @@
 .header {
     position: fixed;
     top: 0;
+    a{
+        color: #fff;
+    }
 }
 
 .header-hide-menu {

@@ -7,7 +7,7 @@
             <div class="content-title">
                 <p>向你推荐</p>
             </div>
-            <v-courseList :tabShow="tabShow" :coursesUrl="coursesUrl" :pagination="pagination"></v-courseList>
+            <v-courseList :tabShow="tabShow" :coursesUrl="coursesUrl" :pagination="pagination" :pageShow="pageShow"></v-courseList>
         </div>
         <v-footer></v-footer>
     </div>
@@ -26,12 +26,13 @@ export default {
             return {
                 tabShow: false,
                 directions: [],
-                coursesUrl: '/course/new',
+                coursesUrl: '/course/commendations',
                 pagination:{
                     pageNum:1,
-                    pageSize:10,
+                    pageSize:8,
                     pageTotal:58
-                }
+                },
+                pageShow:false
 
                 
             }

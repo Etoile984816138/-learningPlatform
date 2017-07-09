@@ -5,23 +5,20 @@
             <mu-raised-button label="搜索" class="search-button" primary />
         </div>
         <div class="course-list-content">
-        	<div class="day-course" v-for="info in courses">
-	        	<p class="content-title">{{info.time}}</p>
-	            <mu-grid-list class="gridlist-demo" :cols="gridrow">
-	                <mu-grid-tile v-for="courseItem in info.list" :key="courseItem.lesson.id">
-	                    <img :src="courseItem.cover" class="cover" />
-	                    <!-- <img src="./banner1.jpg" class="cover" /> -->
-	                    <span slot="title">{{courseItem.lesson.title}}</span>
-
-	                    <span slot="subTitle" v-if="courseItem.lesson.material.type != 2 && courseItem.lesson.material.length != courseItem.point">看至{{courseItem.point}}</span>
-	                    <span slot="subTitle" v-else-if="courseItem.lesson.material == 2 && courseItem.lesson.material.length != courseItem.point">看至{{courseItem.point}}页</span>
-	                    <span slot="subTitle" v-else>已看完</span>
-
-	                    <span slot="subTitle" class="sub-title-right" style="" v-if="courseItem.lesson.material.type != 2">视频时长：{{courseItem.lesson.material.length}}</span>
-	                    <span v-else>页数：{{courseItem.lesson.material.page}}页</span>
-
-	                </mu-grid-tile>
-	            </mu-grid-list>
+            <div class="day-course" v-for="info in courses">
+                <p class="content-title">{{info.time}}</p>
+                <mu-grid-list class="gridlist-demo" :cols="gridrow">
+                    <mu-grid-tile v-for="courseItem in info.list" :key="courseItem.lesson.id">
+                        <img :src="courseItem.cover" class="cover" @click="toDetail(courseItem)" />
+                        <!-- <img src="./banner1.jpg" class="cover" /> -->
+                        <span slot="title">{{courseItem.lesson.title}}</span>
+                        <span slot="subTitle" v-if="courseItem.lesson.material.type != 2 && courseItem.lesson.material.length != courseItem.point">看至{{courseItem.point}}</span>
+                        <span slot="subTitle" v-else-if="courseItem.lesson.material == 2 && courseItem.lesson.material.length != courseItem.point">看至{{courseItem.point}}页</span>
+                        <span slot="subTitle" v-else>已看完</span>
+                        <span slot="subTitle" class="sub-title-right" style="" v-if="courseItem.lesson.material.type != 2">视频时长：{{courseItem.lesson.material.length}}</span>
+                        <span v-else>页数：{{courseItem.lesson.material.page}}页</span>
+                    </mu-grid-tile>
+                </mu-grid-list>
             </div>
         </div>
         <mu-pagination :total="pageTotal*10" :current="pageNum" @pageChange="pageClick">
@@ -61,16 +58,16 @@ export default {
         display: flex;
         justify-content: center
     }
-    .sub-title-right{
-    	float:right;
-    	padding-right:10px;
+    .sub-title-right {
+        float: right;
+        padding-right: 10px;
     }
     .content-title {
-    margin: 40px 0 20px 0;
-    padding: 5px ;
-    border-left: 5px solid @main-color;
-    font-size: 16px;
-}
+        margin: 40px 0 20px 0;
+        padding: 5px;
+        border-left: 5px solid @main-color;
+        font-size: 16px;
+    }
 }
 </style>
 <script type="text/javascript">
@@ -112,6 +109,28 @@ export default {
                     }
 
                 })
+            },
+            toDetail(info) {
+                let time = 0;
+                console.log(info);
+                // 处理时间
+                // const time_arr = info.point.split(':');
+                // 视频
+                if(info.lesson.material.type === 0){
+                    const time_arr = info.point.split(':');
+                    time = parseInt(time_arr[0]) * 60 + parseInt(time_arr[1]);
+                    window.location.href = '/module/player.html#/video/'+info.lesson.id+'?point='+time
+                // 音频
+                }else if(info.lesson.material.type === 1){
+                    const time_arr = info.point.split(':');
+                    time = parseInt(time_arr[0]) * 60 + parseInt(time_arr[1]);
+                    window.location.href = '/module/player.html#/audio/'+info.lesson.id+'?point='+time
+                // PPT
+                }else{
+                    time = info.point
+                    window.location.href = '/module/player.html#/page/'+info.lesson.id+'?point='+time
+                }
+
             }
         }
 }

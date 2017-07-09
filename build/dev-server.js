@@ -22,6 +22,20 @@ var proxyTable = config.dev.proxyTable
 
 var app = express()
 
+app.all('*', function(req, res, next) {  
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Content-Type, Content-Length, Authorization, Accept, X-Requested-With , yourHeaderFeild');
+    res.header('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
+    res.header('Cache-control', 'no-cache');
+
+    if (req.method == 'OPTIONS') {
+        res.send(200);
+    }
+    else {
+        next();
+    }
+});  
+
 var appData = require('../data.json');
 var direction = appData.direction,
     generics = appData.generics,
@@ -35,10 +49,14 @@ var direction = appData.direction,
     courseAdd = appData.courseAdd,
     discusion = appData.discusion,
     danmaku1 = appData.danmakuData,
-    style = appData.study,
+    study = appData.study,
     collection = appData.collection,
     history = appData.history,
-    note = appData.note
+    note = appData.note,
+    danmakuPost = appData.danmakuPost,
+    lessonDetail = appData.lessonDetail,
+    discusionDetail = appData.discusionDetail,
+    msg = appData.msg
 
 var apiRoutes = express.Router();
 
@@ -50,7 +68,7 @@ apiRoutes.param('id', function(req, res, next, id) {
 apiRoutes.get('/direction/:id', function(req, res) {
     res.json({
         failure: [],
-        data: direction
+        success: direction
     });
     res.end();
 });
@@ -154,11 +172,19 @@ apiRoutes.get('/danmaku', function(req, res) {
     });
 });
 
+apiRoutes.post('/danmaku', function(req, res) {
+    res.json({
+        code:1,
+        danmaku:danmakuPost.data
+    });
+});
+
 // 我的学习
 apiRoutes.get('/user/study', function(req, res) {
     res.json({
         failure: [],
-        success: style.success
+        success: study.success,
+        total:study.total
     });
 });
 
@@ -187,6 +213,31 @@ apiRoutes.get('/discuss/:type', function(req, res) {
         failure: [],
         success: note.success,
         total: note.total
+    });
+});
+
+// 我的消息
+apiRoutes.get('/news/:type', function(req, res) {
+    res.json({
+        failure: [],
+        success: msg.success
+    });
+});
+
+// 课时详情
+apiRoutes.get('/lesson/:lesson_id', function(req, res) {
+    res.json({
+        failure: [],
+        success: lessonDetail.success,
+        next:2
+    });
+});
+
+// 划重点/有疑问数据
+apiRoutes.get('/discuss/:lesson_id/lesson/:type', function(req, res) {
+    res.json({
+        failure: [],
+        success: discusionDetail.success
     });
 });
 

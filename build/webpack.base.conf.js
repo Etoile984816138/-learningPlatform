@@ -4,6 +4,7 @@ var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 console.log(ExtractTextPlugin)
+
 function resolve(dir) {
     return path.join(__dirname, '..', dir)
 }
@@ -41,8 +42,8 @@ module.exports = {
             'assets': resolve('src/assets'),
             'components': resolve('src/components'),
             'common': resolve('src/common'),
-            'commonComp':resolve('src/components/common'),
-            'entry':resolve('src/components/entry')
+            'commonComp': resolve('src/components/common'),
+            'entry': resolve('src/components/entry')
         }
     },
     module: {
@@ -70,6 +71,13 @@ module.exports = {
             options: {
                 limit: 10000,
                 name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
+            }
+        }, {
+            test: /\.(mp3|mp4|pptx|pdf)(\?.*)?$/,
+            loader: 'url-loader',
+            options: {
+                limit: 10000,
+                name: utils.assetsPath('media/[name].[hash:7].[ext]')
             }
         }]
     }

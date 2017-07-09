@@ -142,6 +142,7 @@ export default {
             return this.generics
         },
         style_arr: function() { 
+            
             return this.styles 
         }
     }

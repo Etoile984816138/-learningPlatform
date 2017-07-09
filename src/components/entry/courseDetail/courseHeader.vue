@@ -13,7 +13,9 @@
             <mu-col width="100" tablet="60" desktop="60">
                 <mu-list-item disabled>
                     <h1>{{courseData.title}}</h1>
-                    <mu-badge :content="badgeText" slot="after" @click="" class="badge-active"/>
+                    <div @click="setBadgeText">
+                        <mu-badge :content="badgeText" slot="after" :class="{'badge-active':isCollect}" />
+                    </div>
                     <p>{{student_num}}人在学
                         <span class="star-wrapper">
                         评分：
@@ -22,7 +24,7 @@
                     </span>
                     </p>
                     <div v-if="courseData.hasjoin">
-                        <mu-linear-progress mode="determinate" :value="courseData.hasStudy" class="progress" :size="progressSize" :max="courseData.total"/>
+                        <mu-linear-progress mode="determinate" :value="courseData.hasStudy" class="progress" :size="progressSize" :max="courseData.total" />
                         <p>已学习{{courseData.hasStudy}}个课时</p>
                     </div>
                     <div v-else>
@@ -41,8 +43,9 @@ export default {
             return {
                 test: '',
                 value: 20,
-                badgeText:'收藏',
-                progressSize:10
+                badgeText: '收藏',
+                progressSize: 10,
+                isCollect: false
             }
         },
         props: {
@@ -54,6 +57,17 @@ export default {
             }
         },
         created() {
+            try {
+                if (this.courseData.hasCollect) {
+                    this.badgeText = '已收藏'
+                    this.isCollect = true
+                } else {
+                    this.badgeText = '收藏'
+                    this.isCollect = false
+                }
+            } catch (e) {
+                console.log(e)
+            }
 
         },
         methods: {
@@ -75,6 +89,25 @@ export default {
                     }
 
                 })
+            },
+            setBadgeText() {
+                this.$http.post('/collection/' + this.courseData.id).then((response) => {
+                    response = response.body
+                        // console.log(response)
+                    if (response.failure.length === 0) {
+                        if (this.isCollect) {
+                            this.badgeText = '收藏'
+                            this.isCollect = false
+                        } else {
+                            this.badgeText = '已收藏'
+                            this.isCollect = true
+                        }
+                    } else {
+                        alert(response.failure[0])
+                    }
+
+                });
+
             }
         },
         computed: {
@@ -91,11 +124,11 @@ export default {
                 // while (!this.courseData);
                 // return this.courseData.students.length
             },
-            star_num(){
-                if(isNaN(this.courseData.star)){
+            star_num() {
+                if (isNaN(this.courseData.star)) {
                     return 0;
-                }else{
-                    return (5 -this.courseData.star);
+                } else {
+                    return (5 - this.courseData.star);
                 }
             }
         }
@@ -121,12 +154,11 @@ export default {
         }
     }
     .star-wrapper {
-
         display: inline-block;
         margin-left: 100px;
         .mu-icon-button {
             position: relative;
-            top:5px;
+            top: 5px;
             width: 16px;
             height: 16px;
             .mu-icon {
@@ -156,11 +188,15 @@ export default {
     .progress {
         width: 100%;
     }
-    .badge-active .mu-badge{
+    .badge-active {
         cursor: pointer;
-        background: #fdd835;
+        .mu-badge {
+            background: #fdd835;
+        }
         // color: #ffeb3b;
-
+    }
+    .mu-badge {
+        cursor: pointer;
     }
 }
 </style>

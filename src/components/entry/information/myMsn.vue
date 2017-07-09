@@ -2,23 +2,17 @@
     <div id="myMsn">
         <div class="tab-wrapper">
             <mu-tabs :value="activeTab" @change="handleTabChange">
-                <mu-tab value="tab1" title="讨论区通知" @active="handleActive(1)" />
-                <mu-tab value="tab2" title="好友通知" @active="handleActive(2)" />
-                <mu-tab value="tab3" title="系统通知" @active="handleActive(3)" />
+                <mu-tab value="comment" title="讨论区通知" @active="handleActive('comment')" />
+                <mu-tab value="friend" title="好友通知" @active="handleActive('friend')" />
+                <mu-tab value="system" title="系统通知" @active="handleActive('system')" />
             </mu-tabs>
         </div>
         <mu-raised-button label="全部标记为已读" class="demo-raised-button"/>
         <mu-list>
-            <mu-list-item title="Inbox" class="new-tip">
-                <mu-list-item title="5-10" slot="right" disabled class="time"></mu-list-item>
-                <mu-badge content="" class="icon-badge" circle secondary color="red">
+            <mu-list-item v-for="(item,index) in msg" :title="'来自'+item.from.name+'的消息['+item.content+']'" class="new-tip"  :key="index">
+                <mu-list-item :title="item.time" slot="right" disabled class="time"></mu-list-item>
+                <mu-badge content="" class="icon-badge" circle secondary color="red" v-if="item.isRead">
                 </mu-badge>
-            </mu-list-item>
-            <mu-list-item title="Starred">
-            </mu-list-item>
-            <mu-list-item title="Sent mail">
-            </mu-list-item>
-            <mu-list-item title="Drafts">
             </mu-list-item>
         </mu-list>
         <mu-pagination :total="pageTotal*10" :current="pageNum" @pageChange="pageClick">
@@ -106,12 +100,15 @@ export default {
                 gridrow: 3,
                 pageTotal: 50,
                 pageNum: 1,
-                activeTab: 'tab1',
-                size: 1
+                activeTab: 'comment',
+                size: 1,
+                type:'comment',
+                msg:[]
             }
         },
         created() {
             this.viewCourse(this.pageNum)
+            // console.log(this.msg)
 
         },
         methods: {
@@ -120,14 +117,14 @@ export default {
             },
             handleActive(type) {
                 this.type = type;
-                // this.viewCourse(1);
+                this.viewCourse(1);
             },
             pageClick(newIndex) {
                 this.viewCourse(newIndex)
             },
             viewCourse(current) {
                 const _self = this
-                this.$http.get('/user/study', {
+                this.$http.get('/news/'+_self.type, {
                     params: {
                         pageNum: current,
                         pageSize: 12,
@@ -137,8 +134,7 @@ export default {
                         // console.log(response)
                     if (response.failure.length === 0) {
                         console.log(response.success)
-                        this.courses = response.success.courses
-                        this.pageTotal = response.success.total
+                        _self.msg = response.success
                     } else {
                         alert(response.failure[0])
                     }
