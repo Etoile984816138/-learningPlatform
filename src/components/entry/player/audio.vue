@@ -123,11 +123,9 @@ export default {
         created() {
             const _self = this;
             window.onunload = function() {　
-                this.$http.post('/history/record', {
-                    params: {
-                        lesson_id: _self.lessonData.id,
-                        point: _self.current
-                    }
+                _self.$http.post('/history/record', {
+                    lesson_id: _self.lessonData.id,
+                    point: _self.current
                 }).then((response) => {
                     response = response.body
                     if (response.failure.length === 0) {
@@ -219,11 +217,11 @@ export default {
                                 if (response.failure.length === 0) {
                                     let type = response.success.type
                                     if (type === 0) {
-                                        window.location = '#/video/' + _self.nextId
+                                        window.location = '#/video/' + _self.nextId+'?cid='+self.handleUrl()['cid']
                                     } else if (type === 1) {
-                                        window.location = '#/audio/' + _self.nextId
+                                        window.location = '#/audio/' + _self.nextId+'?cid='+self.handleUrl()['cid']
                                     } else {
-                                        window.location = '#/page/' + _self.nextId
+                                        window.location = '#/page/' + _self.nextId+'?cid='+self.handleUrl()['cid']
                                     }
                                 } else {
                                     alert(response.failure[0])

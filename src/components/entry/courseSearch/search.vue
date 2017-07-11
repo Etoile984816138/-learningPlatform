@@ -5,7 +5,7 @@
 <template>
     <div id="search" class="search-wrapper">
         <div class="search-wrapper-li">
-            <p class="search-title">方向：</p>
+            <p class="search-title">方向：{{setGeneric}}</p>
             <mu-list class="search-mu-list" @change="choiseDirection" :value="direction_id">
                 <mu-list-item value="0" title="全部"></mu-list-item>
                 <mu-list-item v-for="direction in direction_arr" :value="direction.d_id" :title="direction.name" :key="direction.d_id">
@@ -13,7 +13,7 @@
             </mu-list>
         </div>
         <div class="search-wrapper-li">
-            <p class="search-title">分类：</p>
+            <p class="search-title">分类：{{setStyle}}</p>
             <mu-list class="search-mu-list" @change="choiseGeneric" :value="generic_id">
                 <mu-list-item value="0" title="全部"></mu-list-item>
                 <mu-list-item v-for="generic in generic_arr" :value="generic.g_id" :title="generic.name" :key="generic.g_id">
@@ -60,6 +60,8 @@ export default {
             direction_id: 0,
             generic_id: 0,
             style_id: 0,
+            generic_arr:[],
+            style_arr:[]
             // direction_arr: this.directions,
             // generic_arr: this.generics,
             // style_arr: this.styles
@@ -80,13 +82,14 @@ export default {
             this.$http.get('/direction/' + _self.direction_id).then((response) => {
                 response = response.body
                     // console.log(response)
-                    if (response.failure.length === 0) {
-                        console.log('success')
-                        _self.generic_arr = response.success
-                    } else {
-                        alert(response.failure[0])
-                    }
-               
+                if (response.failure.length === 0) {
+                    console.log('success')
+                    _self.generic_arr = response.success
+
+                } else {
+                    alert(response.failure[0])
+                }
+
             });
             this.bus.$emit("receiveIds", {
                 d_id: _self.direction_id,
@@ -102,16 +105,16 @@ export default {
             this.generic_id = val;
 
             // 根据分类获取类型
-            this.$http.get('/generic/'+_self.generic_id).then((response) => {
+            this.$http.get('/generic/' + _self.generic_id).then((response) => {
                 response = response.body
                     // console.log(response)
-                    if (response.failure.length === 0) {
-                        console.log('success')
-                        _self.style_arr = response.success
-                    } else {
-                        alert(response.failure[0])
-                    }
-                
+                if (response.failure.length === 0) {
+                    console.log('success')
+                    _self.style_arr = response.success
+                } else {
+                    alert(response.failure[0])
+                }
+
             });
             this.bus.$emit("receiveIds", {
                 d_id: _self.direction_id,
@@ -133,22 +136,30 @@ export default {
         },
 
 
-    }, 
-    computed: { 
-        direction_arr:function() { 
+    },
+    mounted() {
+        // this.test = this.generics;
+        // console.log(this.test)
+    },
+    computed: {
+        direction_arr: function() {
             return this.directions
         },
-        generic_arr:function(){
-            return this.generics
+        setGeneric: function() {
+            // alert(111)
+            console.log('Generic')
+            console.log(this.generics)
+            this.generic_arr = this.generics
         },
-        style_arr: function() { 
-            
-            return this.styles 
+        setStyle: function() {
+            console.log('style')
+            console.log(this.style_arr)
+            this.style_arr = this.styles
         }
     }
 
 
-    }
+}
 </script>
 <style lang="less">
 @main-color: #009688;

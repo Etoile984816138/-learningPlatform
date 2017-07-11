@@ -32,7 +32,7 @@
                 </mu-col>
             </mu-row>
         </div>
-        <mu-pagination :total="pagination.pageTotal*10" :current="pagination.pageNum" @pageChange="pageClick" v-if="pageShow">
+        <mu-pagination :total="total*10" :current="pagination.pageNum" @pageChange="pageClick" v-if="pageShow">
         </mu-pagination>
     </div>
 </template>
@@ -101,7 +101,8 @@ export default {
             d_id: 0,
             g_id: 0,
             s_id: 0,
-            url:this.coursesUrl
+            url:this.coursesUrl,
+            total:0
         }
     },
     created() {
@@ -158,7 +159,8 @@ export default {
                 console.log(response)
                 if (response.failure.length === 0) {
                     console.log('success')
-                    this.courses = response.success
+                    this.courses = response.success;
+                    this.total = response.total;
                 } else {
                     alert(response.failure[0])
                 }

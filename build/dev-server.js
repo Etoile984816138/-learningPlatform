@@ -68,7 +68,7 @@ apiRoutes.param('id', function(req, res, next, id) {
 apiRoutes.get('/direction/:id', function(req, res) {
     res.json({
         failure: [],
-        success: direction
+        success: direction.success
     });
     res.end();
 });
@@ -87,7 +87,8 @@ apiRoutes.get('/generic', function(req, res) {
 apiRoutes.get('/course', function(req, res) {
     res.json({
         failure: [],
-        success: course.success
+        success: course.success,
+        total:20
     });
 });
 
@@ -156,11 +157,22 @@ apiRoutes.get('/course/add/:c_id', function(req, res) {
 });
 app.use('/', apiRoutes);
 
+// 发表主题帖
+apiRoutes.post('/discuss/publish', function(req, res) {
+    console.log(req.params)
+    console.log(req.body)
+    res.json({
+        code:true
+    });
+});
+
 // 获取讨论区数据
 apiRoutes.get('/discuss/:course_id/course/:type', function(req, res) {
+    console.log(req.params)
     res.json({
         failure: [],
-        success: discusion.success
+        success: discusion.success,
+        total:20
     });
 });
 

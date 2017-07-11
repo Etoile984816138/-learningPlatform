@@ -9,7 +9,8 @@
             </mu-list>
             <div class="sidebar-submenu" id="sidebar-submenu" @mouseenter="overFlag" @mouseleave="outFlag" v-show="detailShow^mouseoverFlag">
                 <p class="title">{{direction}}</p>
-                <span class="content" v-for="generic in generics">{{generic.name}}</span>
+                <span class="content" v-for="(item,index) in generics"><span class="name">{{item.name}}</span><span class="divide">|</span></span>
+
                
             </div>
         </mu-flexbox-item>
@@ -33,7 +34,10 @@
         color: #fff;
     }
 }
-
+.divide{
+    display: inline-block;
+    padding: 0 20px;
+}
 .sidebar {
     position: relative;
 }
@@ -65,10 +69,10 @@
         color: #777;
         text-align: left;
         padding: 0;
-        margin-right: 10px;
+        // margin-right: 10px;
         cursor: pointer;
         line-height: 2;
-        &:hover {
+        .name:hover {
             color: #ccc;
         }
     }
@@ -110,8 +114,6 @@ export default {
         }
     },
     created() {
-        console.log('888888')
-      console.log(this.generics)
     },
     methods: {
         showDetail(e) {
@@ -119,10 +121,7 @@ export default {
             this.direction = e.currentTarget.dataset.direction
             this.$http.get('/direction/' + this.direction_id).then((response) => {
                 response = response.body
-                    // console.log(response)
                     if (response.failure.length === 0) {
-                        console.log('378343')
-                        console.log(response.success)
                         this.generics = response.success
                     } else {
                         alert(response.failure[0])

@@ -23,7 +23,7 @@
                         <mu-icon-button icon="star_border" v-for="item in star_num" :key="courseData.id"/>
                     </span>
                     </p>
-                    <div v-if="courseData.hasjoin">
+                    <div v-if="isJoin">
                         <mu-linear-progress mode="determinate" :value="courseData.hasStudy" class="progress" :size="progressSize" :max="courseData.total" />
                         <p>已学习{{courseData.hasStudy}}个课时</p>
                     </div>
@@ -54,6 +54,9 @@ export default {
             },
             bus: {
                 type: Object
+            },
+            isJoin:{
+                type:Boolean
             }
         },
         created() {
@@ -114,11 +117,15 @@ export default {
             student_num() {
                 console.log('-------------------')
                 console.log(this.courseData)
-
+                const _self = this;
                 try {
-                    return this.courseData.employees.length
+                    if(_self.courseData.employees != null){
+                        return _self.courseData.employees.length
+                    }else{
+                        return 0
+                    }
                 } catch (e) {
-                    console.log('数据读取中')
+                    console.log(e)
 
                 }
                 // while (!this.courseData);

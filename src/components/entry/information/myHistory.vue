@@ -119,16 +119,16 @@ export default {
                 if(info.lesson.material.type === 0){
                     const time_arr = info.point.split(':');
                     time = parseInt(time_arr[0]) * 60 + parseInt(time_arr[1]);
-                    window.location.href = '/module/player.html#/video/'+info.lesson.id+'?point='+time
+                    window.location.href = '/module/player.html#/video/'+info.lesson.id+'?point='+time+'&cid='+this.info.lesson.Course.id
                 // 音频
                 }else if(info.lesson.material.type === 1){
                     const time_arr = info.point.split(':');
                     time = parseInt(time_arr[0]) * 60 + parseInt(time_arr[1]);
-                    window.location.href = '/module/player.html#/audio/'+info.lesson.id+'?point='+time
+                    window.location.href = '/module/player.html#/audio/'+info.lesson.id+'?point='+time +'&cid='+this.info.lesson.Course.id
                 // PPT
                 }else{
                     time = info.point
-                    window.location.href = '/module/player.html#/page/'+info.lesson.id+'?point='+time
+                    window.location.href = '/module/player.html#/page/'+info.lesson.id+'?point='+time+'&cid='+this.info.lesson.Course.id
                 }
 
             }

@@ -8,17 +8,17 @@
                 <mu-list-item v-for="chapter in courseData.chapters" :title="chapter.title" disabled :key="chapter.id">
                     <template v-for="lesson in chapter.lessons">
                         <template v-if="lesson.material.type == 0">
-                            <mu-list-item :title="lesson.title" :key="lesson.id" :to="'/video/'+lesson.id">
+                            <mu-list-item :title="lesson.title" :key="lesson.id" :to="'/video/'+lesson.id+'?cid='+cid">
                                 <mu-icon value="live_tv" slot="left" />
                             </mu-list-item>
                         </template>
                         <template v-else-if="lesson.material.type == 1">
-                            <mu-list-item :title="lesson.title" :to="'/audio/'+lesson.id">
+                            <mu-list-item :title="lesson.title" :to="'/audio/'+lesson.id+'?cid='+cid">
                                 <mu-icon value="settings_voice" slot="left" />
                             </mu-list-item>
                         </template>
                         <template v-else>
-                            <mu-list-item :title="lesson.title" :to="'/page/'+lesson.id">
+                            <mu-list-item :title="lesson.title" :to="'/page/'+lesson.id+'?cid='+cid">
                                 <mu-icon value="filter_none" slot="left" />
                             </mu-list-item>
                         </template>
@@ -127,10 +127,9 @@ export default {
         },
         created() {
             if (this.$route.params.id) {
+                console.log('0000000')
                 this.id = this.$route.params.id
-            } else if (typeof this.handleUrl()['id'] != 'undefined') {
-                this.id = this.handleUrl()['id'];
-            } else {
+            }else {
                 this.id = 0;
             }
 
@@ -257,10 +256,10 @@ export default {
 
             },
             handleUrl() {
-                var url = location.search; //获取url中"?"符后的字串 
+                var url = window.location.hash; //获取url中"?"符后的字串
                 var theRequest = new Object();
                 if (url.indexOf("?") != -1) {
-                    var str = url.substr(1);
+                    var str = url.substr((url.indexOf("?") + 1));
                     var strs = str.split("&");
                     for (var i = 0; i < strs.length; i++) {
                         theRequest[strs[i].split("=")[0]] = decodeURI(strs[i].split("=")[1]);
@@ -317,11 +316,11 @@ export default {
                     if (response.failure.length === 0) {
                         let type = response.success.type
                         if (type === 0) {
-                            window.location = '#/video/' + _self.next_id
+                            window.location = '#/video/' + _self.next_id+'?cid='+this.cid
                         } else if (type === 1) {
-                            window.location = '#/audio/' + _self.next_id
+                            window.location = '#/audio/' + _self.next_id+'?cid='+this.cid
                         } else {
-                            window.location = '#/page/' + _self.next_id
+                            window.location = '#/page/' + _self.next_id+'?cid='+this.cid
                         }
                     } else {
                         alert(response.failure[0])
@@ -344,14 +343,12 @@ export default {
 
             },
             cid: function() {
+                // alert(this.handleUrl()['cid'])
                 if (typeof this.handleUrl()['cid'] == 'undefined') {
                     return 0;
                 } else {
                     return this.handleUrl()['cid']
                 }
-            },
-            videoUrl: function(id) {
-                return '/video/' + id
             }
         }
 }

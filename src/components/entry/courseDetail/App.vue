@@ -3,7 +3,7 @@
         <v-header></v-header>
         <v-rightSider></v-rightSider>
         <div id="content" class="content">
-            <v-courseHeader :courseData="courseData" :bus="bus"></v-courseHeader>
+            <v-courseHeader :courseData="courseData" :bus="bus" :isJoin="isJoin"></v-courseHeader>
             <mu-row gutter>
                 <mu-col width="100" tablet="70" desktop="70" class="tab-detail">
                     <mu-row>
@@ -94,7 +94,8 @@
                                         <mu-list-item v-show="discu.close">{{discu.content}}</mu-list-item>
                                     </transition>
                                     <span style="float:right">
-                                    <span @click="setReply(discu,index)" class="hover-state">回复（{{discu.commends.length}}）  </span>
+                                    <span v-if="discu.commends != null" @click="setReply(discu,index)" class="hover-state">回复（{{discu.commends.length}}）  </span>
+                                    <span @click="setReply(discu,index)" class="hover-state" v-else>回复</span>
                                     <span class="hover-state" @click="setSupport(index)">点赞（{{discu.grate}}）</span>
                                     </span>
                                     <transition name="slide-fade">
@@ -122,7 +123,7 @@
                     </div>
                 </mu-col>
                 <mu-col width="100" tablet="30" desktop="30">
-                    <div v-if="courseData.hasjoin">
+                    <div v-if="isJoin">
                         <div class="notice-list">
                             <mu-list>
                                 <mu-sub-header>公告</mu-sub-header>
@@ -134,7 +135,7 @@
                         <mu-list>
                             <mu-sub-header>评价</mu-sub-header>
                             <div>
-                                <mu-list-item disabled class="set-star" v-if="courseData.hasjoin && !isScore">
+                                <mu-list-item disabled class="set-star" v-if="isJoin && !isScore">
                                     <span style="position:relative;top:-5px">打分：</span>
                                     <!-- <mu-icon-button tooltip="default tooltip" icon="grade"/> -->
                                     <mu-icon-button icon="star" v-for="item in setScore" @click="setScoreFull(item)" :tooltip="comment_tooltip[item]" :key="item" />
@@ -142,7 +143,7 @@
                                     <mu-text-field hintText="请输入评论内容" multiLine :rows="3" :rowsMax="6" />
                                     <mu-raised-button label="确定" class="send-score" primary style="float:right" @click="sendScore" />
                                 </mu-list-item>
-                                <mu-list-item disabled v-if="courseData.hasjoin && isScore">
+                                <mu-list-item disabled v-if="isJoin && isScore">
                                     我的评分：
                                     <mu-icon value="grade" v-for="item in myScore" :key="item" />
                                     <mu-icon value="star_border" v-for="item in (5-myScore)" :key="item" />
@@ -194,7 +195,7 @@ export default {
                 bus: new Vue(),
                 snackbar: false,
                 alertText: '未知错误',
-                discussionAreaTitle: '全部主题',
+                discussionAreaTitle: '老师答疑区',
                 discussiontype: 1,
                 discusionData: [],
                 close: false,
@@ -216,7 +217,8 @@ export default {
                 setScore: 0,
                 comment_tooltip: ['十分不满意', '不满意', '中等', '满意', '非常满意'],
                 isScore: false,
-                myScore: 0
+                myScore: 0,
+                isJoin: false
             }
         },
         components: {
@@ -226,28 +228,30 @@ export default {
             'v-courseHeader': courseHeader
         },
         created() {
-            this.setDiscussion()
+            this.setDiscussion();
             this.$http.get('/course/' + this.cid).then((response) => {
-                    response = response.body
-                        // console.log(response)
-                    if (response.failure.length === 0) {
-                        this.courseData = response.success
-                    } else {
-                        alert(response.failure[0])
-                    }
+                response = response.body
+                    // console.log(response)
+                if (response.failure.length === 0) {
+                    this.courseData = response.success
+                } else {
+                    alert(response.failure[0])
+                }
 
-                }),
-                this.$http.get('/course/' + this.cid + '/section').then((response) => {
-                    response = response.body
-                        // console.log(response)
-                    if (response.failure.length === 0) {
-                        this.chapter = response.success
-                        console.log(this.chapter)
-                    } else {
-                        alert(response.failure[0])
-                    }
+            });
+            this.$http.get('/course/' + this.cid + '/section').then((response) => {
+                response = response.body
 
-                });
+                if (response.failure.length === 0) {
+                    this.chapter = response.success
+                    this.isJoin = this.chapter.hasjoin
+                    console.log(this.chapter)
+                } else {
+                    alert(response.failure[0])
+                }
+
+            });
+
             if (this.bus) {
                 const _self = this;
                 this.bus.$on("alertFlag", function(msg) {
@@ -255,7 +259,9 @@ export default {
                     console.log(msg)
                     _self.snackbar = msg.flag;
                     _self.alertText = msg.text;
+                    _self.isJoin = true;
                     _self.showSnackbar();
+                    // location.reload();
                 });
             };
             this.$http.get('/user').then((response) => {
@@ -275,6 +281,7 @@ export default {
         methods: {
             handleUrl() {
                 var url = location.search; //获取url中"?"符后的字串 
+
                 var theRequest = new Object();
                 if (url.indexOf("?") != -1) {
                     var str = url.substr(1);
@@ -318,7 +325,8 @@ export default {
                 }).then((response) => {
                     response = response.body
                     if (response.failure.length === 0) {
-                        _self.discusionData = response.success
+                        _self.discusionData = response.success;
+                        _self.pageTotal = response.total;
                     } else {
                         alert(response.failure[0])
                     }
@@ -394,17 +402,18 @@ export default {
             },
             addDiscussF() {
                 const _self = this;
-                this.$http.post('/discuss/publish', {
-                    params: this.addDiscuss
-                }).then((response) => {
+                console.log('-------')
+                console.log(this.addDiscuss)
+                const params = this.addDiscuss
+                this.$http.post('/discuss/publish',params).then((response) => {
                     response = response.body
-                    if (response.failure.length === 0) {
-                        _self.dialog = false
-                        this.alertText = '发帖成功！'
-                        this.showSnackbar();
-                    } else {
-                        alert(response.failure[0])
-                    }
+                        // if (response.failure.length === 0) {
+                    _self.dialog = false
+                    this.alertText = '发帖成功！'
+                    this.showSnackbar();
+                    // } else {
+                    //     alert(response.failure[0])
+                    // }
 
                 })
 
@@ -430,27 +439,28 @@ export default {
                 this.isScore = true;
                 this.myScore = this.setScore;
             },
-            choiseLessons(type,id){
+            choiseLessons(type, id) {
                 console.log(type)
                 console.log(id)
-                // console.log(window.location)
-                if(type === 2){
+                    // console.log(window.location)
+                if (type === 2) {
 
-                    window.location.href = '/module/player.html#page/'+id
-                }else if(type === 1){
-                    window.location.href = '/module/player.html#audio/'+id
-                }else{
-                    window.location.href = '/module/player.html#video/'+id
+                    window.location.href = '/module/player.html#page/' + id +'?cid='+this.cid
+                } else if (type === 1) {
+                    window.location.href = '/module/player.html#audio/' + id +'?cid='+this.cid
+                } else {
+                    window.location.href = '/module/player.html#video/' + id +'?cid='+this.cid
                 }
             }
 
         },
         computed: {
             cid: function() {
-                if (typeof this.handleUrl()['id'] == 'undefined') {
+
+                if (typeof this.handleUrl()['cid'] == 'undefined') {
                     return 0;
                 } else {
-                    return this.handleUrl()['id']
+                    return this.handleUrl()['cid']
                 }
 
             },
@@ -462,12 +472,14 @@ export default {
 
                 }
             }
+        },
+        mounted() {
+
         }
 }
 </script>
 <style lang="less">
 @main-color: #009688;
-
 .content {
     padding: 50px 100px;
     margin-top: 50px;

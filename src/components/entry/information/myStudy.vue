@@ -6,11 +6,11 @@
         </div>
         <div class="course-list-content">
             <mu-grid-list class="gridlist-demo" :cols="gridrow">
-                <mu-grid-tile v-for="courseItem in courses" :key="courseItem.course.id">
-                    <img :src="courseItem.course.cover" class="cover" @click="toDetail(courseItem.course.id)"/>
+                <mu-grid-tile v-for="courseItem in courses" :key="courseItem.id">
+                    <img :src="courseItem.cover" class="cover" @click="toDetail(courseItem.id)"/>
                     <!-- <img src="./banner1.jpg" class="cover" /> -->
-                    <span slot="title">{{courseItem.course.title}}</span>
-                    <span slot="subTitle">已完成{{courseItem.course.hasStudy}}/{{courseItem.course.total}}课时</span>
+                    <span slot="title">{{courseItem.title}}</span>
+                    <span slot="subTitle">已完成{{courseItem.hasStudy}}/{{courseItem.total}}课时</span>
                 </mu-grid-tile>
             </mu-grid-list>
         </div>

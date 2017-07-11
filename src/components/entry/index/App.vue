@@ -37,6 +37,9 @@ export default {
                 
             }
         },
+        mounted(){
+            // this.init()
+        },
         created() {
             this.$http.get('/direction').then((response) => {
                     response = response.body
@@ -57,6 +60,12 @@ export default {
             'v-courseList': courseList,
             'v-footer': footer,
             'v-rightSider': rightSider
+        },
+        watch:{
+
+        },
+        methods:{
+            
         }
 }
 </script>

@@ -24,6 +24,9 @@
         }, {
             "d_id": 7,
             "name": "前端"
+        }, {
+            "d_id": 8,
+            "name": "前端"
         }]
     },
     "generics": {
@@ -136,19 +139,7 @@
             "description": "dfa",
             "cover": "http://df.jpg",
             "star": 3,
-            "employees": [{
-                "id": 2,
-                "name": "nick",
-                "port": "http://wwww.baidu.jpg"
-            }, {
-                "id": 2,
-                "name": "nick",
-                "port": "http://wwww.baidu.jpg"
-            }, {
-                "id": 2,
-                "name": "nick",
-                "port": "http://wwww.baidu.jpg"
-            }],
+
             "courseComments": [{
                 "id": 2,
                 "name": "nick",
@@ -174,137 +165,13 @@
             "d_name": "56",
             "g_name": "99169",
             "type": "3NRILdpHwJ",
-            "hasjoin": true,
+            "hasjoin": false,
             "hasStudy": 23820,
             "total": 56759,
             "hasCollect": false
         }
     },
-    "chapter": {
-        "failure": [
-            "8cCySR0oeH",
-            "JRYyF0X8x1",
-            "dTeEwpsphH"
-        ],
-        "success": {
-            "title": "jTWW1pbKi4",
-            "description": "dfa",
-            "cover": "http://df.jpg",
-            "star": 3,
-            "chapters": [{
-                "title": "第一节",
-                "lessons": [{
-                    "id": 1,
-                    "title": "标题",
-                    "question": true,
-                    "complete": true,
-                    "noted": true,
-                    "material": {
-                        "length": 40498,
-                        "page": 98088,
-                        "type": 0
-                    }
-                }, {
-                    "id": 2,
-                    "title": "标题",
-                    "question": true,
-                    "complete": true,
-                    "noted": true,
-                    "material": {
-                        "length": 40498,
-                        "page": 98088,
-                        "type": 1
-                    }
-                }, {
-                    "id": 3,
-                    "title": "标题",
-                    "question": true,
-                    "complete": true,
-                    "noted": true,
-                    "material": {
-                        "length": 40498,
-                        "page": 98088,
-                        "type": 2
-                    }
-                }]
-            }, {
-                "title": "第一节",
-                "lessons": [{
-                    "id": 4,
-                    "title": "标题",
-                    "question": true,
-                    "complete": true,
-                    "noted": true,
-                    "material": {
-                        "length": 40498,
-                        "page": 98088,
-                        "type": 39447
-                    }
-                }, {
-                    "id": 5,
-                    "title": "标题",
-                    "question": true,
-                    "complete": true,
-                    "noted": true,
-                    "material": {
-                        "length": 40498,
-                        "page": 98088,
-                        "type": 77953
-                    }
-                }, {
-                    "id": 6,
-                    "title": "标题",
-                    "question": true,
-                    "complete": true,
-                    "noted": true,
-                    "material": {
-                        "length": 40498,
-                        "page": 98088,
-                        "type": 76613
-                    }
-                }]
-            }, {
-                "title": "第一节",
-                "lessons": [{
-                    "id": 7,
-                    "title": "标题",
-                    "question": true,
-                    "complete": true,
-                    "noted": true,
-                    "material": {
-                        "length": 40498,
-                        "page": 98088,
-                        "type": 49218
-                    }
-                }, {
-                    "id": 8,
-                    "title": "标题",
-                    "question": true,
-                    "complete": true,
-                    "noted": true,
-                    "material": {
-                        "length": 40498,
-                        "page": 98088,
-                        "type": 18787
-                    }
-                }, {
-                    "id": 9,
-                    "title": "标题",
-                    "question": true,
-                    "complete": true,
-                    "noted": true,
-                    "material": {
-                        "length": 40498,
-                        "page": 98088,
-                        "type": 15558
-                    }
-                }]
-            }],
-            "hasjoin": false,
-            "hasStudy": 23820,
-            "total": 56759
-        }
-    },
+    "chapter": { "failure": "", "success": { "authority": 0, "chapters": [{ "id": 1, "lessons": [{ "chapter": 1, "complete": false, "course": null, "courseID": 0, "discusses": null, "entityId": 1, "histories": null, "id": 1, "material": { "cover": "我", "entityId": 3, "id": 3, "length": 410, "lessons": null, "name": "rsgfs ", "page": 0, "persistent": true, "point": null, "subtitle": "1", "time": "1", "type": 0, "url": "www" }, "name": "IO流入门", "noted": false, "number": 0, "persistent": true, "question": false, "title": "reader" }, { "chapter": 1, "complete": true, "course": null, "courseID": 0, "discusses": null, "entityId": 2, "histories": null, "id": 2, "material": { "cover": "0", "entityId": 1, "id": 1, "length": 5, "lessons": null, "name": "hello", "page": 0, "persistent": true, "point": null, "subtitle": "456454", "time": "0", "type": 1, "url": "0" }, "name": "IO流入门", "noted": false, "number": 1, "persistent": true, "question": false, "title": "fileinputstream" }, { "chapter": 1, "complete": true, "course": null, "courseID": 0, "discusses": null, "entityId": 3, "histories": null, "id": 3, "material": { "cover": "0", "entityId": 2, "id": 2, "length": 3, "lessons": null, "name": "0", "page": 0, "persistent": true, "point": null, "subtitle": "0", "time": "0", "type": 0, "url": "0" }, "name": "IO流入门", "noted": true, "number": 2, "persistent": true, "question": true, "title": "byteBuffer" }], "title": "IO流入门" }, { "id": 2, "lessons": [{ "chapter": 2, "complete": false, "course": null, "courseID": 0, "discusses": null, "entityId": 4, "histories": null, "id": 4, "material": { "cover": "0", "entityId": 4, "id": 4, "length": 0, "lessons": null, "name": "ppt ", "page": 70, "persistent": true, "point": null, "subtitle": null, "time": "0", "type": 2, "url": "0" }, "name": "容器入门", "noted": false, "number": 0, "persistent": true, "question": false, "title": "map" }, { "chapter": 2, "complete": true, "course": null, "courseID": 0, "discusses": null, "entityId": 5, "histories": null, "id": 5, "material": { "cover": "0", "entityId": 5, "id": 5, "length": 1, "lessons": null, "name": "1", "page": 1, "persistent": true, "point": null, "subtitle": "1", "time": "1", "type": 0, "url": null }, "name": "容器入门", "noted": false, "number": 3, "persistent": true, "question": false, "title": "list" }, { "chapter": 2, "complete": false, "course": null, "courseID": 0, "discusses": null, "entityId": 6, "histories": null, "id": 6, "material": { "cover": "6", "entityId": 6, "id": 6, "length": 6, "lessons": null, "name": "6", "page": 6, "persistent": true, "point": null, "subtitle": "6", "time": "6", "type": 1, "url": "6" }, "name": "容器入门", "noted": false, "number": 4, "persistent": true, "question": false, "title": "collect" }], "title": "容器入门" }], "collections": null, "courseComments": null, "courseRates": null, "cover": null, "d_id": 1, "d_name": null, "description": null, "employees": null, "enter": 3, "entityId": 1, "exams": null, "g_id": 1, "g_name": null, "hasCollect": true, "hasStudy": 3, "hasjoin": true, "id": 1, "lessons": null, "number": 0, "persistent": true, "powers": null, "s_id": 1, "star": 2, "studies": null, "time": "2017-07-01 11:20:33", "title": "java", "total": 6 } },
     "courseAdd": {
         "failure": [
 
@@ -564,157 +431,570 @@
         "total": 18009
     },
     "history": {
-        "failure": [
-            "gdWCr4ltbO",
-            "xSkCGWnn5R",
-            "7UqnEPO9Ug"
-        ],
+        "failure": [],
+        "next": 0,
         "success": [{
-            "time": "2017-7-1",
+            "time": "2017-07-09",
             "list": [{
-                "cover": "KJF0ta0Ypb",
-                "point": "qthhW3VjGn",
-                "time": "2017-7-1 14:20:30",
+                "id": 1,
                 "lesson": {
-                    "id": 92201,
-                    "title": "7b1WmnoWhf",
-                    "chapter": 71285,
-                    "number": "OHNkVn2FKC",
+                    "chapter": 1,
+                    "complete": false,
+                    "course": {
+                        "authority": 0,
+                        "collections": [{
+                            "course": {
+                                "$ref": "$.success[0].list[0].lesson.course"
+                            },
+                            "employee": {
+                                "courseRates": [{
+                                    "course": {
+                                        "$ref": "$.success[0].list[0].lesson.course"
+                                    },
+                                    "employee": {
+                                        "$ref": "$.success[0].list[0].lesson.course.collections[0].employee"
+                                    },
+                                    "entityId": 1,
+                                    "id": 1,
+                                    "persistent": true,
+                                    "rate": 4
+                                }, {
+                                    "course": {
+                                        "authority": 0,
+                                        "collections": [],
+                                        "courseRates": [{
+                                            "$ref": "$.success[0].list[0].lesson.course.collections[0].employee.courseRates[1]"
+                                        }],
+                                        "d_id": 1,
+                                        "enter": 2,
+                                        "entityId": 2,
+                                        "exams": [],
+                                        "g_id": 1,
+                                        "hasCollect": false,
+                                        "hasStudy": 0,
+                                        "hasjoin": false,
+                                        "id": 2,
+                                        "lessons": [],
+                                        "number": 0,
+                                        "persistent": true,
+                                        "powers": [],
+                                        "s_id": 1,
+                                        "star": 0,
+                                        "studies": [{
+                                            "course": {
+                                                "$ref": "$.success[0].list[0].lesson.course.collections[0].employee.courseRates[1].course"
+                                            },
+                                            "employee": {
+                                                "$ref": "$.success[0].list[0].lesson.course.collections[0].employee"
+                                            },
+                                            "entityId": 2,
+                                            "id": 2,
+                                            "persistent": true
+                                        }],
+                                        "time": "2017-07-01 11:10:33",
+                                        "title": "ruby",
+                                        "total": 0
+                                    },
+                                    "employee": {
+                                        "$ref": "$.success[0].list[0].lesson.course.collections[0].employee"
+                                    },
+                                    "entityId": 2,
+                                    "id": 2,
+                                    "persistent": true,
+                                    "rate": 3
+                                }],
+                                "entityId": 1,
+                                "exams": [],
+                                "feedbacks": [],
+                                "histories": [{
+                                    "$ref": "$.success[0].list[0]"
+                                }],
+                                "id": 1,
+                                "identity": 1,
+                                "name": "nick",
+                                "persistent": true,
+                                "powers": [{
+                                    "course": {
+                                        "$ref": "$.success[0].list[0].lesson.course"
+                                    },
+                                    "employee": {
+                                        "$ref": "$.success[0].list[0].lesson.course.collections[0].employee"
+                                    },
+                                    "entityId": 1,
+                                    "id": 1,
+                                    "persistent": true
+                                }],
+                                "studies": [{
+                                    "course": {
+                                        "$ref": "$.success[0].list[0].lesson.course"
+                                    },
+                                    "employee": {
+                                        "$ref": "$.success[0].list[0].lesson.course.collections[0].employee"
+                                    },
+                                    "entityId": 1,
+                                    "id": 1,
+                                    "persistent": true
+                                }, {
+                                    "$ref": "$.success[0].list[0].lesson.course.collections[0].employee.courseRates[1].course.studies[0]"
+                                }, {
+                                    "course": {
+                                        "authority": 0,
+                                        "collections": [],
+                                        "courseRates": [{
+                                            "course": {
+                                                "$ref": "$.success[0].list[0].lesson.course.collections[0].employee.studies[2].course"
+                                            },
+                                            "employee": {
+                                                "courseRates": [{
+                                                    "course": {
+                                                        "$ref": "$.success[0].list[0].lesson.course"
+                                                    },
+                                                    "employee": {
+                                                        "$ref": "$.success[0].list[0].lesson.course.collections[0].employee.studies[2].course.courseRates[0].employee"
+                                                    },
+                                                    "entityId": 3,
+                                                    "id": 3,
+                                                    "persistent": true,
+                                                    "rate": 2
+                                                }, {
+                                                    "$ref": "$.success[0].list[0].lesson.course.collections[0].employee.studies[2].course.courseRates[0]"
+                                                }],
+                                                "entityId": 2,
+                                                "exams": [],
+                                                "feedbacks": [],
+                                                "histories": [{
+                                                    "id": 2,
+                                                    "lesson": {
+                                                        "$ref": "$.success[0].list[0].lesson"
+                                                    },
+                                                    "time": "2017-07-01 12:16:20"
+                                                }, {
+                                                    "id": 3,
+                                                    "lesson": {
+                                                        "$ref": "$.success[0].list[0].lesson"
+                                                    },
+                                                    "time": "2017-07-05 12:16:20"
+                                                }],
+                                                "id": 2,
+                                                "identity": 1,
+                                                "name": "cai",
+                                                "persistent": true,
+                                                "powers": [],
+                                                "studies": [{
+                                                    "course": {
+                                                        "$ref": "$.success[0].list[0].lesson.course"
+                                                    },
+                                                    "employee": {
+                                                        "$ref": "$.success[0].list[0].lesson.course.collections[0].employee.studies[2].course.courseRates[0].employee"
+                                                    },
+                                                    "entityId": 3,
+                                                    "id": 3,
+                                                    "persistent": true
+                                                }, {
+                                                    "course": {
+                                                        "$ref": "$.success[0].list[0].lesson.course.collections[0].employee.studies[2].course"
+                                                    },
+                                                    "employee": {
+                                                        "$ref": "$.success[0].list[0].lesson.course.collections[0].employee.studies[2].course.courseRates[0].employee"
+                                                    },
+                                                    "entityId": 4,
+                                                    "id": 4,
+                                                    "persistent": true
+                                                }],
+                                                "tags": [],
+                                                "total_time": 0
+                                            },
+                                            "entityId": 4,
+                                            "id": 4,
+                                            "persistent": true,
+                                            "rate": 5
+                                        }],
+                                        "d_id": 2,
+                                        "description": "这是一个c",
+                                        "enter": 7,
+                                        "entityId": 8,
+                                        "exams": [],
+                                        "g_id": 1,
+                                        "hasCollect": false,
+                                        "hasStudy": 0,
+                                        "hasjoin": false,
+                                        "id": 8,
+                                        "lessons": [],
+                                        "number": 0,
+                                        "persistent": true,
+                                        "powers": [],
+                                        "s_id": 1,
+                                        "star": 0,
+                                        "studies": [{
+                                            "$ref": "$.success[0].list[0].lesson.course.collections[0].employee.studies[2].course.courseRates[0].employee.studies[1]"
+                                        }, {
+                                            "$ref": "$.success[0].list[0].lesson.course.collections[0].employee.studies[2]"
+                                        }],
+                                        "time": "2017-07-10 11:20:33",
+                                        "title": "C语言入门",
+                                        "total": 0
+                                    },
+                                    "employee": {
+                                        "$ref": "$.success[0].list[0].lesson.course.collections[0].employee"
+                                    },
+                                    "entityId": 8,
+                                    "id": 8,
+                                    "persistent": true,
+                                    "time": "2017-07-10 16:15:14"
+                                }],
+                                "tags": [],
+                                "total_time": 0
+                            },
+                            "entityId": 1,
+                            "id": 1,
+                            "persistent": true,
+                            "time": "2017-07-09 12:16:20"
+                        }],
+                        "courseRates": [{
+                            "$ref": "$.success[0].list[0].lesson.course.collections[0].employee.courseRates[0]"
+                        }, {
+                            "$ref": "$.success[0].list[0].lesson.course.collections[0].employee.studies[2].course.courseRates[0].employee.courseRates[0]"
+                        }, {
+                            "course": {
+                                "$ref": "$.success[0].list[0].lesson.course"
+                            },
+                            "employee": {
+                                "courseRates": [{
+                                    "$ref": "$.success[0].list[0].lesson.course.courseRates[2]"
+                                }],
+                                "entityId": 3,
+                                "exams": [],
+                                "feedbacks": [],
+                                "histories": [],
+                                "id": 3,
+                                "identity": 1,
+                                "name": "chen",
+                                "persistent": true,
+                                "powers": [],
+                                "studies": [{
+                                    "course": {
+                                        "$ref": "$.success[0].list[0].lesson.course"
+                                    },
+                                    "employee": {
+                                        "$ref": "$.success[0].list[0].lesson.course.courseRates[2].employee"
+                                    },
+                                    "entityId": 5,
+                                    "id": 5,
+                                    "persistent": true
+                                }],
+                                "tags": [],
+                                "total_time": 0
+                            },
+                            "entityId": 5,
+                            "id": 5,
+                            "persistent": true,
+                            "rate": 2
+                        }],
+                        "d_id": 1,
+                        "enter": 3,
+                        "entityId": 1,
+                        "exams": [],
+                        "g_id": 1,
+                        "hasCollect": false,
+                        "hasStudy": 0,
+                        "hasjoin": false,
+                        "id": 1,
+                        "lessons": [{
+                            "$ref": "$.success[0].list[0].lesson"
+                        }, {
+                            "chapter": 1,
+                            "complete": false,
+                            "course": {
+                                "$ref": "$.success[0].list[0].lesson.course"
+                            },
+                            "courseID": 1,
+                            "discusses": [],
+                            "entityId": 2,
+                            "histories": [],
+                            "id": 2,
+                            "material": {
+                                "cover": "0",
+                                "entityId": 1,
+                                "id": 1,
+                                "length": 5,
+                                "lessons": [{
+                                    "$ref": "$.success[0].list[0].lesson.course.lessons[1]"
+                                }],
+                                "name": "hello",
+                                "page": 0,
+                                "persistent": true,
+                                "subtitle": "456454",
+                                "time": "0",
+                                "type": 0,
+                                "url": "http://115.159.42.117/oflaDemo/DPlayer-master/demo/test.m3u8"
+                            },
+                            "name": "IO流入门",
+                            "noted": false,
+                            "number": 2,
+                            "persistent": true,
+                            "question": false,
+                            "title": "fileinputstream"
+                        }, {
+                            "chapter": 1,
+                            "complete": false,
+                            "course": {
+                                "$ref": "$.success[0].list[0].lesson.course"
+                            },
+                            "courseID": 1,
+                            "discusses": [{
+                                "comments": [],
+                                "content": "一般把",
+                                "employee": {
+                                    "$ref": "$.success[0].list[0].lesson.course.collections[0].employee"
+                                },
+                                "entityId": 1,
+                                "flag": 0,
+                                "grate": 0,
+                                "id": 1,
+                                "isNick": 0,
+                                "isNote": 0,
+                                "lesson": {
+                                    "$ref": "$.success[0].list[0].lesson.course.lessons[2]"
+                                },
+                                "persistent": true,
+                                "type": 1,
+                                "view": 0
+                            }, {
+                                "comments": [],
+                                "content": "突然感觉还不错",
+                                "employee": {
+                                    "$ref": "$.success[0].list[0].lesson.course.collections[0].employee"
+                                },
+                                "entityId": 2,
+                                "flag": 0,
+                                "grate": 0,
+                                "id": 2,
+                                "isNick": 0,
+                                "isNote": 0,
+                                "lesson": {
+                                    "$ref": "$.success[0].list[0].lesson.course.lessons[2]"
+                                },
+                                "persistent": true,
+                                "type": 1,
+                                "view": 0
+                            }, {
+                                "comments": [],
+                                "content": "完全听不懂额",
+                                "employee": {
+                                    "$ref": "$.success[0].list[0].lesson.course.collections[0].employee"
+                                },
+                                "entityId": 3,
+                                "flag": 0,
+                                "grate": 0,
+                                "id": 3,
+                                "isNick": 0,
+                                "isNote": 0,
+                                "lesson": {
+                                    "$ref": "$.success[0].list[0].lesson.course.lessons[2]"
+                                },
+                                "persistent": true,
+                                "type": 2,
+                                "view": 0
+                            }],
+                            "entityId": 3,
+                            "histories": [],
+                            "id": 3,
+                            "material": {
+                                "cover": "0",
+                                "entityId": 2,
+                                "id": 2,
+                                "length": 3,
+                                "lessons": [{
+                                    "$ref": "$.success[0].list[0].lesson.course.lessons[2]"
+                                }],
+                                "name": "0",
+                                "page": 0,
+                                "persistent": true,
+                                "subtitle": "0",
+                                "time": "0",
+                                "type": 0,
+                                "url": "0"
+                            },
+                            "name": "IO流入门",
+                            "noted": false,
+                            "number": 3,
+                            "persistent": true,
+                            "question": false,
+                            "title": "byteBuffer"
+                        }, {
+                            "chapter": 2,
+                            "complete": false,
+                            "course": {
+                                "$ref": "$.success[0].list[0].lesson.course"
+                            },
+                            "courseID": 1,
+                            "discusses": [],
+                            "entityId": 4,
+                            "histories": [],
+                            "id": 4,
+                            "material": {
+                                "cover": "0",
+                                "entityId": 4,
+                                "id": 4,
+                                "length": 0,
+                                "lessons": [{
+                                    "$ref": "$.success[0].list[0].lesson.course.lessons[3]"
+                                }],
+                                "name": "ppt ",
+                                "page": 70,
+                                "persistent": true,
+                                "time": "0",
+                                "type": 0,
+                                "url": "0"
+                            },
+                            "name": "容器入门",
+                            "noted": false,
+                            "number": 4,
+                            "persistent": true,
+                            "question": false,
+                            "title": "map"
+                        }, {
+                            "chapter": 2,
+                            "complete": false,
+                            "course": {
+                                "$ref": "$.success[0].list[0].lesson.course"
+                            },
+                            "courseID": 1,
+                            "discusses": [],
+                            "entityId": 5,
+                            "histories": [],
+                            "id": 5,
+                            "material": {
+                                "cover": "0",
+                                "entityId": 5,
+                                "id": 5,
+                                "length": 1,
+                                "lessons": [{
+                                    "$ref": "$.success[0].list[0].lesson.course.lessons[4]"
+                                }],
+                                "name": "1",
+                                "page": 1,
+                                "persistent": true,
+                                "subtitle": "1",
+                                "time": "1",
+                                "type": 0
+                            },
+                            "name": "容器入门",
+                            "noted": false,
+                            "number": 5,
+                            "persistent": true,
+                            "question": false,
+                            "title": "list"
+                        }, {
+                            "chapter": 2,
+                            "complete": false,
+                            "course": {
+                                "$ref": "$.success[0].list[0].lesson.course"
+                            },
+                            "courseID": 1,
+                            "discusses": [],
+                            "entityId": 6,
+                            "histories": [],
+                            "id": 6,
+                            "material": {
+                                "cover": "6",
+                                "entityId": 6,
+                                "id": 6,
+                                "length": 6,
+                                "lessons": [{
+                                    "$ref": "$.success[0].list[0].lesson.course.lessons[5]"
+                                }],
+                                "name": "6",
+                                "page": 6,
+                                "persistent": true,
+                                "subtitle": "6",
+                                "time": "6",
+                                "type": 0,
+                                "url": "6"
+                            },
+                            "name": "容器入门",
+                            "noted": false,
+                            "number": 6,
+                            "persistent": true,
+                            "question": false,
+                            "title": "collect"
+                        }],
+                        "number": 0,
+                        "persistent": true,
+                        "powers": [{
+                            "$ref": "$.success[0].list[0].lesson.course.collections[0].employee.powers[0]"
+                        }],
+                        "s_id": 1,
+                        "star": 0,
+                        "studies": [{
+                            "$ref": "$.success[0].list[0].lesson.course.collections[0].employee.studies[0]"
+                        }, {
+                            "$ref": "$.success[0].list[0].lesson.course.collections[0].employee.studies[2].course.courseRates[0].employee.studies[0]"
+                        }, {
+                            "$ref": "$.success[0].list[0].lesson.course.courseRates[2].employee.studies[0]"
+                        }],
+                        "time": "2017-07-01 11:20:33",
+                        "title": "java",
+                        "total": 0
+                    },
+                    "courseID": 1,
+                    "discusses": [{
+                        "comments": [],
+                        "content": "1",
+                        "employee": {
+                            "$ref": "$.success[0].list[0].lesson.course.collections[0].employee"
+                        },
+                        "entityId": 4,
+                        "flag": 0,
+                        "grate": 0,
+                        "id": 4,
+                        "isNick": 1,
+                        "isNote": 1,
+                        "lesson": {
+                            "$ref": "$.success[0].list[0].lesson"
+                        },
+                        "persistent": true,
+                        "time": "2017-07-10 22:31:41",
+                        "title": "1",
+                        "type": 2,
+                        "view": 0
+                    }],
+                    "entityId": 1,
+                    "histories": [{
+                        "$ref": "$.success[0].list[0]"
+                    }, {
+                        "$ref": "$.success[0].list[0].lesson.course.collections[0].employee.studies[2].course.courseRates[0].employee.histories[0]"
+                    }, {
+                        "$ref": "$.success[0].list[0].lesson.course.collections[0].employee.studies[2].course.courseRates[0].employee.histories[1]"
+                    }],
+                    "id": 1,
                     "material": {
-                        "length": 93592,
-                        "page": 26084,
-                        "type": 71886
-                    }
-                }
-            }, {
-                "cover": "RAWxiWCAsF",
-                "point": "fQKQPceYFn",
-                "time": "2017-7-1 14:20:30",
-                "lesson": {
-                    "id": 92351,
-                    "title": "tpCZFcEdvX",
-                    "chapter": 714,
-                    "number": "ESjl8zHnVA",
-                    "material": {
-                        "length": 12492,
-                        "page": 87126,
-                        "type": 82433
-                    }
-                }
-            }, {
-                "cover": "Kgt2TCFID6",
-                "point": "jK6FeNsOdA",
-                "time": "2017-7-1 14:20:30",
-                "lesson": {
-                    "id": 92952,
-                    "title": "A1iSE32pL6",
-                    "chapter": 31952,
-                    "number": "HzO8196ihe",
-                    "material": {
-                        "length": 77721,
-                        "page": 73756,
-                        "type": 91184
-                    }
-                }
-            }]
-        }, {
-            "time": "2017-7-1",
-            "list": [{
-                "cover": "osQaITomXj",
-                "point": "f4Dqwk3IBd",
-                "time": "2017-7-1 14:20:30",
-                "lesson": {
-                    "id": 93189,
-                    "title": "t4W8ZqSLcZ",
-                    "chapter": 90559,
-                    "number": "Qfj7oqXXRU",
-                    "material": {
-                        "length": 27187,
-                        "page": 16659,
-                        "type": 79757
-                    }
-                }
-            }, {
-                "cover": "RnciG48oaP",
-                "point": "9kRGYUcN1T",
-                "time": "2017-7-1 14:20:30",
-                "lesson": {
-                    "id": 93997,
-                    "title": "AeCF3slhd3",
-                    "chapter": 29334,
-                    "number": "7N37OVCiPS",
-                    "material": {
-                        "length": 56014,
-                        "page": 80093,
-                        "type": 90051
-                    }
-                }
-            }, {
-                "cover": "Teklkn7DbT",
-                "point": "fzfK4ryFqI",
-                "time": "2017-7-1 14:20:30",
-                "lesson": {
-                    "id": 94818,
-                    "title": "vVwNPjB0KQ",
-                    "chapter": 2435,
-                    "number": "y5SZZ4XYhe",
-                    "material": {
-                        "length": 87032,
-                        "page": 779,
-                        "type": 3372
-                    }
-                }
-            }]
-        }, {
-            "time": "2017-7-1",
-            "list": [{
-                "cover": "AJ4s7GBf09",
-                "point": "Qw8U6k8X3l",
-                "time": "2017-7-1 14:20:30",
-                "lesson": {
-                    "id": 95115,
-                    "title": "WZzJjKDraC",
-                    "chapter": 91547,
-                    "number": "A3wy4LLDa9",
-                    "material": {
-                        "length": 53200,
-                        "page": 61435,
-                        "type": 69234
-                    }
-                }
-            }, {
-                "cover": "rioiB2pyan",
-                "point": "IEl4ZS5sQK",
-                "time": "2017-7-1 14:20:30",
-                "lesson": {
-                    "id": 95394,
-                    "title": "tYMV0lfCgW",
-                    "chapter": 21280,
-                    "number": "W2vciTwUmC",
-                    "material": {
-                        "length": 70459,
-                        "page": 62489,
-                        "type": 44992
-                    }
-                }
-            }, {
-                "cover": "Lu91rqDfx9",
-                "point": "TLGKqYybor",
-                "time": "2017-7-1 14:20:30",
-                "lesson": {
-                    "id": 96014,
-                    "title": "umYM26C25r",
-                    "chapter": 51838,
-                    "number": "EaWskOTM1G",
-                    "material": {
-                        "length": 88275,
-                        "page": 65414,
-                        "type": 66161
-                    }
-                }
+                        "cover": "我",
+                        "entityId": 3,
+                        "id": 3,
+                        "length": 410,
+                        "lessons": [{
+                            "$ref": "$.success[0].list[0].lesson"
+                        }],
+                        "name": "rsgfs ",
+                        "page": 0,
+                        "persistent": true,
+                        "subtitle": "1",
+                        "time": "1",
+                        "type": 0,
+                        "url": "http://115.159.42.117/oflaDemo/DPlayer-master/demo/test.m3u8"
+                    },
+                    "name": "IO流入门",
+                    "noted": false,
+                    "number": 1,
+                    "persistent": true,
+                    "question": false,
+                    "title": "reader"
+                },
+                "time": "2017-07-09 12:16:20"
             }]
         }],
-        "total": 73137
+        "total": 1
     },
     "note": {
         "failure": [

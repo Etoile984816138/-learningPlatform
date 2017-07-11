@@ -123,7 +123,7 @@ export default {
             },
             viewCourse(current) {
                 const _self = this
-                this.$http.get('/discuss/' + this.type, {
+                this.$http.get('/discuss/my/' + this.type, {
                     params: {
                         pageNum: current,
                         pageSize: 20,
@@ -149,16 +149,16 @@ export default {
                 if(info.lesson.material.type === 0){
                     const time_arr = info.point_time.split(':');
                     time = parseInt(time_arr[0]) * 60 + parseInt(time_arr[1]);
-                    window.location.href = '/module/player.html#/video/'+info.lesson.id+'?point='+time
+                    window.location.href = '/module/player.html#/video/'+info.lesson.id+'?point='+time+'&cid='+this.info.lesson.Course.id
                 // 音频
                 }else if(info.lesson.material.type === 1){
                     const time_arr = info.point_time.split(':');
                     time = parseInt(time_arr[0]) * 60 + parseInt(time_arr[1]);
-                    window.location.href = '/module/player.html#/audio/'+info.lesson.id+'?point='+time
+                    window.location.href = '/module/player.html#/audio/'+info.lesson.id+'?point='+time+'&cid='+this.info.lesson.Course.id
                 // PPT
                 }else{
                     time = info.point_time
-                    window.location.href = '/module/player.html#/page/'+info.lesson.id+'?point='+time
+                    window.location.href = '/module/player.html#/page/'+info.lesson.id+'?point='+time+'&cid='+this.info.lesson.Course.id
                 }
             }
         }

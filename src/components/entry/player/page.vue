@@ -86,17 +86,15 @@ export default {
             // console.log()
             // /lesson/pdf/{url}
             const _self = this;
-            
+
             const point = this.handleUrl()['point'];
             if (typeof point != 'undefined') {
                 this.page = parseInt(point);
             }
             window.onunload = function() {　
-                this.$http.post('/history/record', {
-                    params: {
-                        lesson_id: _self.lessonData.id,
-                        point: _self.page
-                    }
+                _self.$http.post('/history/record', {
+                    lesson_id: _self.lessonData.id,
+                    point: _self.page
                 }).then((response) => {
                     response = response.body
                     if (response.failure.length === 0) {
