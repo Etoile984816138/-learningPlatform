@@ -3,7 +3,7 @@
         <div class="container">
             <div id="dplayer1"></div>
         </div>
-        <span style="display:none">{{getDiscussion}}</span>
+        <!-- <span style="display:none">{{getDiscussion}}{{test}}</span> -->
     </div>
 </template>
 <style type="text/css" src="./DPlayer.min.css"></style>
@@ -12,12 +12,12 @@
     margin-top: 40px;
 }
 </style>
-<!-- <script type="text/javascript" src="./hls.min.js"></script> -->
-<!-- <script type="text/javascript" src="./DPlayer.min.js"></script> -->
+
 <script>
 // import flv from 'flv.js'
-// import hls from "hls.js";
+
 import DPlayer from 'DPlayer';
+// let DPlayer = require('DPlayer')
 
 export default {
     data() {
@@ -26,13 +26,12 @@ export default {
                 discussData: [],
                 count: 0,
                 end_time: 0,
-                current: 0
+                current: 0,
+                lessonData: {}
             }
         },
         props: {
-            lessonData: {
-                type: Object
-            },
+
             bus: {
                 type: Object
             },
@@ -48,61 +47,105 @@ export default {
         },
         mounted() {
             const _self = this;
-            try {
-                this.dpi = new DPlayer({
-                    element: document.getElementById('dplayer1'),
-                    autoplay: false,
-                    theme: '#FADFA3',
-                    loop: false,
-                    screenshot: true,
-                    hotkey: true,
-                    logo: '',
-                    // video: {
-                    //     url: 'http://devtest.qiniudn.com/若能绽放光芒.mp4',
-                    //     pic: 'http://devtest.qiniudn.com/若能绽放光芒.png',
-                    //     type: 'auto',
-                    // },
+            // _self.dpi = null;
+            // let $dplayer1 = document.getElementById('dplayer1');
 
-                    video: {
-                        quality: [{
-                            name: '高清',
-                            url: _self.lessonData.url,
-                            type: 'hls'
-                        }, {
-                            name: '超清',
-                            url: _self.lessonData.url,
-                            type: 'hls'
-                        }],
-                        defaultQuality: 0,
-                        pic: _self.lessonData.cover,
-                    },
-                    // video: {
-                    //     url: 'http://115.159.42.117/oflaDemo/DPlayer-master/demo/test.m3u8',
-                    //     pic: 'http://devtest.qiniudn.com/若能绽放光芒.png',
-                    //     type: 'hls',
-                    // },
-                    danmaku: {
-                        id: '9E2E3368B56CDBB4cd',
-                        api: '/danmaku/' + _self.lessonData.id,
-                        // api:'https://api.prprpr.me/dplayer/',
-                        token: 'tokendemo',
-                        maximum: 3000,
-                        user: 'DIYgod的女粉'
-                    },
-                    contextmenu: [{
-                        text: '视频播放遇到问题？',
-                        link: 'http://www.baidu.com'
-                    }]
+        },
+        beforeRouteEnter(to, from, next) {
+            next(vm => {
+                vm.$http.get('/lesson/' + to.params.id).then((response) => {
+                    response = response.body
+                    if (response.failure.length === 0) {
+                        vm.lessonData = response.success
+                        vm.dpi = new DPlayer({
+                            element: document.getElementById('dplayer1'),
+                            autoplay: false,
+                            theme: '#FADFA3',
+                            loop: false,
+                            screenshot: true,
+                            hotkey: true,
+                            logo: '',
+                            video: {
+                                url: vm.lessonData.url,
+                                pic: vm.lessonData.cover,
+                                type: 'hls',
+                            },
+                            danmaku: {
+                                id: '9E2E3368B56CDBB4',
+                                api: '/danmaku/' + vm.$route.params.id,
+                                // api:'https://api.prprpr.me/dplayer/',
+                                token: 'tokendemo',
+                                maximum: 3000,
+                                user: 'DIYgod的女粉'
+                            },
+                            contextmenu: [{
+                                text: '视频播放遇到问题？',
+                                link: 'http://www.baidu.com'
+                            }]
+                        })
+                        console.log('------')
+                        console.log(vm.lessonData)
+                        const point = vm.handleUrl()['point'];
+                        if (typeof point != 'undefined') {
+                            vm.dpi.video.current.currentTime = point
+                            vm.getDiscussionByPoint(point);
+                        }
+
+                        let current = 0,
+                            end_count = 0;
+                        try {
+                            if (vm.end_time == 0 && vm.dpi.video) {
+                                vm.end_time = vm.dpi.video.duration;
+                            }
+                            end_count = parseInt(vm.end_time / 60) * 60
+                        } catch (e) {
+                            console.log(e)
+                        }
+                        // 获取总时长
+                        setInterval(function() {
+                            try {
+                                current = vm.dpi.video.current.currentTime;
+                                vm.current = current;
+                                if (parseInt(current / 60) * 60 == vm.count) {} else if (vm.count <= end_count) {
+                                    // 时间点改变，请求数据
+                                    vm.getDiscussionByPoint(parseInt(current / 60) * 60)
+                                }
+
+                                if (vm.autoContinue && Boolean(vm.end_time) && (current === vm.end_time)) {
+                                    console.log('播放结束')
+                                        // 请求，判断类型
+                                    vm.$http.get('/lesson/' + vm.nextId).then((response) => {
+                                        response = response.body
+                                            // console.log(response)
+                                        if (response.failure.length === 0) {
+                                            let type = response.success.type
+                                            if (type === 0) {
+                                                window.location = '#/video/' + vm.nextId + '?cid=' + vm.handleUrl()['cid']
+                                            } else if (type === 1) {
+                                                window.location = '#/audio/' + vm.nextId + '?cid=' + vm.handleUrl()['cid']
+                                            } else {
+                                                window.location = '#/page/' + vm.nextId + '?cid=' + vm.handleUrl()['cid']
+                                            }
+                                        } else {
+                                            alert(response.failure[0])
+                                        }
+
+                                    })
+
+
+                                }
+                            } catch (e) {
+                                console.log(e)
+                            }
+                        }, 1000)
+                    } else {
+                        alert(response.failure[0])
+                    }
+
                 })
-                const point = _self.handleUrl()['point'];
-                if (typeof point != 'undefined') {
-                    // _self.dpi.play(_self.handleUrl()['point'])
-                    _self.dpi.video.current.currentTime = point
-                    _self.getDiscussionByPoint(point);
-                }
-            } catch (e) {
-                console.log('DOM渲染中')
-            }
+            })
+
+
         },
         created() {
             const _self = this;
@@ -158,69 +201,6 @@ export default {
                 }
                 return theRequest;
             }
-        },
-        computed: {
-            getDiscussion() {
-                const _self = this;
-                let current = 0,
-                    end_count = 0;
-                try {
-
-                    if (_self.end_time == 0) {
-                        _self.end_time = _self.dpi.video.duration;
-                    }
-                    end_count = parseInt(end_time / 60) * 60
-                } catch (e) {
-                    console.log('DOM渲染中')
-                }
-
-                // 获取总时长
-                setInterval(function() {
-                    try {
-                        // console.log('-----')
-                        // console.log(_self.dpi.video.current)
-                        current = _self.dpi.video.current.currentTime;
-                        _self.current = current;
-                        // while (count != end_count) {
-                        if (parseInt(current / 60) * 60 == _self.count) {
-                            // console.log('时间点未变，不请求数据')
-                        } else if (_self.count <= end_count) {
-                            // 时间点改变，请求数据
-                            _self.getDiscussionByPoint(parseInt(current / 60) * 60)
-                        }
-
-                        if (_self.autoContinue && Boolean(_self.end_time) && (current === _self.end_time)) {
-                            console.log('播放结束')
-                                // 请求，判断类型
-                            _self.$http.get('/lesson/' + _self.nextId).then((response) => {
-                                response = response.body
-                                    // console.log(response)
-                                if (response.failure.length === 0) {
-                                    let type = response.success.type
-                                    if (type === 0) {
-                                        window.location = '#/video/' + _self.nextId + '?cid=' + self.handleUrl()['cid']
-                                    } else if (type === 1) {
-                                        window.location = '#/audio/' + _self.nextId + '?cid=' + self.handleUrl()['cid']
-                                    } else {
-                                        window.location = '#/page/' + _self.nextId + '?cid=' + self.handleUrl()['cid']
-                                    }
-                                } else {
-                                    alert(response.failure[0])
-                                }
-
-                            })
-
-                            // _self.$route.params.id = 2
-
-                        }
-                    } catch (e) {
-                        console.log(e)
-                    }
-                }, 1000)
-            }
-        },
-        watch: {
-
         }
 }
 </script>

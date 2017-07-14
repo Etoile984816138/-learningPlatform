@@ -7,6 +7,7 @@ import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 import header from 'commonComp/header/header'
 import MuseUI from 'muse-ui'
+// import hls from 'hls.js'
 import 'muse-ui/dist/muse-ui.css'
 import 'muse-ui/dist/theme-teal.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
@@ -15,8 +16,13 @@ import audio from 'entry/player/audio'
 import page from 'entry/player/page'
 import video from 'entry/player/video'
 
+// console.log(hls)
+// var hls1 = new hls()
+
 Vue.use(MuseUI)
 Vue.use(VueAwesomeSwiper)
+// Vue.use(hls1)
+
 
 // 路由配置可看官方文档
 Vue.use(VueRouter)

@@ -115,9 +115,9 @@ export default {
                 // 接收到数据之后，就可以更新组件中使用的数据，然后展示到页面上
                 console.log("接收到其他组件传递的数据：");
                 console.log(msg)
-                this.d_id = msg.d_id;
-                this.g_id = msg.g_id;
-                this.s_id = msg.s_id;
+                that.d_id = msg.d_id;
+                that.g_id = msg.g_id;
+                that.s_id = msg.s_id;
                 that.viewCourse(1);
             });
         }
@@ -146,12 +146,12 @@ export default {
             console.log(this.url)
             this.$http.get(_self.url, {
                 params: {
-                    s_id: this.s_id,
-                    g_id: this.g_id,
-                    d_id: this.d_id,
+                    s_id: _self.s_id,
+                    g_id: _self.g_id,
+                    d_id: _self.d_id,
                     pageNum: current,
-                    pageSize: this.pagination.pageSize,
-                    title: this.search_text
+                    pageSize: _self.pagination.pageSize,
+                    title: _self.search_text
                 }
             }).then((response) => {
                 response = response.body
@@ -159,8 +159,8 @@ export default {
                 console.log(response)
                 if (response.failure.length === 0) {
                     console.log('success')
-                    this.courses = response.success;
-                    this.total = response.total;
+                    _self.courses = response.success;
+                    _self.total = response.total;
                 } else {
                     alert(response.failure[0])
                 }

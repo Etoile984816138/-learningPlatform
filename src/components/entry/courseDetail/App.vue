@@ -375,6 +375,9 @@ export default {
                 const _self = this;
                 const today = new Date();
                 console.log(_self.replyText)
+                if(!this.discusionData[index].commends){
+                    this.discusionData[index].commends = []
+                }
                 this.discusionData[index].commends.push({
                     id: 1,
                     to: {
@@ -405,12 +408,14 @@ export default {
                 console.log('-------')
                 console.log(this.addDiscuss)
                 const params = this.addDiscuss
+                console.log(params)
                 this.$http.post('/discuss/publish',params).then((response) => {
                     response = response.body
                         // if (response.failure.length === 0) {
                     _self.dialog = false
                     this.alertText = '发帖成功！'
                     this.showSnackbar();
+                    this.setDiscussion();
                     // } else {
                     //     alert(response.failure[0])
                     // }

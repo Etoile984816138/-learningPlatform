@@ -177,14 +177,14 @@ apiRoutes.get('/discuss/:course_id/course/:type', function(req, res) {
 });
 
 // 弹幕数据
-apiRoutes.get('/danmaku', function(req, res) {
+apiRoutes.get('/danmaku/:id', function(req, res) {
     res.json({
         code: 1,
         danmaku: danmaku1.danmaku
     });
 });
 
-apiRoutes.post('/danmaku', function(req, res) {
+apiRoutes.post('/danmaku/:id', function(req, res) {
     res.json({
         code:1,
         danmaku:danmakuPost.data

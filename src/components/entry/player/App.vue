@@ -41,11 +41,11 @@
                         <!-- <v-audio></v-audio> -->
                     </div>
                     <div class="player-function" @mouseleave="setOutLineHide">
-                        <mu-checkbox label="自动续播" class="demo-checkbox" v-if="lessonData.type != 1" v-model="autoContinue" />
+                        <mu-checkbox label="自动续播" class="demo-checkbox" v-if="lessonData.type != 2" v-model="autoContinue" />
                         <mu-flat-button label="下一课时" class="next-btn" primary v-else @click="toNext" />
                         <div>
-                            <span @click="setPoint">划重点</span>
-                            <span @click="setPoint">有疑问</span>
+                            <span @click="setPoint(1)">划重点</span>
+                            <span @click="setPoint(2)">有疑问</span>
                             <span @mouseover="setOutLineShow">离线观看</span>
                         </div>
                     </div>
@@ -54,7 +54,7 @@
                         <mu-radio label="公开" name="group" nativeValue="0" v-model="playerComment" class="demo-radio" />
                         <mu-radio label="好友可见" name="group" nativeValue="1" v-model="playerComment" class="demo-radio" />
                         <mu-radio label="私密" name="group" nativeValue="2" v-model="playerComment" class="demo-radio" />
-                        <mu-raised-button label="提交" class="send-player-comment" primary @click="submitPoint" />
+                        <mu-raised-button label="提交" class="send-player-comment" primary @click="submitPoint()" />
                     </div>
                 </mu-col>
                 <mu-col width="100" tablet="30" desktop="30">
@@ -122,10 +122,13 @@ export default {
                 point_time: 0,
                 cover: null,
                 next_id: 0,
-                outLineShow: false
+                outLineShow: false,
+                type:1
             }
         },
         created() {
+            this.getDiscussionByPoint(0)
+            const _self = this;
             if (this.$route.params.id) {
                 console.log('0000000')
                 this.id = this.$route.params.id
@@ -133,26 +136,17 @@ export default {
                 this.id = 0;
             }
 
-
-
             this.$http.get('/lesson/' + this.id).then((response) => {
                 response = response.body
-                const _self = this;
-                // console.log(response)
                 if (response.failure.length === 0) {
-                    this.lessonData = response.success
-                    this.next_id = response.next
-                        // 如果是PPT，要再次请求资源
-                    if (this.lessonData.type == 2) {
-                        _self.$http.get('/lesson/pdf/' + _self.lessonData.url).then((response) => {
-                            response = response.body
-                                // console.log(response)
-                            if (response.failure.length === 0) {
-                                console.log('请求成功')
-                            } else {
-                                alert(response.failure[0])
-                            }
-
+                    // 如果是PPT，要再次请求资源
+                    console.log(response.success.type)
+                    _self.lessonData = response.success
+                    _self.next_id = response.next
+                    if (response.success.type == 2) {
+                        _self.$http.get('/lesson/pdf/' + _self.lessonData.url).then((response2) => {
+                            response2 = response2.body
+                             _self.lessonData.url = response2;
                         })
                     }
                 } else {
@@ -198,7 +192,8 @@ export default {
                 this.open = !this.open
                 this.docked = !flag
             },
-            setPoint() {
+            setPoint(val) {
+                this.type = val
                 if (!this.playerFunctionShow) {
                     this.playerFunctionShow = true;
                 } else {
@@ -206,7 +201,7 @@ export default {
                 }
 
             },
-            submitPoint(type) {
+            submitPoint() {
                 let point_time = 0;
                 // 视频
                 if (this.lessonData.type == 0) {
@@ -229,13 +224,14 @@ export default {
                 }
                 const _self = this;
                 const params = {
-                    type: type,
+                    type: _self.type,
                     flag: parseInt(_self.playerComment),
                     content: _self.playerCommentConetnt,
                     lesson_id: parseInt(_self.id),
                     point_time: point_time,
                     cover: _self.cover
                 }
+                console.log('------------')
                 console.log(params)
                 this.$http.post('/discuss/note', {
                     params: params
