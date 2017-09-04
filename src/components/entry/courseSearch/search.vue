@@ -76,14 +76,11 @@ export default {
             this.detailShow = false
         },
         choiseDirection(val) {
-            console.log(val)
             this.direction_id = val;
             const _self = this;
             this.$http.get('/direction/' + _self.direction_id).then((response) => {
                 response = response.body
-                    // console.log(response)
                 if (response.failure.length === 0) {
-                    console.log('success')
                     _self.generic_arr = response.success
 
                 } else {
@@ -100,16 +97,13 @@ export default {
 
         },
         choiseGeneric(val) {
-            console.log(val)
             const _self = this;
             this.generic_id = val;
 
             // 根据分类获取类型
             this.$http.get('/generic/' + _self.generic_id).then((response) => {
                 response = response.body
-                    // console.log(response)
                 if (response.failure.length === 0) {
-                    console.log('success')
                     _self.style_arr = response.success
                 } else {
                     alert(response.failure[0])
@@ -125,7 +119,6 @@ export default {
 
         },
         choiseStyle(val) {
-            console.log(val)
             const _self = this;
             this.style_id = val
             this.bus.$emit("receiveIds", {
@@ -139,21 +132,15 @@ export default {
     },
     mounted() {
         // this.test = this.generics;
-        // console.log(this.test)
     },
     computed: {
         direction_arr: function() {
             return this.directions
         },
         setGeneric: function() {
-            // alert(111)
-            console.log('Generic')
-            console.log(this.generics)
             this.generic_arr = this.generics
         },
         setStyle: function() {
-            console.log('style')
-            console.log(this.style_arr)
             this.style_arr = this.styles
         }
     }
@@ -171,9 +158,7 @@ export default {
 .search-mu-list {
     display: flex;
     font-size: 12px;
-    // display:inline-block;
-    // width:auto;
-    // overflow-x:visible
+    flex-wrap: wrap;
 }
 
 .search-title {

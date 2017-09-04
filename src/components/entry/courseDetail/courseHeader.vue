@@ -5,12 +5,12 @@
 <template>
     <div id="courseHeader" class="course-header">
         <mu-row>
-            <mu-col width="100" tablet="40" desktop="40">
+            <mu-col width="100" tablet="20" desktop="20">
                 <div class="cover-wrapper">
                     <img :src="courseData.cover">
                 </div>
             </mu-col>
-            <mu-col width="100" tablet="60" desktop="60">
+            <mu-col width="100" tablet="80" desktop="80">
                 <mu-list-item disabled>
                     <h1>{{courseData.title}}</h1>
                     <div @click="setBadgeText">
@@ -25,7 +25,7 @@
                     </p>
                     <div v-if="isJoin">
                         <mu-linear-progress mode="determinate" :value="courseData.hasStudy" class="progress" :size="progressSize" :max="courseData.total" />
-                        <p>已学习{{courseData.hasStudy}}个课时</p>
+                        <p>已学习{{courseData.hasStudy}}个课时&nbsp;&nbsp;&nbsp;共{{courseData.total}}个课时</p>
                     </div>
                     <div v-else>
                         <mu-raised-button label="立即参加" class="demo-raised-button" @click="joinCourse" primary/>
@@ -152,8 +152,8 @@ export default {
     margin-bottom: 40px;
     .cover-wrapper {
         // margin:50px;
-        width: 300px;
-        height: 200px;
+        width: 100%;
+        height: 250px;
         border: 1px solid #ccc;
         img {
             width: 100%;

@@ -6,7 +6,7 @@
         </div>
         <div class="course-list-content">
             <mu-grid-list class="gridlist-demo" :cols="gridrow">
-                <mu-grid-tile v-for="courseItem in courses" :key="courseItem.id">
+                <mu-grid-tile v-for="courseItem in courses" :key="courseItem.id" style="height:300px">
                     <img :src="courseItem.cover" class="cover" @click="toDetail(courseItem.id)"/>
                     <!-- <img src="./banner1.jpg" class="cover" /> -->
                     <span slot="title">{{courseItem.title}}</span>
@@ -34,6 +34,9 @@ export default {
         clear: both;
     }
     // @main-color: #009688;
+    .mu-grid-tile>img{
+        width: 100%;
+    }
     .course-list {
         margin-bottom: 20px;
         position: relative;

@@ -8,7 +8,7 @@
             <div class="day-course" v-for="info in courses">
                 <p class="content-title">{{info.time}}</p>
                 <mu-grid-list class="gridlist-demo" :cols="gridrow">
-                    <mu-grid-tile v-for="courseItem in info.list" :key="courseItem.lesson.id">
+                    <mu-grid-tile v-for="courseItem in info.list" :key="courseItem.lesson.id" style="height:300px">
                         <img :src="courseItem.cover" class="cover" @click="toDetail(courseItem)" />
                         <!-- <img src="./banner1.jpg" class="cover" /> -->
                         <span slot="title">{{courseItem.lesson.title}}</span>

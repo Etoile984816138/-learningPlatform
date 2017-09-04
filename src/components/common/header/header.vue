@@ -10,7 +10,7 @@
             <mu-flat-button color="white" label="我的消息" slot="right" href="/module/information.html#/msg"/>
             <mu-badge :content="''+user.new_info" class="icon-badge" circle secondary slot="right"> </mu-badge>
             <mu-flat-button color="white" :label="user.name" slot="right" />
-            <mu-avatar slot="right" :src="user.portrait" />
+            <mu-avatar slot="right" :src="user.port" />
             <!-- <mu-icon-menu icon="expand_more" slot="right">
             <mu-menu-item title="菜单 1" />
             <mu-menu-item title="菜单 2" />

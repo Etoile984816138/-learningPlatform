@@ -27,7 +27,7 @@ export default {
                 coursesUrl: '/course/new',
                 pagination: {
                     pageNum: 1,
-                    pageSize: 8,
+                    pageSize: 16,
                     pageTotal: 58,
                     direction_id: 0,
                     generic_id: 0,
@@ -52,9 +52,7 @@ export default {
             this.title = this.handleUrl()['title'],
                 this.$http.get('/direction').then((response) => {
                     response = response.body
-                        // console.log(response)
                         if (response.failure.length === 0) {
-                            console.log('success')
                             this.directions = response.success
                         } else {
                             alert(response.failure[0])
@@ -63,11 +61,8 @@ export default {
                 }),
                 this.$http.get('/generic').then((response) => {
                     response = response.body
-                        // console.log(response)
                         if (response.failure.length === 0) {
-                            console.log('success')
                             this.generics = response.success
-                            console.log(this.generics)
                         } else {
                             alert(response.failure[0])
                         }
@@ -75,10 +70,7 @@ export default {
                 }),
                 this.$http.get('/style').then((response) => {
                     response = response.body
-                        // console.log(response)
                         if (response.failure.length === 0) {
-                            console.log('-------')
-                            console.log(response.success)
                             this.styles = response.success
                         } else {
                             alert(response.failure[0])
@@ -104,7 +96,6 @@ export default {
                 return theRequest;
             },
             handleIds(data) {
-                console.log(data)
                 this.pagination.direction_id = data.d_id;
                 this.pagination.generic_id = data.g_id;
                 this.pagination.style_id = data.s_id

@@ -9,7 +9,10 @@
 </template>
 <style lang="less">
 #footer {
-  
+    .mu-appbar{
+            position: absolute;
+            bottom: 0;
+        }
     .footer-text {
         display: block;
         text-align: center;

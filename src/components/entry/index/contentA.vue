@@ -17,9 +17,9 @@
         <mu-flexbox-item grow="5" class="carousel">
             <!-- swiper -->
             <swiper :options="swiperOption" style="height:350px">
-                <swiper-slide><img src="./banner1.jpg"></swiper-slide>
-                <swiper-slide><img src="./banner2.jpg"></swiper-slide>
-                <swiper-slide><img src="./banner3.jpg"></swiper-slide>
+                <swiper-slide><img src="./1.png"></swiper-slide>
+                <swiper-slide><img src="./2.png"></swiper-slide>
+                <swiper-slide><img src="./3.png"></swiper-slide>
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
         </mu-flexbox-item>

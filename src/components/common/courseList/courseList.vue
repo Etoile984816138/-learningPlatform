@@ -10,6 +10,10 @@
                             <mu-tab value="/course/commendations" title="最适合我" />
                         </mu-tabs>
                     </div>
+                    <div v-else>
+                        <mu-raised-button label="都不合适？做个测验吧..." class="survey-button" primary @click="toSurvey"/>
+                        
+                    </div>
                 </mu-col>
                 <mu-col width="100" tablet="50" desktop="33">
                     <mu-row>
@@ -28,7 +32,18 @@
             <mu-row gutter>
                 <mu-col width="50" tablet="30" desktop="25" v-for="course in courses" :key="course.id">
                     <img :src="course.cover" @click="toDetail(course.id)">
-                    <p>{{course.title}}</p>
+                    <p class="course-title">{{course.title}}</p>
+                    <div class="course-description-wrapper">
+                        <p><mu-icon value="import_contacts"/>{{course.enter}}人正在学习</p>
+                        <p><mu-icon value="favorite_border" class="favorite_border"/>{{course.number}}人已收藏</p>
+                        
+                    </div>
+                    <div class="course-score-wrapper">
+                        <span>评分：</span>
+                        <mu-icon value="star" v-for="item in course.star" :key="item"/>
+                       
+                    </div>
+                    
                 </mu-col>
             </mu-row>
         </div>
@@ -52,6 +67,37 @@
             width: 100%;
             height: 200px
         }
+        .course-title{
+            text-align: left;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .course-description-wrapper{
+            display: flex;
+            justify-content:space-between;
+            text-align: left;
+            color: #b2b2b2;
+            font-size: 14px;
+            .mu-icon{
+                vertical-align: middle;
+                display: inline-block;
+                margin-right: 5px;
+                &.favorite_border{
+                    color: #ff80ab;
+                }
+            }
+        }
+        .course-score-wrapper{
+            color: #b2b2b2;
+            font-size: 14px;
+            text-align: left;
+            .mu-icon{
+                vertical-align: middle;
+                display: inline-block;
+                margin-right: 5px;
+                color: #ffc107;
+            }
+        }
     }
     .tab {
         position: relative;
@@ -67,6 +113,7 @@
     .search-button {
         float: right;
     }
+    
 }
 </style>
 <script>
@@ -120,6 +167,11 @@ export default {
                 that.s_id = msg.s_id;
                 that.viewCourse(1);
             });
+
+            this.bus.$on("getType", function(msg) {
+                that.url = msg.url;
+                that.viewCourse(1);
+            })
         }
 
     },
@@ -179,6 +231,9 @@ export default {
         },
         toDetail(id) {
             window.location.href = '/module/courseDetail.html?cid=' + id
+        },
+        toSurvey(){
+            window.location.href = '/module/survey.html'
         }
     },
     computed: {

@@ -84,7 +84,7 @@ apiRoutes.get('/generic', function(req, res) {
 });
 
 // 检索功能
-apiRoutes.get('/course', function(req, res) {
+apiRoutes.get('/course/commendations/:type', function(req, res) {
     res.json({
         failure: [],
         success: course.success,
@@ -96,7 +96,7 @@ apiRoutes.get('/course', function(req, res) {
 apiRoutes.get('/course/new', function(req, res) {
     res.json({
         failure: [],
-        success: news.success
+        success: course.success
     });
 });
 
@@ -165,6 +165,23 @@ apiRoutes.post('/discuss/publish', function(req, res) {
         code:true
     });
 });
+
+apiRoutes.post('/history/record', function(req, res) {
+    console.log(req.params)
+    console.log(req.body)
+    res.json({
+        code:true
+    });
+});
+
+apiRoutes.get('/history/record', function(req, res) {
+    console.log(req.params)
+    console.log(req.body)
+    res.json({
+        code:true
+    });
+});
+
 
 // 获取讨论区数据
 apiRoutes.get('/discuss/:course_id/course/:type', function(req, res) {

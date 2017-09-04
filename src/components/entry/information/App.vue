@@ -6,10 +6,10 @@
             <mu-paper :zDepth="1">
                 <mu-list-item disabled>
                     <div class="avatar-wrapper">
-                        <img src="./banner1.jpg">
+                        <img src="/static/img/user_port.jpg">
                     </div>
                     <div class="infor">
-                        <h2>头像</h2>
+                        <h2>宋一</h2>
                         <p>学习时长：20min</p>
                     </div>
                 </mu-list-item>
